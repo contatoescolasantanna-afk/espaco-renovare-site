@@ -14,7 +14,7 @@ permissions:
 # "1" = o domínio oficial mostra só a página "Em construção" com os contatos.
 # Para lançar o site completo, troque para "0" (a pré-visualização sempre mostra o site completo).
 env:
-  EM_CONSTRUCAO: "1"
+  EM_CONSTRUCAO: "0"
 
 concurrency:
   group: pages
