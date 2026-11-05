@@ -4,10 +4,10 @@ faixa_etaria: 2 e 3 anos
 ordem: 2
 cor: azul
 resumo: "A fase do “eu sozinho!”: autonomia, linguagem, movimento e muita brincadeira, com o material Conquista."
-imagem: /images/uploads/crianca-sorrindo-pintura.jpg
-imagem_alt: Menino do Maternal sorrindo enquanto pinta com os colegas no gramado
-imagem_2: /images/uploads/pintura-no-gramado.jpg
-imagem_2_alt: Crianças pintando juntas numa mesa azul no gramado
+imagem: /images/uploads/03-pintura-com-uniforme.webp
+imagem_alt: Alunos de uniforme durante uma experiência de pintura com carimbos
+imagem_2: /images/uploads/06-sorriso-com-uniforme.webp
+imagem_2_alt: Aluno de uniforme sorrindo após uma atividade com massinha
 seo_titulo: "Maternal (2 e 3 anos) em Santana de Parnaíba | Renovare"
 seo_descricao: "Maternal para 2 e 3 anos em Santana de Parnaíba: turmas de até 10 crianças, material Conquista, arte, natureza e aulas extras. Agende sua visita."
 destaques:

@@ -154,8 +154,8 @@ eleventyComputed:
     </header>
     <ul class="espacos">
       {%- for e in home.estrutura.espacos %}
-      <li class="espaco">
-        <figure><img src="{{ e.imagem }}" alt="{{ e.imagem_alt }}" sizes="(min-width: 1000px) 380px, (min-width: 561px) 45vw, 46vw"></figure>
+      <li class="espaco{% if e.enquadramento == 'panoramico' %} espaco--panoramico{% endif %}">
+        <figure><img src="{{ e.imagem }}" alt="{{ e.imagem_alt }}" sizes="{% if e.enquadramento == 'panoramico' %}(min-width: 1200px) 1180px, 92vw{% else %}(min-width: 1000px) 380px, (min-width: 561px) 45vw, 46vw{% endif %}"></figure>
         <h3>{{ e.nome }}</h3>
         <p>{{ e.texto }}</p>
       </li>
@@ -215,7 +215,7 @@ eleventyComputed:
     </header>
     <ul class="mosaico">
       {%- for f in home.galeria.fotos %}
-      <li><img src="{{ f.imagem }}" alt="{{ f.alt }}" sizes="(min-width: 1000px) 300px, 45vw"></li>
+      <li{% if f.enquadramento == 'panoramico' %} class="mosaico__panoramica"{% endif %}><img src="{{ f.imagem }}" alt="{{ f.alt }}" sizes="(min-width: 1000px) 600px, 90vw"></li>
       {%- endfor %}
     </ul>
     <p class="centro"><a class="botao botao--contorno" href="https://www.instagram.com/{{ escola.instagram }}/" target="_blank" rel="noopener">{{ icone("instagram") }} Siga @{{ escola.instagram }}</a></p>

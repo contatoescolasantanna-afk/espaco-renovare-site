@@ -5,8 +5,8 @@ date: 2026-11-04
 tema: Escolher a escola
 turmas: [bercario, maternal]
 resumo: Procurando creche ou berçário particular em Santana de Parnaíba? Um checklist prático, o que perguntar e como encaixar a escola na rotina da família.
-imagem: /images/uploads/espaco-parque.jpg
-imagem_alt: Parque infantil colorido no gramado do Espaço Renovare
+imagem: /images/uploads/07-parque-coberto.webp
+imagem_alt: Parque coberto do Espaço Renovare com escorregadores e balanço
 seo_descricao: "Guia para escolher creche ou berçário particular em Santana de Parnaíba: checklist, perguntas para a visita, horário, deslocamento e avaliações."
 faq:
   - pergunta: Qual a diferença entre creche e berçário?
