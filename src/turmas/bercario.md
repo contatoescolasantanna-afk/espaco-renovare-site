@@ -6,7 +6,7 @@ cor: amarelo
 resumo: Colo, rotina tranquila e estímulos pensados para os primeiros passos, com turmas pequenas e muito afeto.
 imagem: /images/uploads/bebe-pintando-ajustada.jpg
 imagem_alt: Bebê do berçário pintando com pincel no cadeirão
-imagem_2: /images/uploads/28-bebe-sorrindo-no-gramado.webp
+imagem_2: /images/uploads/28-bebe-centralizado.webp
 imagem_2_alt: Bebê do berçário sorrindo no gramado
 seo_titulo: "Berçário em Santana de Parnaíba a partir de 4 meses | Renovare"
 seo_descricao: "Berçário no Rancho Alegre, Santana de Parnaíba, para bebês a partir de 4 meses. Turma pequena, área verde e integral das 7h às 18h30. Agende uma visita."

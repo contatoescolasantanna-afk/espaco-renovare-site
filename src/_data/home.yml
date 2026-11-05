@@ -152,6 +152,7 @@ galeria:
       alt: Criança de uniforme pintando um semáforo de papel
     - imagem: /images/uploads/19-turma-de-ballet.webp
       alt: Turma de ballet durante a aula na escola
+      foco: "50% 0%"
     - imagem: /images/uploads/22-menina-pintando-na-mesa-azul.webp
       alt: Menina de uniforme pintando na mesa azul
     - imagem: /images/uploads/17-musica-menina-com-violao.webp

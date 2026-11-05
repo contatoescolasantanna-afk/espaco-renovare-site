@@ -215,7 +215,7 @@ eleventyComputed:
     </header>
     <ul class="mosaico">
       {%- for f in home.galeria.fotos %}
-      <li{% if f.enquadramento == 'panoramico' %} class="mosaico__panoramica"{% endif %}><img src="{{ f.imagem }}" alt="{{ f.alt }}" sizes="(min-width: 1000px) 600px, 90vw"></li>
+      <li{% if f.enquadramento == 'panoramico' %} class="mosaico__panoramica"{% endif %}><img src="{{ f.imagem }}" alt="{{ f.alt }}"{% if f.foco %} style="object-position:{{ f.foco }}"{% endif %} sizes="(min-width: 1000px) 600px, 90vw"></li>
       {%- endfor %}
     </ul>
     <p class="centro"><a class="botao botao--contorno" href="https://www.instagram.com/{{ escola.instagram }}/" target="_blank" rel="noopener">{{ icone("instagram") }} Siga @{{ escola.instagram }}</a></p>
