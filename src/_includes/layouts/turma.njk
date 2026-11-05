@@ -17,7 +17,7 @@ classeCorpo: pagina-interna
       </div>
     </div>
     <div class="hero__fotos hero__fotos--duas">
-      <figure class="hero__foto hero__foto--principal"><img src="{{ imagem }}" alt="{{ imagem_alt }}" loading="eager" fetchpriority="high" sizes="(min-width: 1100px) 520px, (min-width: 760px) 50vw, 88vw"></figure>
+      <figure class="hero__foto hero__foto--principal"><img src="{{ imagem }}" alt="{{ imagem_alt }}"{% if imagem_foco %} style="object-position:{{ imagem_foco }}"{% endif %} loading="eager" fetchpriority="high" sizes="(min-width: 1100px) 520px, (min-width: 760px) 50vw, 88vw"></figure>
       {%- if imagem_2 %}<figure class="hero__foto hero__foto--2"><img src="{{ imagem_2 }}" alt="{{ imagem_2_alt }}" sizes="(min-width: 760px) 200px, 34vw"></figure>{% endif %}
     </div>
   </div>

@@ -6,6 +6,8 @@ cor: azul
 resumo: "A fase do “eu sozinho!”: autonomia, linguagem, movimento e muita brincadeira, com o material Conquista."
 imagem: /images/uploads/04-massinha-com-uniforme.webp
 imagem_alt: Aluna de uniforme sorrindo com letras de massinha
+# Ponto da foto que fica centralizado (horizontal vertical). Ex.: "50% 10%" mostra mais o alto da foto
+imagem_foco: "50% 8%"
 imagem_2: /images/uploads/06-sorriso-com-uniforme.webp
 imagem_2_alt: Aluno de uniforme sorrindo durante atividade com massinha
 seo_titulo: "Maternal (2 e 3 anos) em Santana de Parnaíba | Renovare"

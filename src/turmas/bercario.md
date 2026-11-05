@@ -4,7 +4,7 @@ faixa_etaria: A partir de 4 meses
 ordem: 1
 cor: amarelo
 resumo: Colo, rotina tranquila e estímulos pensados para os primeiros passos, com turmas pequenas e muito afeto.
-imagem: /images/uploads/bebe-pintando.jpg
+imagem: /images/uploads/bebe-pintando-ajustada.jpg
 imagem_alt: Bebê do berçário pintando com pincel no cadeirão
 imagem_2: /images/uploads/28-bebe-sorrindo-no-gramado.webp
 imagem_2_alt: Bebê do berçário sorrindo no gramado
