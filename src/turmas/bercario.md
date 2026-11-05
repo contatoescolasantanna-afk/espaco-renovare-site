@@ -3,7 +3,7 @@ titulo: Berçário
 faixa_etaria: A partir de 4 meses
 ordem: 1
 cor: amarelo
-resumo: Colo, rotina tranquila e estímulos pensados para os primeiros passos — com turmas pequenas e muito afeto.
+resumo: Colo, rotina tranquila e estímulos pensados para os primeiros passos, com turmas pequenas e muito afeto.
 imagem: /images/uploads/bebe-pintando.jpg
 imagem_alt: Bebê do berçário pintando com pincel no cadeirão
 imagem_2: /images/uploads/espaco-bercario.jpg

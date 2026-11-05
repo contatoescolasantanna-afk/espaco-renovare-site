@@ -3,7 +3,7 @@ titulo: Pré-escola
 faixa_etaria: 4 e 5 anos
 ordem: 3
 cor: verde
-resumo: Curiosidade, letras, números e projetos — preparando a criança para o Ensino Fundamental com confiança e alegria.
+resumo: Curiosidade, letras, números e projetos, preparando a criança para o Ensino Fundamental com confiança e alegria.
 imagem: /images/uploads/formatura-2024.jpg
 imagem_alt: Diretora abraçando aluno de beca na formatura da Pré-escola
 imagem_2: /images/uploads/arte-ao-ar-livre-2.jpg
@@ -19,13 +19,13 @@ destaques:
   - Formatura no fim da Educação Infantil
 ---
 
-Na **Pré-escola** a curiosidade vira projeto. As crianças levantam hipóteses, pesquisam, registram e descobrem o mundo das letras e dos números de um jeito significativo — sem pressa e sem sofrimento.
+Na **Pré-escola** a curiosidade vira projeto. As crianças levantam hipóteses, pesquisam, registram e descobrem o mundo das letras e dos números de um jeito significativo, sem pressa e sem sofrimento.
 
 ## O que a criança vive na Pré-escola
 
 - **Letramento e matemática:** trilha das vogais, quadro numérico, calendário, diário de bordo da turma e, no Grupo 5, livro de caligrafia.
 - **Projetos:** como o *Livro que Anda*, a Festa da Família e as datas especiais, que envolvem as famílias.
-- **Arte como caminho:** pintura, teatro, música e construção — para expressar ideias e sentimentos.
+- **Arte como caminho:** pintura, teatro, música e construção para expressar ideias e sentimentos.
 - **Autoconhecimento:** assembleias e rodas para reconhecer emoções, resolver conflitos e cuidar do outro.
 - **Natureza:** horta, pomar e investigações no quintal.
 

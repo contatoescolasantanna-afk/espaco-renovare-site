@@ -4,13 +4,13 @@ seo_titulo: "10 perguntas para fazer na visita à escola infantil"
 date: 2026-11-04
 tema: Escolher a escola
 turmas: [bercario, maternal, pre-escola]
-resumo: Um checklist prático para você sair da visita com segurança — do tamanho da turma à adaptação, da rotina à comunicação com a família.
+resumo: Um checklist prático para você sair da visita com segurança: do tamanho da turma à adaptação, da rotina à comunicação com a família.
 imagem: /images/uploads/professora-e-aluno-arte.jpg
 imagem_alt: Professora ajudando um aluno em atividade de arte
 seo_descricao: "Vai visitar escolas infantis em Santana de Parnaíba? Veja 10 perguntas para fazer na visita e escolher com segurança o berçário ou a pré-escola."
 ---
 
-Escolher a primeira escola do filho mexe com o coração — e com a cabeça. Site bonito e Instagram ajudam, mas é **na visita** que você sente o clima, observa as crianças e entende se aquela escola combina com a sua família.
+Escolher a primeira escola do filho mexe com o coração e com a cabeça. Site bonito e Instagram ajudam, mas é **na visita** que você sente o clima, observa as crianças e entende se aquela escola combina com a sua família.
 
 Para você aproveitar cada minuto, separamos as perguntas que mais fazem diferença:
 
@@ -60,4 +60,4 @@ Pergunte o que está incluído na mensalidade, quais são os horários de cada p
 
 Observe as crianças. Elas parecem à vontade? Os adultos se abaixam para falar com elas, chamam cada uma pelo nome? Muitas vezes, a resposta que você procura está nesses pequenos detalhes.
 
-**Quer fazer essas perguntas para a gente?** No Espaço Renovare, a visita é sem pressa e sem compromisso — e seu filho é muito bem-vindo para conhecer o parque, a horta e o pomar com você.
+**Quer fazer essas perguntas para a gente?** No Espaço Renovare, a visita é sem pressa e sem compromisso, e seu filho é muito bem-vindo para conhecer o parque, a horta e o pomar com você.

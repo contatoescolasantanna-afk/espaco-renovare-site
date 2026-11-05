@@ -11,7 +11,7 @@ hero:
   sobretitulo: Berçário e Educação Infantil em Santana de Parnaíba
   titulo: Aqui seu filho é chamado pelo nome
   titulo_destaque: e cresce feliz.
-  subtitulo: Turmas de no máximo 10 crianças, 1.800 m² de área verde com horta e pomar e uma equipe que acompanha cada conquista de pertinho — dos 4 meses aos 5 anos.
+  subtitulo: Turmas de no máximo 10 crianças, 1.800 m² de área verde com horta e pomar e uma equipe que acompanha cada conquista de pertinho, dos 4 meses aos 5 anos.
   botao_principal: Agendar uma visita
   botao_secundario: Conversar no WhatsApp
   frase_manuscrita: Educação é parceria!
@@ -36,11 +36,11 @@ numeros:
 
 diferenciais:
   titulo: Por que as famílias escolhem o Renovare
-  subtitulo: Uma escola pequena de propósito. Aqui cada criança é vista, ouvida e acompanhada — e cada família tem nome, rosto e voz.
+  subtitulo: Uma escola pequena de propósito. Aqui cada criança é vista, ouvida e acompanhada, e cada família tem nome, rosto e voz.
   itens:
     - icone: turma
       titulo: Turmas pequenas de verdade
-      texto: No máximo 10 crianças por sala. A professora conhece o jeito, o tempo e as preferências de cada uma — e você sente isso no dia a dia.
+      texto: No máximo 10 crianças por sala. A professora conhece o jeito, o tempo e as preferências de cada uma, e você sente isso no dia a dia.
     - icone: natureza
       titulo: Natureza no quintal
       texto: São 1.800 m² de área verde com parque, horta e pomar. Criança aqui planta, colhe acerola, jabuticaba e amora, se suja e aprende de verdade.
@@ -55,14 +55,14 @@ diferenciais:
       texto: Livro de recados, Almanaque da Família, reuniões e registros em fotos e vídeos. Você acompanha cada pequena conquista do seu filho.
     - icone: estrela
       titulo: Aulas extras na própria escola
-      texto: Ballet, Cross Kids, Música e Inglês no mesmo lugar, na rotina da criança — sem você precisar correr para outro endereço.
+      texto: Ballet, Cross Kids, Música e Inglês no mesmo lugar, na rotina da criança, sem você precisar correr para outro endereço.
 
 proposta:
   titulo: Uma proposta que respeita o tempo de cada criança
   texto: |-
     No Espaço Renovare acreditamos que cada criança é única e que aprender é uma aventura singular. Por isso, a arte, o brincar e a natureza são os caminhos do nosso dia a dia.
 
-    As crianças exploram, levantam hipóteses, resolvem problemas e constroem conhecimento com significado — sempre com afeto, respeito e muita escuta. Nosso nome vem do italiano *renovare*, renovar: o sol do nosso logo representa um novo dia e uma nova oportunidade de descobrir o mundo.
+    As crianças exploram, levantam hipóteses, resolvem problemas e constroem conhecimento com significado, sempre com afeto, respeito e muita escuta. Nosso nome vem do italiano *renovare*, renovar: o sol do nosso logo representa um novo dia e uma nova oportunidade de descobrir o mundo.
   frase_manuscrita: Educar hoje para um amanhã melhor!
   imagem: /images/uploads/professora-acompanhando.jpg
   imagem_alt: Professora orientando um aluno durante atividade de pintura com as mãos
@@ -119,7 +119,7 @@ estrutura:
 
 extras:
   titulo: Aulas extras sem sair da escola
-  subtitulo: Mais experiências para o corpo, a música e o mundo — dentro da rotina do seu filho.
+  subtitulo: Mais experiências para o corpo, a música e o mundo, dentro da rotina do seu filho.
   itens:
     - nome: Ballet
       icone: ballet
@@ -127,7 +127,7 @@ extras:
       imagem: ""
     - nome: Cross Kids
       icone: cross
-      texto: Circuitos, saltos e desafios motores que desenvolvem força, coordenação e confiança — brincando.
+      texto: Circuitos, saltos e desafios motores que desenvolvem força, coordenação e confiança, brincando.
       imagem: ""
     - nome: Música
       icone: musica
@@ -197,7 +197,7 @@ video:
 
 visita:
   titulo: Venha conhecer o Renovare pessoalmente
-  subtitulo: Escolher a primeira escola é uma decisão do coração. Por isso, a visita é sem pressa e sem compromisso — traga seu filho, se quiser!
+  subtitulo: Escolher a primeira escola é uma decisão do coração. Por isso, a visita é sem pressa e sem compromisso. Traga seu filho, se quiser!
   # Ex.: "Visitas de segunda a sexta, com duração de cerca de 40 minutos" (vazio = escondido)
   info: ""
   passos:
@@ -206,7 +206,7 @@ visita:
     - titulo: Conheça
       texto: Visite salas, parque, horta e pomar e converse com a direção pedagógica.
     - titulo: Tire suas dúvidas
-      texto: Rotina, adaptação, material, aulas extras, valores e vagas — sem pressa.
+      texto: Rotina, adaptação, material, aulas extras, valores e vagas, sem pressa.
     - titulo: Decida com calma
       texto: Se fizer sentido para a sua família, reservamos a vaga do seu filho.
 
@@ -236,4 +236,4 @@ faq:
 
 cta_final:
   titulo: Que tal conhecer o Renovare de pertinho?
-  texto: As vagas são limitadas — no máximo 10 crianças por turma. Agende sua visita e venha sentir o clima da escola.
+  texto: As vagas são limitadas: no máximo 10 crianças por turma. Agende sua visita e venha sentir o clima da escola.
