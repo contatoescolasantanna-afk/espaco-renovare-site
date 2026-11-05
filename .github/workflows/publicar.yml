@@ -53,7 +53,8 @@ jobs:
           cp _site/CNAME _site/favicon.svg _site/favicon-48.png _site/apple-touch-icon.png _construcao/
           cp _site/fonts/fredoka.woff2 _site/fonts/nunito.woff2 _construcao/fonts/
           cp _site/images/marca/logo-horizontal.png _site/images/marca/compartilhar.jpg _construcao/images/marca/
-          printf 'User-agent: *\nAllow: /\n' > _construcao/robots.txt
+          printf 'User-agent: *\nAllow: /\n\nSitemap: https://espacorenovareinfantil.com.br/sitemap.xml\n' > _construcao/robots.txt
+          printf '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url><loc>https://espacorenovareinfantil.com.br/</loc><lastmod>%s</lastmod></url>\n</urlset>\n' "$(date -u +%Y-%m-%d)" > _construcao/sitemap.xml
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ${{ (!endsWith(github.repository, '.github.io') && env.EM_CONSTRUCAO == '1') && '_construcao' || '_site' }}
