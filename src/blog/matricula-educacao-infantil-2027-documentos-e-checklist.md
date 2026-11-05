@@ -5,8 +5,8 @@ date: 2026-11-04
 tema: Matrículas
 turmas: [bercario, maternal, pre-escola]
 resumo: Quando começar, quais documentos costumam ser pedidos, como saber a turma pela idade e o que conferir antes de assinar o contrato.
-imagem: /images/uploads/04-massinha-com-uniforme.webp
-imagem_alt: Aluna de uniforme sorrindo durante atividade com massinha
+imagem: /images/uploads/menina-sorriso.jpg
+imagem_alt: Menina sorrindo na Festa da Família da escola
 seo_descricao: "Vai matricular seu filho na educação infantil em 2027? Veja quando começar, os documentos mais pedidos, a turma pela idade e o checklist antes de assinar."
 faq:
   - pergunta: Quando fazer a matrícula para 2027?

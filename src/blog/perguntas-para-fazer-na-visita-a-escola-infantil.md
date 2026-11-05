@@ -5,8 +5,8 @@ date: 2026-11-04
 tema: Escolher a escola
 turmas: [bercario, maternal, pre-escola]
 resumo: "Um checklist prático para você sair da visita com segurança: do tamanho da turma à adaptação, da rotina à comunicação com a família."
-imagem: /images/uploads/01-sala-de-atividades.webp
-imagem_alt: Sala de atividades com mesas e cadeiras coloridas
+imagem: /images/uploads/professora-e-aluno-arte.jpg
+imagem_alt: Professora ajudando um aluno em atividade de arte
 seo_descricao: "Vai visitar escolas infantis em Santana de Parnaíba? Veja 10 perguntas para fazer na visita e escolher com segurança o berçário ou a pré-escola."
 ---
 

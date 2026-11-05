@@ -5,8 +5,8 @@ date: 2026-11-04
 tema: Primeiros passos
 turmas: [bercario, maternal, pre-escola]
 resumo: Um guia simples para entender os nomes das turmas da educação infantil, a idade de cada uma, a data de corte e quando a matrícula passa a ser obrigatória.
-imagem: /images/uploads/03-pintura-com-uniforme.webp
-imagem_alt: Crianças de uniforme explorando pintura com carimbos
+imagem: /images/uploads/turma-pintando-ao-ar-livre.jpg
+imagem_alt: Turma da educação infantil pintando em mesas azuis no gramado
 seo_descricao: "Berçário, maternal, jardim e pré: veja a idade de cada fase da educação infantil, a data de corte de 31 de março e quando a escola passa a ser obrigatória."
 faq:
   - pergunta: Com quantos anos a criança vai para o maternal?

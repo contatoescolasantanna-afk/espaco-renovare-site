@@ -15,12 +15,12 @@ hero:
   botao_principal: Agendar uma visita
   botao_secundario: Conversar no WhatsApp
   frase_manuscrita: Educação é parceria!
-  imagem_principal: /images/uploads/03-pintura-com-uniforme.webp
-  imagem_principal_alt: Crianças de uniforme explorando pintura com carimbos na sala do Espaço Renovare
-  imagem_2: /images/uploads/04-massinha-com-uniforme.webp
-  imagem_2_alt: Aluna de uniforme sorrindo durante atividade com massinha
-  imagem_3: /images/uploads/06-sorriso-com-uniforme.webp
-  imagem_3_alt: Aluno de uniforme sorrindo após atividade com massinha azul
+  imagem_principal: /images/uploads/arte-ao-ar-livre-1.jpg
+  imagem_principal_alt: Crianças pintando em mesas coloridas no gramado do Espaço Renovare
+  imagem_2: /images/uploads/festa-criancas.jpg
+  imagem_2_alt: Crianças se divertindo na festa de fim de ano da escola
+  imagem_3: /images/uploads/menina-sorriso.jpg
+  imagem_3_alt: Menina sorrindo durante a Festa da Família
 
 numeros:
   - valor: Desde 2013
@@ -64,8 +64,8 @@ proposta:
 
     As crianças exploram, levantam hipóteses, resolvem problemas e constroem conhecimento com significado, sempre com afeto, respeito e muita escuta. Nosso nome vem do italiano *renovare*, renovar: o sol do nosso logo representa um novo dia e uma nova oportunidade de descobrir o mundo.
   frase_manuscrita: Educar hoje para um amanhã melhor!
-  imagem: /images/uploads/05-aprendizagem-com-uniforme.webp
-  imagem_alt: Aluno de uniforme concentrado em uma atividade no caderno
+  imagem: /images/uploads/professora-acompanhando.jpg
+  imagem_alt: Professora orientando um aluno durante atividade de pintura com as mãos
   pilares:
     - titulo: Autoconhecimento e autoestima
       texto: A criança aprende a reconhecer o que sente, a confiar em si e a respeitar o outro.
@@ -88,18 +88,17 @@ estrutura:
       texto: A chegada é por uma rampa cercada de flores e árvores. Escola toda térrea, sem escadas.
       imagem: /images/uploads/espaco-jardim.jpg
       imagem_alt: Rampa de acesso ladeada por canteiro florido e árvores
-    - nome: Parque coberto
-      texto: Escorregadores e balanço em uma área coberta para brincar e explorar os movimentos.
-      imagem: /images/uploads/07-parque-coberto.webp
-      imagem_alt: Parque coberto com escorregadores coloridos e balanço
-    - nome: Campo de futebol
-      texto: Gramado com traves para brincadeiras com bola e atividades de movimento ao ar livre.
-      imagem: /images/uploads/02-campo-de-futebol.webp
-      imagem_alt: Campo gramado do Espaço Renovare com duas traves de futebol
-      enquadramento: panoramico
+    - nome: Parque no gramado
+      texto: Escorregadores, balanço, cavalinhos e cercadinho de brincar num gramado amplo para gastar energia com segurança.
+      imagem: /images/uploads/espaco-parque.jpg
+      imagem_alt: Parque infantil colorido com escorregadores e balanço em amplo gramado
+    - nome: Atividades ao ar livre
+      texto: Mesas no gramado para pintar, criar e investigar com a natureza em volta.
+      imagem: /images/uploads/espaco-atividades-ao-ar-livre.jpg
+      imagem_alt: Crianças pintando juntas numa mesa azul no gramado da escola
     - nome: Salas por faixa etária
       texto: Ambientes claros e arejados, com mobiliário e materiais adequados a cada idade.
-      imagem: /images/uploads/01-sala-de-atividades.webp
+      imagem: /images/uploads/espaco-sala.jpg
       imagem_alt: Sala de atividades iluminada com mesas e cadeirinhas coloridas
     - nome: Refeitório
       texto: Mesas coloridas e cadeirões para os pequenos em área coberta, ao lado do jardim.
@@ -143,23 +142,22 @@ galeria:
   titulo: Momentos que fazem a infância
   subtitulo: Um pouquinho do nosso dia a dia. Tem muito mais no Instagram!
   fotos:
-    - imagem: /images/uploads/03-pintura-com-uniforme.webp
-      alt: Crianças de uniforme experimentando pintura com carimbos
-    - imagem: /images/uploads/04-massinha-com-uniforme.webp
-      alt: Aluna de uniforme durante atividade com massinha colorida
-    - imagem: /images/uploads/05-aprendizagem-com-uniforme.webp
-      alt: Aluno de uniforme explorando uma atividade no caderno
-    - imagem: /images/uploads/02-campo-de-futebol.webp
-      alt: Campo gramado com duas traves de futebol
-      enquadramento: panoramico
-    - imagem: /images/uploads/07-parque-coberto.webp
-      alt: Escorregadores e balanço no parque coberto
-    - imagem: /images/uploads/06-sorriso-com-uniforme.webp
-      alt: Aluno de uniforme sorrindo na sala de atividades
-    - imagem: /images/uploads/01-sala-de-atividades.webp
-      alt: Sala de atividades com mesas e cadeiras coloridas
-    - imagem: /images/uploads/espaco-jardim.jpg
-      alt: Jardim florido ao lado da rampa de acesso à escola
+    - imagem: /images/uploads/arte-com-as-maos-2.jpg
+      alt: Menino rindo enquanto a professora pinta sua mão para a arte de Natal
+    - imagem: /images/uploads/professora-e-aluno-arte.jpg
+      alt: Professora ajudando um aluno na arte com as mãos
+    - imagem: /images/uploads/turma-pintando-ao-ar-livre.jpg
+      alt: Turma pintando em mesas azuis no gramado
+    - imagem: /images/uploads/apresentacao-danca.jpg
+      alt: Crianças dançando em apresentação para as famílias
+    - imagem: /images/uploads/familia-e-professora.jpg
+      alt: Professora, mãe e filha juntas na Festa da Família
+    - imagem: /images/uploads/formatura-familia.jpg
+      alt: Família reunida com o formando no dia da formatura
+    - imagem: /images/uploads/bebe-natal.jpg
+      alt: Bebê com gorro de Papai Noel na festa de fim de ano
+    - imagem: /images/uploads/arte-com-as-maos-mesa.jpg
+      alt: Crianças fazendo arte com as mãos, cola colorida e glitter na sala
 
 depoimentos:
   titulo: O que dizem as famílias
