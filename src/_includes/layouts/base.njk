@@ -13,7 +13,7 @@
   <title>{{ tituloPagina }}</title>
   <meta name="description" content="{{ descricaoPagina }}">
   <link rel="canonical" href="{{ urlCanonica }}">
-  {%- if semIndexar %}<meta name="robots" content="noindex">{% endif %}
+  {%- if semIndexar or ambiente.preview %}<meta name="robots" content="noindex, nofollow">{% endif %}
   <meta name="theme-color" content="#41AACD">
   <meta name="format-detection" content="telephone=no">
 

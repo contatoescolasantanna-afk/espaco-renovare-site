@@ -32,6 +32,11 @@ jobs:
           key: fotos-${{ hashFiles('src/images/**') }}
           restore-keys: fotos-
       - run: npm run build
+        env:
+          SITE_PREVIEW: ${{ endsWith(github.repository, '.github.io') && '1' || '0' }}
+      # Na pré-visualização (repositório *.github.io) não usa o domínio próprio
+      - if: endsWith(github.repository, '.github.io')
+        run: rm -f _site/CNAME
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

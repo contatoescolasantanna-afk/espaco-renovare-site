@@ -3,6 +3,6 @@ permalink: /robots.txt
 eleventyExcludeFromCollections: true
 ---
 User-agent: *
-Allow: /
+{% if ambiente.preview %}Disallow: /{% else %}Allow: /{% endif %}
 
 Sitemap: {{ escola.url }}/sitemap.xml
