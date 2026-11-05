@@ -188,7 +188,7 @@ a.selo-google:hover{color:var(--azul-900)}
 .cartao-turma a:hover{transform:translateY(-6px)}
 .cartao-turma a:hover .link-seta .icone{transform:translateX(4px)}
 .cartao-turma figure{aspect-ratio:4/3;overflow:hidden;background:var(--azul-100)}
-.cartao-turma figure img{width:100%;height:100%;object-fit:cover}
+.cartao-turma figure img{width:100%;height:100%;object-fit:cover;object-position:50% 15%}
 .cartao-turma__corpo{padding:1.4rem 1.5rem 1.6rem;display:flex;flex-direction:column;gap:.2rem;flex:1}
 .cartao-turma__corpo h3{font-size:1.6rem;margin:.4rem 0 .2rem;color:var(--azul-900)}
 .cartao-turma__corpo p{color:var(--tinta-2);margin:0 0 1rem}
