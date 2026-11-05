@@ -56,7 +56,7 @@ formulario_endpoint: ""
 formulario_chave: ""
 
 # Métricas (deixe vazio se não usar)
-google_analytics_id: ""
+google_analytics_id: "G-9NJCR4WWMR"
 meta_pixel_id: ""
 
 # Crédito no rodapé (link do site da EngrenaLab)

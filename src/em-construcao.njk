@@ -49,6 +49,13 @@ eleventyExcludeFromCollections: true
     a{color:#13708F;text-decoration-thickness:1.5px;text-underline-offset:3px}
     a:hover{color:#0B4A60}
     small{display:block;margin-top:28px;color:#4B5B64;font-size:.85rem}
+    /* Aviso de cookies (aparece só se o Google Analytics estiver configurado) */
+    .aviso-cookies{position:fixed;left:16px;right:16px;bottom:16px;z-index:60;max-width:560px;margin:0 auto;background:#fff;border-radius:22px;box-shadow:0 24px 50px -20px rgba(11,74,96,.35);padding:1rem 1.2rem;display:flex;gap:1rem;align-items:center;flex-wrap:wrap;border:2px solid #EAF6FB;text-align:left}
+    .aviso-cookies p{margin:0;flex:1 1 260px;font-size:.92rem;color:#4B5B64}
+    .aviso-cookies div{display:flex;gap:.5rem}
+    .aviso-cookies .botao{min-height:44px;padding:8px 18px;font-size:.95rem;border:2px solid transparent;cursor:pointer;font-family:inherit}
+    .botao--primario{background:#FFC000;color:#1D2B33}
+    .botao--contorno{background:#fff;color:#0B4A60;border-color:#D3EDF7 !important}
   </style>
 </head>
 <body>
@@ -57,10 +64,10 @@ eleventyExcludeFromCollections: true
     <span class="selo">Site em construção</span>
     <h1>Nosso site novo está chegando!</h1>
     <p>Enquanto isso, fale com a gente pelo WhatsApp ou telefone para tirar dúvidas e agendar uma visita.</p>
-    <a class="botao botao--whats" href="{{ escola.whatsapp | whatsLink(escola.whatsapp_mensagem) }}" target="_blank" rel="noopener">{{ icone("whatsapp") }}<span>Falar no WhatsApp</span></a>
+    <a class="botao botao--whats" href="{{ escola.whatsapp | whatsLink(escola.whatsapp_mensagem) }}" target="_blank" rel="noopener" data-evento="whatsapp" data-origem="em-construcao-botao">{{ icone("whatsapp") }}<span>Falar no WhatsApp</span></a>
     <ul>
-      <li>{{ icone("whatsapp") }}<span>WhatsApp: <a href="{{ escola.whatsapp | whatsLink(escola.whatsapp_mensagem) }}" target="_blank" rel="noopener">{{ escola.whatsapp_exibicao }}</a></span></li>
-      <li>{{ icone("telefone") }}<span>Telefone: <a href="tel:+55{{ escola.telefone | digits }}">{{ escola.telefone_exibicao }}</a></span></li>
+      <li>{{ icone("whatsapp") }}<span>WhatsApp: <a href="{{ escola.whatsapp | whatsLink(escola.whatsapp_mensagem) }}" target="_blank" rel="noopener" data-evento="whatsapp" data-origem="em-construcao-lista">{{ escola.whatsapp_exibicao }}</a></span></li>
+      <li>{{ icone("telefone") }}<span>Telefone: <a href="tel:+55{{ escola.telefone | digits }}" data-evento="telefone" data-origem="em-construcao">{{ escola.telefone_exibicao }}</a></span></li>
       <li>{{ icone("email") }}<span>E-mail: <a href="mailto:{{ escola.email }}">{{ escola.email }}</a></span></li>
       <li>{{ icone("instagram") }}<span>Instagram: <a href="https://www.instagram.com/{{ escola.instagram }}/" target="_blank" rel="noopener">@{{ escola.instagram }}</a></span></li>
       <li>{{ icone("local") }}<span><a href="{{ escola.endereco.link_mapa }}" target="_blank" rel="noopener">{{ escola.endereco.rua }}, {{ escola.endereco.bairro }}, {{ escola.endereco.cidade }} – {{ escola.endereco.uf }}</a></span></li>
@@ -68,5 +75,7 @@ eleventyExcludeFromCollections: true
     </ul>
     <small>© {{ "now" | anoAtual }} {{ escola.nome_completo }} · Site criado por <a href="{{ escola.credito_link }}" target="_blank" rel="noopener">EngrenaLab</a></small>
   </main>
+  <script>window.RENOVARE={whatsapp:"{{ escola.whatsapp | digits }}",ga:"{{ escola.google_analytics_id }}",pixel:"{{ escola.meta_pixel_id }}"};</script>
+  <script src="/js/main.js" defer></script>
 </body>
 </html>
