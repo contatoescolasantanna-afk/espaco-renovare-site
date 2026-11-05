@@ -155,7 +155,7 @@ eleventyComputed:
     <ul class="espacos">
       {%- for e in home.estrutura.espacos %}
       <li class="espaco{% if e.enquadramento == 'panoramico' %} espaco--panoramico{% endif %}">
-        <figure><img src="{{ e.imagem }}" alt="{{ e.imagem_alt }}" sizes="{% if e.enquadramento == 'panoramico' %}(min-width: 1200px) 1180px, 92vw{% else %}(min-width: 1000px) 380px, (min-width: 561px) 45vw, 46vw{% endif %}"></figure>
+        <figure><img src="{{ e.imagem }}" alt="{{ e.imagem_alt }}"{% if e.foco %} style="object-position:{{ e.foco }}"{% endif %} sizes="{% if e.enquadramento == 'panoramico' %}(min-width: 1200px) 1180px, 92vw{% else %}(min-width: 1000px) 380px, (min-width: 561px) 45vw, 46vw{% endif %}"></figure>
         <h3>{{ e.nome }}</h3>
         <p>{{ e.texto }}</p>
       </li>

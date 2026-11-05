@@ -97,6 +97,7 @@ estrutura:
       imagem: /images/uploads/02-campo-de-futebol.webp
       imagem_alt: Campo de futebol gramado com duas traves na área externa da escola
       enquadramento: panoramico
+      foco: "88% 50%"
     - nome: Salas por faixa etária
       texto: Ambientes claros e arejados, com mobiliário e materiais adequados a cada idade.
       imagem: /images/uploads/24-sala-mesas-coloridas.webp
