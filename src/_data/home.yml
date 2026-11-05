@@ -64,8 +64,8 @@ proposta:
 
     As crianças exploram, levantam hipóteses, resolvem problemas e constroem conhecimento com significado, sempre com afeto, respeito e muita escuta. Nosso nome vem do italiano *renovare*, renovar: o sol do nosso logo representa um novo dia e uma nova oportunidade de descobrir o mundo.
   frase_manuscrita: Educar hoje para um amanhã melhor!
-  imagem: /images/uploads/11-professora-e-alunos-no-parque.webp
-  imagem_alt: Professora de uniforme brincando com os alunos no parque
+  imagem: /images/uploads/21-apoio-individual-na-atividade.webp
+  imagem_alt: Professora orientando um aluno de uniforme na atividade de escrita
   pilares:
     - titulo: Autoconhecimento e autoestima
       texto: A criança aprende a reconhecer o que sente, a confiar em si e a respeitar o outro.
@@ -92,18 +92,15 @@ estrutura:
       texto: Escorregadores, balanço, cavalinhos e cercadinho de brincar num gramado amplo para gastar energia com segurança.
       imagem: /images/uploads/espaco-parque.jpg
       imagem_alt: Parque infantil colorido com escorregadores e balanço em amplo gramado
-    - nome: Parque coberto
-      texto: Brinquedos em área coberta para brincar mesmo em dia de chuva ou de sol forte.
-      imagem: /images/uploads/07-parque-coberto.webp
-      imagem_alt: Parque infantil em área coberta da escola
+    - nome: Campo de futebol
+      texto: Campo gramado para correr, jogar bola e gastar energia ao ar livre.
+      imagem: /images/uploads/02-campo-de-futebol.webp
+      imagem_alt: Campo de futebol gramado com duas traves na área externa da escola
+      enquadramento: panoramico
     - nome: Salas por faixa etária
       texto: Ambientes claros e arejados, com mobiliário e materiais adequados a cada idade.
       imagem: /images/uploads/24-sala-mesas-coloridas.webp
       imagem_alt: Sala de atividades iluminada com mesas e cadeirinhas coloridas
-    - nome: Cantinho da leitura
-      texto: Livros ao alcance das crianças para folhear, ouvir histórias e criar o gosto pela leitura.
-      imagem: /images/uploads/13-cantinho-da-leitura.webp
-      imagem_alt: Cantinho da leitura com livros infantis ao alcance das crianças
     - nome: Refeitório
       texto: Mesas coloridas e cadeirões para os pequenos em área coberta, ao lado do jardim.
       imagem: /images/uploads/espaco-refeitorio.jpg
@@ -120,11 +117,6 @@ estrutura:
       texto: Colchonetes individuais numa sala decorada e tranquila para quem fica no integral.
       imagem: /images/uploads/espaco-descanso.jpg
       imagem_alt: Colchonetes coloridos na sala de descanso decorada com girafa e leão
-    - nome: Campo de futebol
-      texto: Campo gramado para correr, jogar bola e gastar energia ao ar livre.
-      imagem: /images/uploads/02-campo-de-futebol.webp
-      imagem_alt: Campo de futebol gramado com duas traves na área externa da escola
-      enquadramento: panoramico
 
 extras:
   titulo: Aulas extras sem sair da escola
@@ -165,8 +157,8 @@ galeria:
       alt: Menina com violão na aula de música
     - imagem: /images/uploads/20-aluno-lendo-conquista.webp
       alt: Aluno de uniforme lendo o livro do material Conquista
-    - imagem: /images/uploads/21-apoio-individual-na-atividade.webp
-      alt: Professora apoiando um aluno de uniforme na atividade
+    - imagem: /images/uploads/18-musica-menino-com-violao.webp
+      alt: Menino com violão na aula de música
 
 depoimentos:
   titulo: O que dizem as famílias
