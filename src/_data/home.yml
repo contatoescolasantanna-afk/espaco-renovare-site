@@ -82,7 +82,7 @@ estrutura:
   espacos:
     - nome: Fácil de achar
       texto: Muro colorido na Rua Colorado, 29, no Jardim Rancho Alegre, com entrada acessível.
-      imagem: /images/uploads/espaco-fachada.jpg
+      imagem: /images/uploads/39-fachada.webp
       imagem_alt: Fachada do Espaço Renovare com muro azul e placa com o logo da escola
     - nome: Jardim e rampa de acesso
       texto: A chegada é por uma rampa cercada de flores e árvores. Escola toda térrea, sem escadas.
@@ -90,7 +90,7 @@ estrutura:
       imagem_alt: Rampa de acesso ladeada por canteiro florido e árvores
     - nome: Parque no gramado
       texto: Escorregadores, balanço, cavalinhos e cercadinho de brincar num gramado amplo para gastar energia com segurança.
-      imagem: /images/uploads/espaco-parque.jpg
+      imagem: /images/uploads/42-parque-no-gramado.webp
       imagem_alt: Parque infantil colorido com escorregadores e balanço em amplo gramado
     - nome: Campo de futebol
       texto: Campo gramado para correr, jogar bola e gastar energia ao ar livre.
@@ -107,15 +107,15 @@ estrutura:
       imagem_alt: Refeitório coberto com mesas coloridas de um lado e cadeirões do outro
     - nome: Berçário aconchegante
       texto: Sala própria com berço, cantinho macio e materiais pensados para bebês a partir de 4 meses.
-      imagem: /images/uploads/espaco-bercario.jpg
+      imagem: /images/uploads/40-bercario-cantinho-acolhedor.webp
       imagem_alt: Sala do berçário com berço branco e poltronas de pelúcia
     - nome: Soninho dos bebês
       texto: Berços individuais em sala própria para o descanso tranquilo dos bebês.
-      imagem: /images/uploads/espaco-bercos.jpg
+      imagem: /images/uploads/41-sala-dos-bercos.webp
       imagem_alt: Berços brancos individuais enfileirados na sala do berçário
     - nome: Hora do descanso
       texto: Colchonetes individuais numa sala decorada e tranquila para quem fica no integral.
-      imagem: /images/uploads/espaco-descanso.jpg
+      imagem: /images/uploads/43-sala-de-descanso.webp
       imagem_alt: Colchonetes coloridos na sala de descanso decorada com girafa e leão
 
 extras:
