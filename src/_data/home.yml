@@ -110,6 +110,7 @@ estrutura:
       texto: Sala própria com berço, cantinho macio e materiais pensados para bebês a partir de 4 meses.
       imagem: /images/uploads/40-bercario-cantinho-acolhedor.webp
       imagem_alt: Sala do berçário com berço branco e poltronas de pelúcia
+      foco: "5% 50%"
     - nome: Soninho dos bebês
       texto: Berços individuais em sala própria para o descanso tranquilo dos bebês.
       imagem: /images/uploads/41-sala-dos-bercos.webp
@@ -152,7 +153,6 @@ galeria:
       alt: Criança de uniforme pintando um semáforo de papel
     - imagem: /images/uploads/19-turma-de-ballet.webp
       alt: Turma de ballet durante a aula na escola
-      foco: "50% 0%"
     - imagem: /images/uploads/22-menina-pintando-na-mesa-azul.webp
       alt: Menina de uniforme pintando na mesa azul
     - imagem: /images/uploads/17-musica-menina-com-violao.webp
@@ -163,10 +163,6 @@ galeria:
       alt: Menino com violão na aula de música
     - imagem: /images/uploads/45-abraco-professor-e-aluno-judo.webp
       alt: Aluno de judô abraçando o professor na entrega de faixas
-    - imagem: /images/uploads/11-professora-e-alunos-no-parque.webp
-      alt: Professora de uniforme sorrindo com os alunos no parque
-    - imagem: /images/uploads/30-descoberta-com-tinta-amarela.webp
-      alt: Bebê mostrando a mão pintada de tinta amarela
     - imagem: /images/uploads/35-arte-com-as-maos-pintadas.webp
       alt: Menino mostrando as duas mãos pintadas numa atividade de arte
     - imagem: /images/uploads/29-criancas-explorando-a-arvore.webp

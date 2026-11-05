@@ -1,4 +1,5 @@
 import path from "node:path";
+import fs from "node:fs";
 import yaml from "js-yaml";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
@@ -35,6 +36,19 @@ export default function (eleventyConfig) {
   });
 
   // ---------- Filtros ----------
+  // Ponto de foco de cada foto (rosto centralizado, sem cortar). Ver src/_data/focos.json.
+  // Uso: <img src="{{ x }}"{{ x | foco | safe }}>  ou  {{ x | foco(manual) | safe }}
+  eleventyConfig.addFilter("foco", (src, manual) => {
+    let pos = manual;
+    if (!pos && src) {
+      try {
+        const mapa = JSON.parse(fs.readFileSync("src/_data/focos.json", "utf8"));
+        pos = mapa[String(src).split("/").pop()];
+      } catch (e) { /* sem mapa: usa o padrão do CSS */ }
+    }
+    return pos ? ` style="object-position:${pos}"` : "";
+  });
+
   eleventyConfig.addFilter("digits", (v) => String(v || "").replace(/\D/g, ""));
 
   eleventyConfig.addFilter("whatsLink", (numero, mensagem) => {

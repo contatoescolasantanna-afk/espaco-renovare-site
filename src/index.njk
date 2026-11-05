@@ -33,13 +33,13 @@ eleventyComputed:
     <div class="hero__fotos">
       <img class="hero__sol" src="/images/marca/logo-sol.svg" alt="" width="212" height="198" eleventy:ignore>
       <figure class="hero__foto hero__foto--principal">
-        <img src="{{ h.imagem_principal }}" alt="{{ h.imagem_principal_alt }}" loading="eager" fetchpriority="high" sizes="(min-width: 1100px) 540px, (min-width: 760px) 50vw, 88vw">
+        <img src="{{ h.imagem_principal }}" alt="{{ h.imagem_principal_alt }}"{{ h.imagem_principal | foco | safe }} loading="eager" fetchpriority="high" sizes="(min-width: 1100px) 540px, (min-width: 760px) 50vw, 88vw">
       </figure>
       <figure class="hero__foto hero__foto--2">
-        <img src="{{ h.imagem_2 }}" alt="{{ h.imagem_2_alt }}" sizes="(min-width: 760px) 200px, 34vw">
+        <img src="{{ h.imagem_2 }}" alt="{{ h.imagem_2_alt }}"{{ h.imagem_2 | foco | safe }} sizes="(min-width: 760px) 200px, 34vw">
       </figure>
       <figure class="hero__foto hero__foto--3">
-        <img src="{{ h.imagem_3 }}" alt="{{ h.imagem_3_alt }}" sizes="(min-width: 760px) 180px, 30vw">
+        <img src="{{ h.imagem_3 }}" alt="{{ h.imagem_3_alt }}"{{ h.imagem_3 | foco | safe }} sizes="(min-width: 760px) 180px, 30vw">
       </figure>
       <p class="hero__bilhete manuscrita">{{ h.frase_manuscrita }} {{ icone("coracao") }}</p>
     </div>
@@ -130,7 +130,7 @@ eleventyComputed:
       {%- for t in collections.turmas %}
       <li class="cartao-turma cartao-turma--{{ t.data.cor }}">
         <a href="{{ t.url }}">
-          <figure><img src="{{ t.data.imagem }}" alt="{{ t.data.imagem_alt }}" sizes="(min-width: 1000px) 360px, (min-width: 640px) 45vw, 90vw"></figure>
+          <figure><img src="{{ t.data.imagem }}" alt="{{ t.data.imagem_alt }}"{{ t.data.imagem | foco | safe }} sizes="(min-width: 1000px) 360px, (min-width: 640px) 45vw, 90vw"></figure>
           <div class="cartao-turma__corpo">
             <span class="etiqueta">{{ t.data.faixa_etaria }}</span>
             <h3>{{ t.data.titulo }}</h3>
@@ -155,7 +155,7 @@ eleventyComputed:
     <ul class="espacos">
       {%- for e in home.estrutura.espacos %}
       <li class="espaco{% if e.enquadramento == 'panoramico' %} espaco--panoramico{% endif %}">
-        <figure><img src="{{ e.imagem }}" alt="{{ e.imagem_alt }}"{% if e.foco %} style="object-position:{{ e.foco }}"{% endif %} sizes="{% if e.enquadramento == 'panoramico' %}(min-width: 1200px) 1180px, 92vw{% else %}(min-width: 1000px) 380px, (min-width: 561px) 45vw, 46vw{% endif %}"></figure>
+        <figure><img src="{{ e.imagem }}" alt="{{ e.imagem_alt }}"{{ e.imagem | foco(e.foco) | safe }} sizes="{% if e.enquadramento == 'panoramico' %}(min-width: 1200px) 1180px, 92vw{% else %}(min-width: 1000px) 560px, (min-width: 561px) 70vw, 85vw{% endif %}"></figure>
         <h3>{{ e.nome }}</h3>
         <p>{{ e.texto }}</p>
       </li>
@@ -168,7 +168,7 @@ eleventyComputed:
 <section class="secao secao--creme" id="proposta">
   <div class="container proposta">
     <div class="proposta__foto">
-      <figure><img src="{{ home.proposta.imagem }}" alt="{{ home.proposta.imagem_alt }}" sizes="(min-width: 900px) 460px, 90vw"></figure>
+      <figure><img src="{{ home.proposta.imagem }}" alt="{{ home.proposta.imagem_alt }}"{{ home.proposta.imagem | foco | safe }} sizes="(min-width: 900px) 460px, 90vw"></figure>
       <p class="manuscrita proposta__frase">{{ home.proposta.frase_manuscrita }}</p>
     </div>
     <div class="proposta__texto">
@@ -215,7 +215,7 @@ eleventyComputed:
     </header>
     <ul class="mosaico">
       {%- for f in home.galeria.fotos %}
-      <li{% if f.enquadramento == 'panoramico' %} class="mosaico__panoramica"{% endif %}><img src="{{ f.imagem }}" alt="{{ f.alt }}"{% if f.foco %} style="object-position:{{ f.foco }}"{% endif %} sizes="(min-width: 1000px) 600px, 90vw"></li>
+      <li{% if f.enquadramento == 'panoramico' %} class="mosaico__panoramica"{% endif %}><img src="{{ f.imagem }}" alt="{{ f.alt }}"{{ f.imagem | foco(f.foco) | safe }} sizes="(min-width: 1000px) 600px, 90vw"></li>
       {%- endfor %}
     </ul>
     <p class="centro"><a class="botao botao--contorno" href="https://www.instagram.com/{{ escola.instagram }}/" target="_blank" rel="noopener">{{ icone("instagram") }} Siga @{{ escola.instagram }}</a></p>
