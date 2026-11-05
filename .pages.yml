@@ -1,0 +1,383 @@
+# =====================================================================
+#  PAINEL DE EDIÇÃO — Pages CMS (https://app.pagescms.org)
+#  Cada bloco abaixo vira um menu no painel. A escola edita textos e fotos
+#  sem mexer em código; ao salvar, o site é republicado em ~1 minuto.
+# =====================================================================
+media:
+  input: src/images/uploads
+  output: /images/uploads
+
+content:
+  # ------------------------------------------------------------------
+  - name: escola
+    label: ⚙️ Configurações gerais
+    description: Contatos, endereço, horário, faixa de matrículas e integrações.
+    type: file
+    path: src/_data/escola.yml
+    format: yaml
+    fields:
+      - { name: nome, label: Nome da escola, type: string, required: true }
+      - { name: nome_completo, label: Nome completo (aparece no Google), type: string }
+      - { name: slogan, label: Slogan, type: string }
+      - { name: ano_fundacao, label: Ano de fundação, type: number }
+      - { name: url, label: Endereço do site, type: string, description: "Não altere sem falar com quem cuida do site." }
+      - name: whatsapp
+        label: WhatsApp (só números, com 55 + DDD)
+        type: string
+        description: "Exemplo: 5511991154080"
+        required: true
+      - { name: whatsapp_exibicao, label: WhatsApp como aparece no site, type: string }
+      - { name: whatsapp_mensagem, label: Mensagem automática do WhatsApp, type: text }
+      - { name: telefone, label: Telefone fixo (só números com DDD), type: string }
+      - { name: telefone_exibicao, label: Telefone como aparece no site, type: string }
+      - { name: email, label: E-mail, type: string }
+      - { name: instagram, label: Instagram (sem @), type: string }
+      - name: endereco
+        label: Endereço
+        type: object
+        fields:
+          - { name: rua, label: Rua e número, type: string }
+          - { name: bairro, label: Bairro, type: string }
+          - { name: cidade, label: Cidade, type: string }
+          - { name: uf, label: Estado, type: string }
+          - { name: cep, label: CEP, type: string }
+          - { name: latitude, label: Latitude, type: number }
+          - { name: longitude, label: Longitude, type: number }
+          - { name: link_mapa, label: Link do Google Maps, type: string }
+          - { name: regiao_atendida, label: Região atendida, type: string }
+      - { name: horario, label: Horário de funcionamento (texto), type: string }
+      - { name: horario_abre, label: Abre às (HH:MM), type: string }
+      - { name: horario_fecha, label: Fecha às (HH:MM), type: string }
+      - { name: periodos, label: Períodos, type: string }
+      - name: matriculas
+        label: Faixa de matrículas (topo do site)
+        type: object
+        fields:
+          - { name: ativo, label: Mostrar a faixa?, type: boolean }
+          - { name: texto, label: Texto da faixa, type: string }
+          - { name: botao, label: Texto do link, type: string }
+      - { name: google_nota, label: Nota no Google (ex. 5,0), type: string, description: "Atualize quando mudar. Vazio = selo escondido." }
+      - { name: google_total, label: Número de avaliações no Google, type: number }
+      - { name: google_avaliacoes_link, label: Link das avaliações no Google, type: string }
+      - name: agenda_online_link
+        label: Link da agenda de visitas online
+        type: string
+        description: "Opcional. Link de agendamento do Google Agenda (ou Calendly). Mostra o botão 'Escolher dia e horário'."
+      - name: formulario_endpoint
+        label: Receber pedidos de visita também por e-mail (endpoint)
+        type: string
+        description: "Opcional. Ex.: https://api.web3forms.com/submit — deixe vazio para usar só o WhatsApp."
+      - { name: formulario_chave, label: Chave do serviço de formulário, type: string }
+      - { name: google_analytics_id, label: Google Analytics (G-XXXXXXX), type: string }
+      - { name: meta_pixel_id, label: Meta Pixel (Facebook/Instagram), type: string }
+      - { name: credito_link, label: Link do site da EngrenaLab (rodapé), type: string }
+      - { name: razao_social, label: Razão social, type: string }
+      - { name: cnpj, label: CNPJ, type: string }
+
+  # ------------------------------------------------------------------
+  - name: home
+    label: 🏠 Página inicial
+    description: Todos os textos e fotos da página principal, na ordem em que aparecem.
+    type: file
+    path: src/_data/home.yml
+    format: yaml
+    fields:
+      - { name: seo_titulo, label: Título no Google (até 60 letras), type: string }
+      - { name: seo_descricao, label: Descrição no Google (até 155 letras), type: text }
+      - { name: imagem_compartilhamento, label: Foto ao compartilhar no WhatsApp, type: image }
+
+      - name: hero
+        label: 1. Abertura (topo da página)
+        type: object
+        fields:
+          - { name: sobretitulo, label: Frase pequena acima do título, type: string }
+          - { name: titulo, label: Título principal, type: string }
+          - { name: titulo_destaque, label: Parte do título grifada em amarelo, type: string }
+          - { name: subtitulo, label: Texto de apoio, type: text }
+          - { name: botao_principal, label: Botão amarelo, type: string }
+          - { name: botao_secundario, label: Botão do WhatsApp, type: string }
+          - { name: frase_manuscrita, label: Bilhetinho escrito à mão, type: string }
+          - { name: imagem_principal, label: Foto grande, type: image }
+          - { name: imagem_principal_alt, label: Descrição da foto grande (acessibilidade e Google), type: string }
+          - { name: imagem_2, label: Foto pequena (direita), type: image }
+          - { name: imagem_2_alt, label: Descrição da foto pequena (direita), type: string }
+          - { name: imagem_3, label: Foto pequena (esquerda), type: image }
+          - { name: imagem_3_alt, label: Descrição da foto pequena (esquerda), type: string }
+
+      - name: numeros
+        label: 2. Números em destaque
+        type: object
+        list: { min: 2, max: 6 }
+        fields:
+          - { name: valor, label: Número/destaque, type: string }
+          - { name: legenda, label: Legenda, type: string }
+
+      - name: diferenciais
+        label: 3. Por que o Renovare
+        type: object
+        fields:
+          - { name: titulo, label: Título, type: string }
+          - { name: subtitulo, label: Subtítulo, type: text }
+          - name: itens
+            label: Diferenciais
+            type: object
+            list: true
+            fields:
+              - name: icone
+                label: Ícone
+                type: select
+                options: { values: [turma, natureza, arte, livro, coracao, estrela, escudo, sol, musica] }
+              - { name: titulo, label: Título, type: string }
+              - { name: texto, label: Texto, type: text }
+
+      - name: depoimentos
+        label: 4. Depoimentos de famílias
+        description: Use só depoimentos reais (avaliações do Google ou mensagens autorizadas pela família). A seção some se a lista ficar vazia.
+        type: object
+        fields:
+          - { name: titulo, label: Título, type: string }
+          - { name: subtitulo, label: Subtítulo, type: string }
+          - name: itens
+            label: Depoimentos
+            type: object
+            list: true
+            fields:
+              - { name: nome, label: "Nome (ex. Juliana S.)", type: string }
+              - { name: relacao, label: "Relação (ex. mãe do Pedro, Maternal)", type: string }
+              - { name: texto, label: Depoimento (copie as palavras da família), type: text }
+              - name: fonte
+                label: De onde veio
+                type: select
+                options: { values: [Google, Facebook, Instagram, WhatsApp, Família autorizou] }
+              - { name: destaque, label: Cartão grande em destaque (marque só 1), type: boolean }
+              - { name: foto, label: Foto (opcional, com autorização), type: image }
+
+      - name: estrutura
+        label: 5. Espaços da escola
+        type: object
+        fields:
+          - { name: titulo, label: Título, type: string }
+          - { name: subtitulo, label: Subtítulo, type: text }
+          - name: espacos
+            label: Espaços
+            type: object
+            list: true
+            fields:
+              - { name: nome, label: Nome do espaço, type: string }
+              - { name: texto, label: Descrição, type: text }
+              - { name: imagem, label: Foto, type: image }
+              - { name: imagem_alt, label: Descrição da foto, type: string }
+
+      - name: proposta
+        label: 6. Proposta pedagógica
+        type: object
+        fields:
+          - { name: titulo, label: Título, type: string }
+          - { name: texto, label: Texto (linha em branco separa parágrafos), type: text }
+          - { name: frase_manuscrita, label: Frase escrita à mão, type: string }
+          - { name: imagem, label: Foto, type: image }
+          - { name: imagem_alt, label: Descrição da foto, type: string }
+          - name: pilares
+            label: Pilares
+            type: object
+            list: true
+            fields:
+              - { name: titulo, label: Título, type: string }
+              - { name: texto, label: Texto, type: text }
+
+      - name: extras
+        label: 7. Aulas extras
+        type: object
+        fields:
+          - { name: titulo, label: Título, type: string }
+          - { name: subtitulo, label: Subtítulo, type: text }
+          - name: itens
+            label: Aulas
+            type: object
+            list: true
+            fields:
+              - { name: nome, label: Nome da aula, type: string }
+              - name: icone
+                label: Ícone (usado quando não há foto)
+                type: select
+                options: { values: [ballet, cross, musica, ingles, estrela, arte, coracao] }
+              - { name: texto, label: Descrição, type: text }
+              - { name: imagem, label: Foto (opcional), type: image }
+
+      - name: galeria
+        label: 8. Galeria de momentos
+        type: object
+        fields:
+          - { name: titulo, label: Título, type: string }
+          - { name: subtitulo, label: Subtítulo, type: string }
+          - name: fotos
+            label: Fotos (ideal 8)
+            type: object
+            list: true
+            fields:
+              - { name: imagem, label: Foto, type: image }
+              - { name: alt, label: Descrição da foto, type: string }
+
+      - name: video
+        label: 9. Vídeo do YouTube
+        type: object
+        fields:
+          - { name: titulo, label: Título, type: string }
+          - { name: youtube_id, label: Código do vídeo no YouTube, type: string, description: "O que vem depois de v= no link. Vazio = seção escondida." }
+
+      - name: visita
+        label: 10. Agendar visita
+        type: object
+        fields:
+          - { name: titulo, label: Título, type: string }
+          - { name: subtitulo, label: Subtítulo, type: text }
+          - { name: info, label: "Dias e duração da visita (ex. Seg a sex · 40 min)", type: string }
+          - name: passos
+            label: Passos da visita
+            type: object
+            list: true
+            fields:
+              - { name: titulo, label: Passo, type: string }
+              - { name: texto, label: Descrição, type: string }
+
+      - name: faq
+        label: 11. Perguntas frequentes
+        type: object
+        fields:
+          - { name: titulo, label: Título, type: string }
+          - name: itens
+            label: Perguntas
+            type: object
+            list: true
+            fields:
+              - { name: pergunta, label: Pergunta, type: string }
+              - { name: resposta, label: Resposta, type: text }
+
+      - name: cta_final
+        label: 12. Chamada final
+        type: object
+        fields:
+          - { name: titulo, label: Título, type: string }
+          - { name: texto, label: Texto, type: text }
+
+  # ------------------------------------------------------------------
+  - name: rotina
+    label: 🕘 Rotina (Um dia no Renovare)
+    description: Aparece nas páginas de cada turma.
+    type: file
+    path: src/_data/rotina.yml
+    format: yaml
+    fields:
+      - { name: titulo, label: Título, type: string }
+      - { name: subtitulo, label: Subtítulo, type: text }
+      - name: itens
+        label: Momentos do dia
+        type: object
+        list: true
+        fields:
+          - { name: titulo, label: Momento, type: string }
+          - { name: texto, label: Descrição, type: string }
+
+  # ------------------------------------------------------------------
+  - name: equipe
+    label: 👩‍🏫 Quem somos e equipe
+    type: file
+    path: src/_data/equipe.yml
+    format: yaml
+    fields:
+      - { name: titulo, label: Título da equipe, type: string }
+      - { name: subtitulo, label: Subtítulo, type: string }
+      - { name: historia, label: História (linha em branco separa parágrafos), type: text }
+      - { name: missao, label: Missão (frase em destaque), type: text }
+      - name: pessoas
+        label: Pessoas da equipe
+        type: object
+        list: true
+        fields:
+          - { name: nome, label: Nome, type: string }
+          - { name: funcao, label: Função, type: string }
+          - { name: texto, label: Frase curta, type: text }
+          - { name: foto, label: Foto (com autorização), type: image }
+
+  # ------------------------------------------------------------------
+  - name: alimentacao
+    label: 🍎 Alimentação
+    type: file
+    path: src/_data/alimentacao.yml
+    format: yaml
+    fields:
+      - { name: titulo, label: Título, type: string }
+      - { name: subtitulo, label: Texto, type: text }
+      - name: refeicoes
+        label: Refeições oferecidas
+        type: object
+        list: true
+        fields:
+          - { name: nome, label: Refeição, type: string }
+      - { name: observacao, label: Observação (alergias, cardápio, nutricionista...), type: text }
+
+  # ------------------------------------------------------------------
+  - name: turmas
+    label: 🎒 Turmas
+    description: Cada turma tem sua própria página (ótimo para aparecer no Google).
+    type: collection
+    path: src/turmas
+    filename: "{primary}.md"
+    view:
+      fields: [titulo, faixa_etaria]
+      primary: titulo
+      sort: [ordem]
+    fields:
+      - { name: titulo, label: Nome da turma, type: string, required: true }
+      - { name: faixa_etaria, label: Faixa etária, type: string }
+      - { name: ordem, label: Ordem de exibição, type: number }
+      - name: cor
+        label: Cor
+        type: select
+        options: { values: [amarelo, azul, verde] }
+      - { name: resumo, label: Resumo (aparece no cartão), type: text }
+      - { name: imagem, label: Foto principal, type: image }
+      - { name: imagem_alt, label: Descrição da foto principal, type: string }
+      - { name: imagem_2, label: Foto secundária, type: image }
+      - { name: imagem_2_alt, label: Descrição da foto secundária, type: string }
+      - { name: seo_titulo, label: Título no Google, type: string }
+      - { name: seo_descricao, label: Descrição no Google, type: text }
+      - { name: destaques, label: Itens do "Em resumo", type: string, list: true }
+      - { name: body, label: Texto da página, type: rich-text, options: { format: markdown } }
+
+  # ------------------------------------------------------------------
+  - name: blog
+    label: ✏️ Blog para famílias
+    type: collection
+    path: src/blog
+    filename: "{primary}.md"
+    view:
+      fields: [titulo, date]
+      primary: titulo
+      sort: [date]
+      default: { sort: date, order: desc }
+    fields:
+      - { name: titulo, label: Título, type: string, required: true }
+      - { name: date, label: Data, type: date }
+      - name: tema
+        label: Tema
+        type: select
+        options: { values: [Escolher a escola, Primeiros passos, Desenvolvimento infantil, Rotina da família, Matrículas] }
+      - name: turmas
+        label: Turmas relacionadas (o artigo aparece na página delas)
+        type: select
+        options: { multiple: true, values: [bercario, maternal, pre-escola] }
+      - { name: seo_titulo, label: "Título no Google (opcional, até 60 letras)", type: string }
+      - { name: resumo, label: Resumo, type: text }
+      - { name: imagem, label: Foto de capa, type: image }
+      - { name: imagem_alt, label: Descrição da foto, type: string }
+      - { name: seo_descricao, label: Descrição no Google, type: text }
+      - { name: rascunho, label: Rascunho (não publicar ainda), type: boolean }
+      - name: faq
+        label: Perguntas rápidas (opcional, aparecem no fim do artigo)
+        type: object
+        list: true
+        fields:
+          - { name: pergunta, label: Pergunta, type: string }
+          - { name: resposta, label: Resposta, type: text }
+      - { name: body, label: Texto, type: rich-text, options: { format: markdown } }

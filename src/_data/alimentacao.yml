@@ -1,0 +1,11 @@
+# ============================================================
+#  ALIMENTAÇÃO — aparece nas páginas das turmas e no FAQ
+# ============================================================
+titulo: Alimentação na escola
+subtitulo: As refeições fazem parte da rotina e são servidas no refeitório, com mesas coloridas e cadeirões para os pequenos.
+refeicoes:
+  - nome: Lanche da manhã
+  - nome: Almoço
+  - nome: Lanche da tarde
+  - nome: Jantar
+observacao: O cardápio é acompanhado por nutricionista. Alergias, restrições alimentares e a introdução alimentar dos bebês são conversadas com a família na matrícula.

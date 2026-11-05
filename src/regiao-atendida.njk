@@ -1,0 +1,83 @@
+---
+layout: layouts/base.njk
+permalink: /regiao-atendida/
+titulo: Região atendida
+seo_titulo: "Escola infantil perto de você em Santana de Parnaíba"
+seo_descricao: "Berçário e educação infantil no Rancho Alegre, a minutos do Jardim Isaura, Centro, Fazendinha, Alphaville, Barueri e Cajamar. Veja como chegar."
+classeCorpo: pagina-interna
+eleventyComputed:
+  schemaExtra:
+    "@context": "https://schema.org"
+    "@type": "FAQPage"
+    mainEntity:
+      - "@type": "Question"
+        name: "Onde fica o Espaço Renovare?"
+        acceptedAnswer: { "@type": "Answer", text: "{{ escola.endereco.rua }}, {{ escola.endereco.bairro }}, {{ escola.endereco.cidade }}/{{ escola.endereco.uf }}, CEP {{ escola.endereco.cep }}." }
+      - "@type": "Question"
+        name: "O Espaço Renovare recebe famílias de outros bairros e cidades?"
+        acceptedAnswer: { "@type": "Answer", text: "Sim. Recebemos famílias de vários bairros de Santana de Parnaíba, como Jardim Isaura, Centro Histórico, Fazendinha e Alphaville, e também de Barueri e Cajamar." }
+      - "@type": "Question"
+        name: "Qual é o horário para deixar e buscar as crianças?"
+        acceptedAnswer: { "@type": "Answer", text: "A escola funciona de segunda a sexta, das 7h às 18h30, com opções de manhã, tarde ou período integral." }
+---
+{%- from "partials/icones.njk" import icone -%}
+<nav class="migalhas container" aria-label="Você está em">
+  <a href="/">Início</a> <span aria-hidden="true">›</span> <span aria-current="page">Região atendida</span>
+</nav>
+
+<section class="secao secao--topo-curto">
+  <div class="container container--estreito centro">
+    <p class="rotulo">Região atendida</p>
+    <h1>{{ regiao.titulo }} em {{ escola.endereco.cidade }}</h1>
+    <p class="hero__sub regiao__sub">{{ regiao.subtitulo }}</p>
+    <div class="hero__botoes regiao__botoes">
+      <a class="botao botao--primario botao--grande" href="#agendar" data-evento="cta-visita" data-origem="regiao">{{ icone("calendario") }} Agendar uma visita</a>
+      <a class="botao botao--contorno botao--grande" href="{{ escola.endereco.link_mapa }}" target="_blank" rel="noopener">{{ icone("local") }} Abrir no Google Maps</a>
+    </div>
+  </div>
+</section>
+
+<section class="secao secao--sem-topo">
+  <div class="container">
+    <header class="secao__cabeca">
+      <h2>Quanto tempo leva até a escola?</h2>
+      <p>Tempo aproximado de carro, sem trânsito, a partir do centro de cada bairro.</p>
+    </header>
+    <ul class="bairros">
+      {%- for b in regiao.bairros %}
+      <li class="bairro">
+        <span class="bairro__tempo"><strong>{{ b.minutos }}</strong> min</span>
+        <span class="bairro__nome"><strong>{{ b.nome }}</strong><small>{{ b.cidade }} · cerca de {{ b.km | string | replace(".", ",") }} km</small></span>
+      </li>
+      {%- endfor %}
+    </ul>
+    <p class="centro regiao__nota">Estimativa por mapa (OpenStreetMap). No horário de pico, confira o tempo no seu aplicativo de trânsito.</p>
+  </div>
+</section>
+
+<section class="secao secao--sem-topo">
+  <div class="container regiao__grade">
+    <div class="cartao-chegada">
+      <h2>Como chegar</h2>
+      <p>{{ icone("local") }} <span><strong>{{ escola.endereco.rua }}</strong><br>{{ escola.endereco.bairro }} · {{ escola.endereco.cidade }}/{{ escola.endereco.uf }} · CEP {{ escola.endereco.cep }}</span></p>
+      <p>{{ icone("relogio") }} <span>{{ escola.horario }}</span></p>
+      <div class="cartao-chegada__botoes">
+        <a class="botao botao--contorno" href="{{ escola.endereco.link_mapa }}" target="_blank" rel="noopener">Google Maps</a>
+        <a class="botao botao--contorno" href="https://waze.com/ul?ll={{ escola.endereco.latitude }},{{ escola.endereco.longitude }}&navigate=yes" target="_blank" rel="noopener">Waze</a>
+      </div>
+    </div>
+    <div class="texto-corrido texto-corrido--artigo">
+      <h2>Por que famílias de bairros vizinhos escolhem o Renovare</h2>
+      <ul>
+        <li><strong>Turmas de no máximo 10 crianças</strong>, com professora e auxiliar: atenção de verdade para cada criança.</li>
+        <li><strong>Natureza na rotina:</strong> 1.800 m² de área verde, com parque, horta e pomar.</li>
+        <li><strong>Horário que cabe na vida de quem trabalha:</strong> das 7h às 18h30, em meio período ou integral.</li>
+        <li><strong>Do berçário ao pré:</strong> seu filho pode ficar com a mesma equipe dos 4 meses aos 5 anos.</li>
+      </ul>
+      <p>Conheça as turmas: <a href="/turmas/bercario/">Berçário</a>, <a href="/turmas/maternal/">Maternal</a> e <a href="/turmas/pre-escola/">Pré-escola</a>.</p>
+    </div>
+  </div>
+</section>
+
+{% include "partials/secao-agendar.njk" %}
+{% include "partials/cta-final.njk" %}

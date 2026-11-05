@@ -1,0 +1,39 @@
+# ============================================================
+#  QUEM SOMOS / EQUIPE — página /quem-somos/
+# ============================================================
+titulo: Quem cuida do seu filho
+subtitulo: Uma equipe pequena, próxima e que conhece cada criança pelo nome.
+historia: |-
+  O Espaço Renovare nasceu em 1º de agosto de 2013, com o nome de Escola Santanna, em Santana de Parnaíba. Com o tempo, a escola ganhou um novo nome: **Renovare**, que vem do italiano e significa *renovar*.
+
+  O sol do nosso logo representa exatamente isso: um novo dia, uma nova chance, uma nova oportunidade de viver algo novo. É assim que enxergamos a infância, com respeito, afeto e muita descoberta, do berçário à pré-escola.
+missao: Acolher cada criança como única, aprendendo pela arte, pelo brincar e pela natureza, em parceria com as famílias.
+pessoas:
+  - nome: Sabrina
+    funcao: Diretora pedagógica
+    texto: Conduz a proposta pedagógica da escola e acompanha de perto cada turma e cada família.
+    foto: ""
+  - nome: Carla
+    funcao: Professora
+    texto: Professora das turmas do Berçário e do Maternal.
+    foto: ""
+  - nome: Michelle
+    funcao: Auxiliar de desenvolvimento infantil
+    texto: Apoia o dia a dia das turmas, nos cuidados e nas atividades.
+    foto: ""
+  - nome: Isabelly
+    funcao: Auxiliar de desenvolvimento infantil
+    texto: Apoia o dia a dia das turmas, nos cuidados e nas atividades.
+    foto: ""
+  - nome: Gabriane
+    funcao: Professora de Ballet
+    texto: Responsável pelas aulas de Ballet da escola.
+    foto: ""
+  - nome: Weslei
+    funcao: Secretaria
+    texto: Recebe as famílias e cuida de matrículas, documentos e recados.
+    foto: ""
+  - nome: Maria Aparecida
+    funcao: Copeira
+    texto: Prepara e organiza as refeições servidas às crianças.
+    foto: ""

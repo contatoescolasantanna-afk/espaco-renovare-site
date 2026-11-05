@@ -1,0 +1,35 @@
+{%- from "partials/icones.njk" import icone -%}
+{%- if escola.matriculas.ativo %}
+<div class="faixa-matricula">
+  <div class="container faixa-matricula__inner">
+    <span class="faixa-matricula__ponto" aria-hidden="true"></span>
+    {%- set partes = escola.matriculas.texto.split("·") -%}
+    <p>{{ partes[0] | trim }}{% if partes.length > 1 %}<span class="so-desktop"> ·{{ partes.slice(1).join("·") }}</span>{% endif %}</p>
+    <a href="/#agendar" data-evento="cta-visita" data-origem="faixa-topo">{{ escola.matriculas.botao }} {{ icone("seta") }}</a>
+  </div>
+</div>
+{%- endif %}
+<header class="topo" data-topo>
+  <div class="container topo__inner">
+    <a class="topo__logo" href="/" aria-label="{{ escola.nome }} – página inicial">
+      <img src="/images/marca/logo-horizontal.png" width="379" height="112" alt="{{ escola.nome }} – Educação Infantil" eleventy:ignore>
+    </a>
+    <nav class="topo__nav" id="menu" aria-label="Menu principal">
+      <ul>
+        <li><a href="/#diferenciais">Por que o Renovare</a></li>
+        <li><a href="/#turmas">Turmas</a></li>
+        <li><a href="/#estrutura">Estrutura</a></li>
+        <li><a href="/quem-somos/">Quem somos</a></li>
+        <li><a href="/#duvidas">Dúvidas</a></li>
+        <li><a href="/blog/">Blog</a></li>
+      </ul>
+      <a class="topo__tel" href="tel:+55{{ escola.telefone | digits }}">{{ icone("telefone") }} {{ escola.telefone_exibicao }}</a>
+    </nav>
+    <div class="topo__acoes">
+      <a class="botao botao--primario botao--pequeno" href="/#agendar" data-evento="cta-visita" data-origem="topo">Agendar visita</a>
+      <button class="topo__menu" type="button" aria-controls="menu" aria-expanded="false" data-menu>
+        <span class="sr">Abrir menu</span>{{ icone("menu", "icone icone--abrir") }}{{ icone("fechar", "icone icone--fechar") }}
+      </button>
+    </div>
+  </div>
+</header>

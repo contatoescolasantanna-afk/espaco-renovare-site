@@ -1,0 +1,37 @@
+{%- set org = {
+  "@context": "https://schema.org",
+  "@type": ["Preschool", "ChildCare"],
+  "@id": escola.url ~ "/#escola",
+  "name": escola.nome,
+  "alternateName": escola.nome_completo,
+  "slogan": escola.slogan,
+  "url": escola.url ~ "/",
+  "logo": escola.url ~ "/images/marca/logo-quadrado.png",
+  "image": escola.url ~ home.imagem_compartilhamento,
+  "telephone": "+55" ~ (escola.telefone | digits),
+  "email": escola.email,
+  "foundingDate": escola.ano_fundacao | string,
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": escola.endereco.rua,
+    "addressLocality": escola.endereco.cidade,
+    "addressRegion": escola.endereco.uf,
+    "postalCode": escola.endereco.cep,
+    "addressCountry": "BR"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": escola.endereco.latitude, "longitude": escola.endereco.longitude },
+  "hasMap": escola.endereco.link_mapa,
+  "areaServed": ["Santana de Parnaíba", "Barueri", "Cajamar"],
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": escola.horario_abre,
+    "closes": escola.horario_fecha
+  }],
+  "contactPoint": [{ "@type": "ContactPoint", "telephone": "+" ~ (escola.whatsapp | digits), "contactType": "admissions", "availableLanguage": "Portuguese" }],
+  "sameAs": ["https://www.instagram.com/" ~ escola.instagram ~ "/"]
+} -%}
+<script type="application/ld+json">{{ org | json | safe }}</script>
+{%- if schemaExtra %}
+<script type="application/ld+json">{{ schemaExtra | json | safe }}</script>
+{%- endif %}

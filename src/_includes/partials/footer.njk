@@ -1,0 +1,43 @@
+{%- from "partials/icones.njk" import icone -%}
+<footer class="rodape">
+  <svg class="onda onda--topo" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40c160 30 320 40 480 25S800 5 960 10s320 40 480 45V80H0Z" fill="currentColor"/></svg>
+  <div class="container rodape__grade">
+    <div class="rodape__marca">
+      <img src="/images/marca/logo-vertical.png" width="600" height="766" alt="{{ escola.nome }}" loading="lazy" eleventy:ignore>
+      <p class="manuscrita">Juntos por uma infância mais feliz!</p>
+    </div>
+    <div>
+      <h2 class="rodape__titulo">Visite a gente</h2>
+      <ul class="rodape__lista">
+        <li>{{ icone("local") }}<a href="{{ escola.endereco.link_mapa }}" target="_blank" rel="noopener">{{ escola.endereco.rua }} – {{ escola.endereco.bairro }}<br>{{ escola.endereco.cidade }}/{{ escola.endereco.uf }} · CEP {{ escola.endereco.cep }}</a></li>
+        <li>{{ icone("relogio") }}<span>{{ escola.horario }}</span></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="rodape__titulo">Fale com a gente</h2>
+      <ul class="rodape__lista">
+        <li>{{ icone("whatsapp") }}<a href="{{ escola.whatsapp | whatsLink(escola.whatsapp_mensagem) }}" target="_blank" rel="noopener" data-evento="whatsapp" data-origem="rodape">{{ escola.whatsapp_exibicao }}</a></li>
+        <li>{{ icone("telefone") }}<a href="tel:+55{{ escola.telefone | digits }}" data-evento="telefone">{{ escola.telefone_exibicao }}</a></li>
+        <li>{{ icone("email") }}<a href="mailto:{{ escola.email }}">{{ escola.email }}</a></li>
+        <li>{{ icone("instagram") }}<a href="https://www.instagram.com/{{ escola.instagram }}/" target="_blank" rel="noopener">@{{ escola.instagram }}</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="rodape__titulo">Navegue</h2>
+      <ul class="rodape__lista rodape__lista--links">
+        {%- for t in collections.turmas %}
+        <li><a href="{{ t.url }}">{{ t.data.titulo }} <small>({{ t.data.faixa_etaria }})</small></a></li>
+        {%- endfor %}
+        <li><a href="/quem-somos/">Quem somos e equipe</a></li>
+        <li><a href="/regiao-atendida/">Bairros atendidos e como chegar</a></li>
+        <li><a href="/blog/">Blog para famílias</a></li>
+        <li><a href="/agendar-visita/">Agendar visita</a></li>
+        <li><a href="/politica-de-privacidade/">Política de privacidade</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container rodape__base">
+    <p>© {{ "now" | anoAtual }} {{ escola.nome }} · {{ escola.razao_social }} · CNPJ {{ escola.cnpj }}</p>
+    <p>Berçário e Educação Infantil em {{ escola.endereco.cidade }} – {{ escola.endereco.uf }} · Site criado por {% if escola.credito_link %}<a href="{{ escola.credito_link }}" target="_blank" rel="noopener"><strong>EngrenaLab</strong></a>{% else %}<strong>EngrenaLab</strong>{% endif %}</p>
+  </div>
+</footer>

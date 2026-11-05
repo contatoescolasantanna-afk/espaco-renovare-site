@@ -1,0 +1,58 @@
+{#- Ícones em linha (traço arredondado). Uso: {{ icone("natureza") }} -#}
+{% macro icone(nome, classe="icone") -%}
+<svg class="{{ classe }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+{%- if nome == "turma" -%}
+<circle cx="9" cy="7" r="3.2"/><path d="M3 20v-1.5A4.5 4.5 0 0 1 7.5 14h3a4.5 4.5 0 0 1 4.5 4.5V20"/><circle cx="17.5" cy="8.5" r="2.5"/><path d="M17 14h.8a3.7 3.7 0 0 1 3.7 3.7V20"/>
+{%- elif nome == "natureza" -%}
+<path d="M12 22V12"/><path d="M12 12C12 7 8 4 3 4c0 5 3.5 8 9 8Z"/><path d="M12 15c0-4.5 3.5-7 9-7 0 4.5-3.5 7-9 7Z"/>
+{%- elif nome == "arte" -%}
+<path d="M12 3a9 9 0 0 0 0 18c1.2 0 2-.8 2-1.8 0-.5-.2-.9-.5-1.3-.3-.3-.5-.7-.5-1.2 0-1 .8-1.7 1.8-1.7H17a4 4 0 0 0 4-4C21 6.6 17 3 12 3Z"/><circle cx="7.5" cy="11" r="1.2" fill="currentColor"/><circle cx="10" cy="7" r="1.2" fill="currentColor"/><circle cx="14.5" cy="7" r="1.2" fill="currentColor"/>
+{%- elif nome == "livro" -%}
+<path d="M2 5.5C4.5 4 7.5 4 12 6c4.5-2 7.5-2 10-.5V19c-2.5-1.5-5.5-1.5-10 .5-4.5-2-7.5-2-10-.5Z"/><path d="M12 6v13.5"/>
+{%- elif nome == "coracao" -%}
+<path d="M19.5 13.6 12 21l-7.5-7.4A5 5 0 0 1 12 6.5a5 5 0 0 1 7.5 7.1Z"/>
+{%- elif nome == "estrela" -%}
+<path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9Z"/>
+{%- elif nome == "ballet" -%}
+<circle cx="12" cy="4.5" r="2"/><path d="M12 7v6"/><path d="M8 9.5c1.3 1 2.6 1.5 4 1.5s2.7-.5 4-1.5"/><path d="M7 16.5c1.5-1.6 3.2-2.5 5-2.5s3.5.9 5 2.5"/><path d="M12 14l-2.5 7"/><path d="M12 14l2.5 7"/>
+{%- elif nome == "cross" -%}
+<circle cx="14" cy="4.5" r="2"/><path d="m6 21 3-5 3 2 1.5-5.5"/><path d="M9.5 10.5 13 8l3 2.5 3-.5"/><path d="m13.5 12.5 3.5 2.5-1 6"/>
+{%- elif nome == "musica" -%}
+<path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/>
+{%- elif nome == "ingles" -%}
+<path d="M4 5h9a3 3 0 0 1 3 3v4a3 3 0 0 1-3 3H8l-4 3.5V5Z"/><path d="M16 9.5h2a2 2 0 0 1 2 2V20l-3-2.5h-4a2 2 0 0 1-2-2"/><path d="M7.5 8.5h4"/><path d="M7.5 11.5h2.5"/>
+{%- elif nome == "whatsapp" -%}
+<path d="M3.5 20.5 5 16.3A8.5 8.5 0 1 1 8.1 19.3Z"/><path d="M9 8.8c0 3.3 2.9 6.2 6.2 6.2l1.3-1.6-2-1-1 .9a5 5 0 0 1-2.8-2.8l.9-1-1-2Z" fill="currentColor" stroke-width="1"/>
+{%- elif nome == "telefone" -%}
+<path d="M5 3h3.5l1.8 4.5-2.3 1.4a11 11 0 0 0 7.1 7.1l1.4-2.3L21 15.5V19a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/>
+{%- elif nome == "local" -%}
+<path d="M12 21s-7-5.6-7-11.5a7 7 0 0 1 14 0C19 15.4 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/>
+{%- elif nome == "relogio" -%}
+<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
+{%- elif nome == "email" -%}
+<rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/>
+{%- elif nome == "instagram" -%}
+<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".8" fill="currentColor"/>
+{%- elif nome == "check" -%}
+<path d="m5 12.5 4.5 4.5L19 7.5"/>
+{%- elif nome == "calendario" -%}
+<rect x="3" y="4.5" width="18" height="16.5" rx="2.5"/><path d="M8 2.5v4M16 2.5v4M3 10h18"/><path d="m9 15 2 2 4-4"/>
+{%- elif nome == "seta" -%}
+<path d="M5 12h14"/><path d="m13 6 6 6-6 6"/>
+{%- elif nome == "menu" -%}
+<path d="M4 7h16M4 12h16M4 17h16"/>
+{%- elif nome == "fechar" -%}
+<path d="M6 6l12 12M18 6 6 18"/>
+{%- elif nome == "mais" -%}
+<path d="M12 5v14M5 12h14"/>
+{%- elif nome == "play" -%}
+<path d="M8 5.5v13l11-6.5Z" fill="currentColor"/>
+{%- elif nome == "sol" -%}
+<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+{%- elif nome == "escudo" -%}
+<path d="M12 3 4.5 6v5.5c0 4.7 3.2 8.3 7.5 9.5 4.3-1.2 7.5-4.8 7.5-9.5V6Z"/><path d="m8.5 12 2.5 2.5 4.5-4.5"/>
+{%- else -%}
+<circle cx="12" cy="12" r="8"/>
+{%- endif -%}
+</svg>
+{%- endmacro %}

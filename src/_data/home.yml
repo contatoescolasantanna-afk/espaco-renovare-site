@@ -1,0 +1,239 @@
+# ============================================================
+#  PÁGINA INICIAL
+#  Edite pelo painel (Pages CMS) em "Página inicial".
+#  Dica: textos com linha em branco viram parágrafos separados.
+# ============================================================
+seo_titulo: "Berçário e Escola Infantil em Santana de Parnaíba | Renovare"
+seo_descricao: "Escola infantil no Rancho Alegre, Santana de Parnaíba: berçário a partir de 4 meses, turmas de até 10 crianças, horta e pomar. Agende sua visita."
+imagem_compartilhamento: /images/marca/compartilhar.jpg
+
+hero:
+  sobretitulo: Berçário e Educação Infantil em Santana de Parnaíba
+  titulo: Aqui seu filho é chamado pelo nome
+  titulo_destaque: e cresce feliz.
+  subtitulo: Turmas de no máximo 10 crianças, 1.800 m² de área verde com horta e pomar e uma equipe que acompanha cada conquista de pertinho — dos 4 meses aos 5 anos.
+  botao_principal: Agendar uma visita
+  botao_secundario: Conversar no WhatsApp
+  frase_manuscrita: Educação é parceria!
+  imagem_principal: /images/uploads/arte-ao-ar-livre-1.jpg
+  imagem_principal_alt: Crianças pintando em mesas coloridas no gramado do Espaço Renovare
+  imagem_2: /images/uploads/festa-criancas.jpg
+  imagem_2_alt: Crianças se divertindo na festa de fim de ano da escola
+  imagem_3: /images/uploads/menina-sorriso.jpg
+  imagem_3_alt: Menina sorrindo durante a Festa da Família
+
+numeros:
+  - valor: Desde 2013
+    legenda: acolhendo famílias da região
+  - valor: Até 10
+    legenda: crianças por turma
+  - valor: 1.800 m²
+    legenda: de área verde, horta e pomar
+  - valor: 4 meses a 5 anos
+    legenda: berçário, maternal e pré
+  - valor: 7h às 18h30
+    legenda: meio período ou integral
+
+diferenciais:
+  titulo: Por que as famílias escolhem o Renovare
+  subtitulo: Uma escola pequena de propósito. Aqui cada criança é vista, ouvida e acompanhada — e cada família tem nome, rosto e voz.
+  itens:
+    - icone: turma
+      titulo: Turmas pequenas de verdade
+      texto: No máximo 10 crianças por sala. A professora conhece o jeito, o tempo e as preferências de cada uma — e você sente isso no dia a dia.
+    - icone: natureza
+      titulo: Natureza no quintal
+      texto: São 1.800 m² de área verde com parque, horta e pomar. Criança aqui planta, colhe acerola, jabuticaba e amora, se suja e aprende de verdade.
+    - icone: arte
+      titulo: Aprender pela arte
+      texto: A arte conduz a nossa proposta. Pintura, música, teatro e construção com as mãos desenvolvem criatividade, autonomia e autoestima.
+    - icone: livro
+      titulo: Material Conquista + BNCC
+      texto: Sistema de ensino Conquista Solução Educacional, com livros por faixa etária e Artes e Inglês a partir dos 3 anos, alinhado à BNCC.
+    - icone: coracao
+      titulo: A família sempre por perto
+      texto: Livro de recados, Almanaque da Família, reuniões e registros em fotos e vídeos. Você acompanha cada pequena conquista do seu filho.
+    - icone: estrela
+      titulo: Aulas extras na própria escola
+      texto: Ballet, Cross Kids, Música e Inglês no mesmo lugar, na rotina da criança — sem você precisar correr para outro endereço.
+
+proposta:
+  titulo: Uma proposta que respeita o tempo de cada criança
+  texto: |-
+    No Espaço Renovare acreditamos que cada criança é única e que aprender é uma aventura singular. Por isso, a arte, o brincar e a natureza são os caminhos do nosso dia a dia.
+
+    As crianças exploram, levantam hipóteses, resolvem problemas e constroem conhecimento com significado — sempre com afeto, respeito e muita escuta. Nosso nome vem do italiano *renovare*, renovar: o sol do nosso logo representa um novo dia e uma nova oportunidade de descobrir o mundo.
+  frase_manuscrita: Educar hoje para um amanhã melhor!
+  imagem: /images/uploads/professora-acompanhando.jpg
+  imagem_alt: Professora orientando um aluno durante atividade de pintura com as mãos
+  pilares:
+    - titulo: Autoconhecimento e autoestima
+      texto: A criança aprende a reconhecer o que sente, a confiar em si e a respeitar o outro.
+    - titulo: Aprendizagem por projetos
+      texto: Projetos como o Livro que Anda, a Festa da Família e as datas especiais envolvem crianças e famílias.
+    - titulo: Salas ambientes
+      texto: Ateliê de artes, quintal, horta, pomar e parque organizados como um “terceiro educador”.
+    - titulo: Documentação pedagógica
+      texto: Registramos o processo de cada criança com fotos, vídeos e produções para a família acompanhar a evolução.
+
+estrutura:
+  titulo: Espaço para brincar, explorar e crescer
+  subtitulo: Escola térrea, com acesso por rampa, ventilada e cercada de verde, num bairro tranquilo de chácaras e condomínios.
+  espacos:
+    - nome: Fácil de achar
+      texto: Muro colorido na Rua Colorado, 29, no Jardim Rancho Alegre, com entrada acessível.
+      imagem: /images/uploads/espaco-fachada.jpg
+      imagem_alt: Fachada do Espaço Renovare com muro azul e placa com o logo da escola
+    - nome: Jardim e rampa de acesso
+      texto: A chegada é por uma rampa cercada de flores e árvores. Escola toda térrea, sem escadas.
+      imagem: /images/uploads/espaco-jardim.jpg
+      imagem_alt: Rampa de acesso ladeada por canteiro florido e árvores
+    - nome: Parque no gramado
+      texto: Escorregadores, balanço, cavalinhos e cercadinho de brincar num gramado amplo para gastar energia com segurança.
+      imagem: /images/uploads/espaco-parque.jpg
+      imagem_alt: Parque infantil colorido com escorregadores e balanço em amplo gramado
+    - nome: Atividades ao ar livre
+      texto: Mesas no gramado para pintar, criar e investigar com a natureza em volta.
+      imagem: /images/uploads/espaco-atividades-ao-ar-livre.jpg
+      imagem_alt: Crianças pintando juntas numa mesa azul no gramado da escola
+    - nome: Salas por faixa etária
+      texto: Ambientes claros e arejados, com mobiliário e materiais adequados a cada idade.
+      imagem: /images/uploads/espaco-sala.jpg
+      imagem_alt: Sala de atividades iluminada com mesas e cadeirinhas coloridas
+    - nome: Refeitório
+      texto: Mesas coloridas e cadeirões para os pequenos em área coberta, ao lado do jardim.
+      imagem: /images/uploads/espaco-refeitorio.jpg
+      imagem_alt: Refeitório coberto com mesas coloridas de um lado e cadeirões do outro
+    - nome: Berçário aconchegante
+      texto: Sala própria com berço, cantinho macio e materiais pensados para bebês a partir de 4 meses.
+      imagem: /images/uploads/espaco-bercario.jpg
+      imagem_alt: Sala do berçário com berço branco e poltronas de pelúcia
+    - nome: Soninho dos bebês
+      texto: Berços individuais em sala própria para o descanso tranquilo dos bebês.
+      imagem: /images/uploads/espaco-bercos.jpg
+      imagem_alt: Berços brancos individuais enfileirados na sala do berçário
+    - nome: Hora do descanso
+      texto: Colchonetes individuais numa sala decorada e tranquila para quem fica no integral.
+      imagem: /images/uploads/espaco-descanso.jpg
+      imagem_alt: Colchonetes coloridos na sala de descanso decorada com girafa e leão
+
+extras:
+  titulo: Aulas extras sem sair da escola
+  subtitulo: Mais experiências para o corpo, a música e o mundo — dentro da rotina do seu filho.
+  itens:
+    - nome: Ballet
+      icone: ballet
+      texto: Consciência corporal, equilíbrio, coordenação e expressão artística, respeitando o ritmo de cada criança.
+      imagem: ""
+    - nome: Cross Kids
+      icone: cross
+      texto: Circuitos, saltos e desafios motores que desenvolvem força, coordenação e confiança — brincando.
+      imagem: ""
+    - nome: Música
+      icone: musica
+      texto: Ritmo, canto, percepção sonora e instrumentos para estimular a sensibilidade e a memória.
+      imagem: ""
+    - nome: Inglês
+      icone: ingles
+      texto: Contato lúdico com o idioma por meio de músicas, histórias e brincadeiras, com material próprio a partir dos 3 anos.
+      imagem: ""
+
+galeria:
+  titulo: Momentos que fazem a infância
+  subtitulo: Um pouquinho do nosso dia a dia. Tem muito mais no Instagram!
+  fotos:
+    - imagem: /images/uploads/arte-com-as-maos-2.jpg
+      alt: Menino rindo enquanto a professora pinta sua mão para a arte de Natal
+    - imagem: /images/uploads/professora-e-aluno-arte.jpg
+      alt: Professora ajudando um aluno na arte com as mãos
+    - imagem: /images/uploads/turma-pintando-ao-ar-livre.jpg
+      alt: Turma pintando em mesas azuis no gramado
+    - imagem: /images/uploads/apresentacao-danca.jpg
+      alt: Crianças dançando em apresentação para as famílias
+    - imagem: /images/uploads/familia-e-professora.jpg
+      alt: Professora, mãe e filha juntas na Festa da Família
+    - imagem: /images/uploads/formatura-familia.jpg
+      alt: Família reunida com o formando no dia da formatura
+    - imagem: /images/uploads/bebe-natal.jpg
+      alt: Bebê com gorro de Papai Noel na festa de fim de ano
+    - imagem: /images/uploads/arte-com-as-maos-mesa.jpg
+      alt: Crianças fazendo arte com as mãos, cola colorida e glitter na sala
+
+depoimentos:
+  titulo: O que dizem as famílias
+  subtitulo: Avaliações reais de mães e pais publicadas no Google.
+  # Só use depoimentos reais. A seção só aparece quando houver pelo menos 1.
+  # destaque: true deixa o cartão maior (use em apenas 1).
+  itens:
+    - nome: Mariana F.
+      relacao: Mãe · filho na escola desde os 5 meses
+      texto: Meu filho está nessa escola desde os 5 meses e simplesmente ama! Ele entra sorrindo e chora para não sair. Isso, para mim, é a maior prova de que fiz a escolha certa! O sonho de toda mamãe é encontrar um lugar onde seu filho seja acolhido com carinho, cuidado e dedicação, e nessa escola encontrei tudo isso!
+      fonte: Google
+      destaque: true
+      foto: ""
+    - nome: Rizia M.
+      relacao: Mãe de dois ex-alunos
+      texto: Um espaço muito afetivo! Meus dois filhos passaram pelo colégio e não tenho nada a reclamar, tenho ao contrário, muitos elogios a Sabrina e o Wesley que conduzem a escola como se fosse uma família que abraça. […] Na rotina eu vi que toda a equipe tinha o preparo e cuidado de atenção e zelo.
+      fonte: Google
+      destaque: false
+      foto: ""
+    - nome: Tamires A.
+      relacao: Mãe de dois alunos Renovare
+      texto: Meu filho estuda nessa escola desde bebê e gosto muito do método de ensino e de todo o carinho que todos têm com meu pequeno. Meu filho mais velho estudou no Pré também!! Só tenho a agradecer!!
+      fonte: Google
+      destaque: false
+      foto: ""
+    - nome: Fernanda O.
+      relacao: Família Renovare
+      texto: Super indico o Espaço Renovare! Ótimo atendimento e cuidado com os nossos pequenos! Tudo feito com muito amor!
+      fonte: Google
+      destaque: false
+      foto: ""
+
+video:
+  titulo: Conheça a escola em 1 minuto
+  # Cole só o código do vídeo do YouTube (ex.: dQw4w9WgXcQ). Vazio = seção escondida.
+  youtube_id: ""
+
+visita:
+  titulo: Venha conhecer o Renovare pessoalmente
+  subtitulo: Escolher a primeira escola é uma decisão do coração. Por isso, a visita é sem pressa e sem compromisso — traga seu filho, se quiser!
+  # Ex.: "Visitas de segunda a sexta, com duração de cerca de 40 minutos" (vazio = escondido)
+  info: ""
+  passos:
+    - titulo: Agende
+      texto: Escolha o melhor dia e período. Respondemos rapidinho pelo WhatsApp.
+    - titulo: Conheça
+      texto: Visite salas, parque, horta e pomar e converse com a direção pedagógica.
+    - titulo: Tire suas dúvidas
+      texto: Rotina, adaptação, material, aulas extras, valores e vagas — sem pressa.
+    - titulo: Decida com calma
+      texto: Se fizer sentido para a sua família, reservamos a vaga do seu filho.
+
+faq:
+  titulo: Perguntas frequentes
+  itens:
+    - pergunta: A partir de qual idade vocês recebem as crianças?
+      resposta: Recebemos bebês a partir de 4 meses no Berçário e acompanhamos a criança até os 5 anos, na Pré-escola.
+    - pergunta: Quais são os horários e períodos?
+      resposta: Funcionamos de segunda a sexta, das 7h às 18h30, com opções de manhã, tarde ou período integral.
+    - pergunta: Quantas crianças há em cada turma?
+      resposta: No máximo 10 crianças por sala, com professora e auxiliar de desenvolvimento infantil. É o que permite um acompanhamento realmente individual.
+    - pergunta: Qual é o material didático?
+      resposta: Usamos o sistema Conquista Solução Educacional, organizado por faixa etária (2 a 5 anos), com livros semestrais, livro de Artes e de Inglês a partir dos 3 anos, além do Almanaque da Família.
+    - pergunta: Quais aulas extras a escola oferece?
+      resposta: Ballet, Cross Kids, Música e Inglês, dentro da própria escola. Na visita explicamos dias, turmas e valores.
+    - pergunta: Como acompanho o dia a dia do meu filho?
+      resposta: Pelo livro de recados, pelo Almanaque da Família, nas reuniões de pais e pelos registros em fotos e vídeos das atividades. E a nossa porta está sempre aberta para conversar.
+    - pergunta: Como funciona a adaptação?
+      resposta: A adaptação é gradual. Nos primeiros dias a criança fica menos tempo na escola, e esse tempo aumenta aos poucos até ela entrar na rotina da turma, que todas as crianças seguem. Explicamos tudo com calma na visita.
+    - pergunta: A escola oferece alimentação?
+      resposta: Sim. A escola serve lanche da manhã, almoço, lanche da tarde e jantar, no refeitório, de acordo com o período de cada criança. O cardápio é acompanhado por nutricionista, e alergias e restrições são conversadas com a família.
+    - pergunta: Qual é o valor da mensalidade?
+      resposta: Os valores variam conforme a turma e o período (meio período ou integral). Enviamos a tabela atualizada pelo WhatsApp e apresentamos tudo na visita.
+    - pergunta: Onde fica a escola?
+      resposta: Na Rua Colorado, 29, no Jardim Rancho Alegre, em Santana de Parnaíba. Recebemos famílias de Santana de Parnaíba, Barueri e Cajamar.
+
+cta_final:
+  titulo: Que tal conhecer o Renovare de pertinho?
+  texto: As vagas são limitadas — no máximo 10 crianças por turma. Agende sua visita e venha sentir o clima da escola.

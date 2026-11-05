@@ -1,0 +1,95 @@
+---
+layout: layouts/base.njk
+classeCorpo: pagina-interna
+---
+{%- from "partials/icones.njk" import icone -%}
+<nav class="migalhas container" aria-label="Você está em">
+  <a href="/">Início</a> <span aria-hidden="true">›</span> <a href="/#turmas">Turmas</a> <span aria-hidden="true">›</span> <span aria-current="page">{{ titulo }}</span>
+</nav>
+<section class="hero hero--interna hero--{{ cor }}">
+  <div class="container hero__grade">
+    <div class="hero__texto">
+      <h1><span class="sobretitulo">{{ faixa_etaria }} · {{ escola.endereco.cidade }}</span>{{ titulo }} no Espaço Renovare</h1>
+      <p class="hero__sub">{{ resumo }}</p>
+      <div class="hero__botoes">
+        <a class="botao botao--primario botao--grande" href="#agendar" data-evento="cta-visita" data-origem="turma-{{ page.fileSlug }}">{{ icone("calendario") }} Agendar uma visita</a>
+        <a class="botao botao--contorno botao--grande" href="{{ escola.whatsapp | whatsLink('Olá! Vim pelo site e quero saber sobre vagas no ' ~ titulo ~ '.') }}" target="_blank" rel="noopener" data-evento="whatsapp" data-origem="turma-{{ page.fileSlug }}">{{ icone("whatsapp") }} Perguntar sobre vagas</a>
+      </div>
+    </div>
+    <div class="hero__fotos hero__fotos--duas">
+      <figure class="hero__foto hero__foto--principal"><img src="{{ imagem }}" alt="{{ imagem_alt }}" loading="eager" fetchpriority="high" sizes="(min-width: 1100px) 520px, (min-width: 760px) 50vw, 88vw"></figure>
+      {%- if imagem_2 %}<figure class="hero__foto hero__foto--2"><img src="{{ imagem_2 }}" alt="{{ imagem_2_alt }}" sizes="(min-width: 760px) 200px, 34vw"></figure>{% endif %}
+    </div>
+  </div>
+  <svg class="onda" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30c240 40 480 40 720 20s480-45 720-10v30H0Z" fill="currentColor"/></svg>
+</section>
+
+<section class="secao">
+  <div class="container conteudo-turma">
+    <article class="texto-corrido texto-corrido--artigo">
+      {{ content | safe }}
+    </article>
+    <aside class="resumo-turma">
+      <h2>Em resumo</h2>
+      <ul>
+        {%- for d in destaques %}
+        <li>{{ icone("check") }}<span>{{ d }}</span></li>
+        {%- endfor %}
+      </ul>
+      <a class="botao botao--primario" href="#agendar" data-evento="cta-visita" data-origem="resumo-{{ page.fileSlug }}">Agendar visita</a>
+      {%- set artigos = collections.blog | postsDaTurma(page.fileSlug) -%}
+      {%- if artigos.length %}
+      <div class="resumo-turma__blog">
+        <h3>Para ler com calma</h3>
+        <ul>{% for a in artigos %}<li><a href="{{ a.url }}">{{ a.data.titulo }}</a></li>{% endfor %}</ul>
+      </div>
+      {%- endif %}
+    </aside>
+  </div>
+</section>
+
+<section class="secao secao--sem-topo" id="rotina">
+  <div class="container">
+    <header class="secao__cabeca">
+      <p class="rotulo">Rotina</p>
+      <h2>{{ rotina.titulo }}</h2>
+      <p>{{ rotina.subtitulo }}</p>
+    </header>
+    <ol class="rotina">
+      {%- for r in rotina.itens %}
+      <li><span class="rotina__num">{{ loop.index }}</span><h3>{{ r.titulo }}</h3><p>{{ r.texto }}</p></li>
+      {%- endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="secao secao--sem-topo" id="alimentacao">
+  <div class="container container--estreito">
+    <div class="alimentacao">
+      <figure><img src="/images/uploads/espaco-refeitorio.jpg" alt="Refeitório coberto com mesas coloridas e cadeirões" sizes="(min-width: 760px) 320px, 90vw"></figure>
+      <div>
+        <h2>{{ alimentacao.titulo }}</h2>
+        <p>{{ alimentacao.subtitulo }}</p>
+        <ul class="alimentacao__lista">{% for r in alimentacao.refeicoes %}<li>{{ icone("check") }} {{ r.nome }}</li>{% endfor %}</ul>
+        {%- if alimentacao.observacao %}<p class="alimentacao__obs">{{ alimentacao.observacao }}</p>{% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="secao secao--sem-topo">
+  <div class="container">
+    <header class="secao__cabeca"><h2>Conheça também</h2></header>
+    <ul class="cartoes-turma cartoes-turma--mini">
+      {%- for t in collections.turmas %}{% if t.url != page.url %}
+      <li class="cartao-turma cartao-turma--{{ t.data.cor }}"><a href="{{ t.url }}">
+        <figure><img src="{{ t.data.imagem }}" alt="{{ t.data.imagem_alt }}" sizes="(min-width: 640px) 45vw, 90vw"></figure>
+        <div class="cartao-turma__corpo"><span class="etiqueta">{{ t.data.faixa_etaria }}</span><h3>{{ t.data.titulo }}</h3><span class="link-seta">Ver turma {{ icone("seta") }}</span></div>
+      </a></li>
+      {%- endif %}{% endfor %}
+    </ul>
+  </div>
+</section>
+
+{% include "partials/secao-agendar.njk" %}
+{% include "partials/cta-final.njk" %}

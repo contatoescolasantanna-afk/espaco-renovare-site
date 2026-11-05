@@ -1,0 +1,60 @@
+{%- from "partials/icones.njk" import icone -%}
+{%- set tituloAuto = titulo ~ " | " ~ escola.nome -%}
+{%- if tituloAuto.length > 62 %}{% set tituloAuto = titulo %}{% endif -%}
+{%- set tituloPagina = seo_titulo or tituloAuto -%}
+{%- set descricaoPagina = seo_descricao or resumo or home.seo_descricao -%}
+{%- set imagemCompartilhamento = imagem or home.imagem_compartilhamento -%}
+{%- set urlCanonica = escola.url ~ page.url -%}
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>{{ tituloPagina }}</title>
+  <meta name="description" content="{{ descricaoPagina }}">
+  <link rel="canonical" href="{{ urlCanonica }}">
+  {%- if semIndexar %}<meta name="robots" content="noindex">{% endif %}
+  <meta name="theme-color" content="#41AACD">
+  <meta name="format-detection" content="telephone=no">
+
+  <meta property="og:type" content="{{ 'article' if tipoOg == 'article' else 'website' }}">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="{{ escola.nome_completo }}">
+  <meta property="og:title" content="{{ tituloPagina }}">
+  <meta property="og:description" content="{{ descricaoPagina }}">
+  <meta property="og:url" content="{{ urlCanonica }}">
+  <meta property="og:image" content="{{ escola.url }}{{ imagemCompartilhamento }}">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-48.png" sizes="48x48" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="preload" href="/fonts/fredoka.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/nunito.woff2" as="font" type="font/woff2" crossorigin>
+  <style>{% include "css/style.css" %}</style>
+
+  {% include "partials/schema.njk" %}
+
+  {#- Métricas (GA4 / Meta Pixel) só carregam depois do consentimento — ver js/main.js -#}
+</head>
+<body class="{{ classeCorpo }}">
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+  {% include "partials/header.njk" %}
+  <main id="conteudo">
+    {{ content | safe }}
+  </main>
+  {% include "partials/footer.njk" %}
+
+  {#- Barra fixa no celular + botão flutuante de WhatsApp -#}
+  <div class="barra-acao" role="group" aria-label="Ações rápidas">
+    <a class="botao botao--whats" href="{{ escola.whatsapp | whatsLink(escola.whatsapp_mensagem) }}" target="_blank" rel="noopener" data-evento="whatsapp" data-origem="barra-celular">{{ icone("whatsapp") }}<span>WhatsApp</span></a>
+    <a class="botao botao--primario" href="/#agendar" data-evento="cta-visita" data-origem="barra-celular">{{ icone("calendario") }}<span>Agendar visita</span></a>
+  </div>
+  <a class="whats-flutuante" href="{{ escola.whatsapp | whatsLink(escola.whatsapp_mensagem) }}" target="_blank" rel="noopener" aria-label="Conversar no WhatsApp" data-evento="whatsapp" data-origem="flutuante">{{ icone("whatsapp") }}<span class="whats-flutuante__balao">Fale com a gente!</span></a>
+
+  <script>window.RENOVARE={whatsapp:"{{ escola.whatsapp | digits }}",endpoint:"{{ escola.formulario_endpoint }}",chave:"{{ escola.formulario_chave }}",ga:"{{ escola.google_analytics_id }}",pixel:"{{ escola.meta_pixel_id }}"};</script>
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

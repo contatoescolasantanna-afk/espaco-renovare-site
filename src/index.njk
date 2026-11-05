@@ -1,0 +1,260 @@
+---
+layout: layouts/base.njk
+classeCorpo: pagina-home
+eleventyComputed:
+  seo_titulo: "{{ home.seo_titulo }}"
+  seo_descricao: "{{ home.seo_descricao }}"
+---
+{%- from "partials/icones.njk" import icone -%}
+{%- set h = home.hero -%}
+
+{# ================= HERO ================= #}
+<section class="hero">
+  <div class="container hero__grade">
+    <div class="hero__texto">
+      <h1>
+        <span class="sobretitulo">{{ h.sobretitulo }}</span>
+        {{ h.titulo }} <span class="destaque-amarelo">{{ h.titulo_destaque }}</span>
+      </h1>
+      <p class="hero__sub">{{ h.subtitulo }}</p>
+      <div class="hero__botoes">
+        <a class="botao botao--primario botao--grande" href="#agendar" data-evento="cta-visita" data-origem="hero">{{ icone("calendario") }} {{ h.botao_principal }}</a>
+        <a class="botao botao--contorno botao--grande" href="{{ escola.whatsapp | whatsLink(escola.whatsapp_mensagem) }}" target="_blank" rel="noopener" data-evento="whatsapp" data-origem="hero">{{ icone("whatsapp") }} {{ h.botao_secundario }}</a>
+      </div>
+      <div class="hero__selos">
+        {%- if escola.google_nota %}
+        <{{ 'a' if escola.google_avaliacoes_link else 'span' }} class="selo-google"{% if escola.google_avaliacoes_link %} href="{{ escola.google_avaliacoes_link }}" target="_blank" rel="noopener"{% endif %}>
+          <span class="selo-google__estrelas" aria-hidden="true">★★★★★</span> {{ escola.google_nota }} no Google{% if escola.google_total %} <small>({{ escola.google_total }} avaliações)</small>{% endif %}
+        </{{ 'a' if escola.google_avaliacoes_link else 'span' }}>
+        {%- endif %}
+        <p class="hero__local">{{ icone("local") }} {{ escola.endereco.bairro }} · {{ escola.endereco.cidade }} – {{ escola.endereco.uf }}</p>
+      </div>
+    </div>
+    <div class="hero__fotos">
+      <img class="hero__sol" src="/images/marca/logo-sol.svg" alt="" width="212" height="198" eleventy:ignore>
+      <figure class="hero__foto hero__foto--principal">
+        <img src="{{ h.imagem_principal }}" alt="{{ h.imagem_principal_alt }}" loading="eager" fetchpriority="high" sizes="(min-width: 1100px) 540px, (min-width: 760px) 50vw, 88vw">
+      </figure>
+      <figure class="hero__foto hero__foto--2">
+        <img src="{{ h.imagem_2 }}" alt="{{ h.imagem_2_alt }}" sizes="(min-width: 760px) 200px, 34vw">
+      </figure>
+      <figure class="hero__foto hero__foto--3">
+        <img src="{{ h.imagem_3 }}" alt="{{ h.imagem_3_alt }}" sizes="(min-width: 760px) 180px, 30vw">
+      </figure>
+      <p class="hero__bilhete manuscrita">{{ h.frase_manuscrita }} {{ icone("coracao") }}</p>
+    </div>
+  </div>
+  <svg class="onda" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30c240 40 480 40 720 20s480-45 720-10v30H0Z" fill="currentColor"/></svg>
+</section>
+
+
+{# ================= NÚMEROS ================= #}
+<section class="numeros" aria-label="O Renovare em números">
+  <div class="container">
+    <ul class="numeros__lista">
+      {%- for n in home.numeros %}
+      <li><strong>{{ n.valor }}</strong><span>{{ n.legenda }}</span></li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+{# ================= DIFERENCIAIS ================= #}
+<section class="secao" id="diferenciais">
+  <div class="container">
+    <header class="secao__cabeca">
+      <p class="rotulo">Por que o Renovare</p>
+      <h2>{{ home.diferenciais.titulo }}</h2>
+      <p>{{ home.diferenciais.subtitulo }}</p>
+    </header>
+    <ul class="cartoes-diferenciais">
+      {%- for d in home.diferenciais.itens %}
+      <li class="cartao-dif cartao-dif--{{ loop.index }}">
+        <span class="cartao-dif__icone">{{ icone(d.icone) }}</span>
+        <h3>{{ d.titulo }}</h3>
+        <p>{{ d.texto }}</p>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+{# ================= DEPOIMENTOS (só aparece se houver) ================= #}
+{%- if home.depoimentos.itens and home.depoimentos.itens.length %}
+<section class="secao secao--depoimentos" id="depoimentos">
+  <div class="container">
+    <header class="secao__cabeca">
+      <p class="rotulo">Famílias Renovare</p>
+      <h2>{{ home.depoimentos.titulo }}</h2>
+      {%- if home.depoimentos.subtitulo %}<p>{{ home.depoimentos.subtitulo }}</p>{% endif %}
+      {%- if escola.google_nota %}
+      <p class="nota-google">
+        <span class="nota-google__g" aria-hidden="true">G</span>
+        <strong>{{ escola.google_nota }}</strong>
+        <span class="nota-google__estrelas" role="img" aria-label="5 de 5 estrelas">★★★★★</span>
+        {%- if escola.google_total %}<span class="nota-google__total">{{ escola.google_total }} avaliações no Google</span>{% endif %}
+      </p>
+      {%- endif %}
+    </header>
+    <ul class="depoimentos" role="list">
+      {%- for d in home.depoimentos.itens %}
+      <li class="depoimento{% if d.destaque %} depoimento--destaque{% endif %}">
+        <span class="depoimento__aspas" aria-hidden="true">“</span>
+        <p class="depoimento__estrelas" role="img" aria-label="Avaliação 5 de 5">★★★★★</p>
+        <blockquote><p>{{ d.texto }}</p></blockquote>
+        <footer class="depoimento__autor">
+          {%- if d.foto %}<img src="{{ d.foto }}" alt="" width="52" height="52" sizes="52px">{% else %}<span class="depoimento__inicial" aria-hidden="true">{{ d.nome | first }}</span>{% endif %}
+          <span><strong>{{ d.nome }}</strong>{% if d.relacao %}<small>{{ d.relacao }}</small>{% endif %}</span>
+          {%- if d.fonte %}<span class="depoimento__fonte">via {{ d.fonte }}</span>{% endif %}
+        </footer>
+      </li>
+      {%- endfor %}
+    </ul>
+    {%- if escola.google_avaliacoes_link %}
+    <p class="centro"><a class="botao botao--contorno" href="{{ escola.google_avaliacoes_link }}" target="_blank" rel="noopener">{{ icone("estrela") }} Ver todas as avaliações no Google</a></p>
+    {%- endif %}
+  </div>
+</section>
+{%- endif %}
+
+{# ================= TURMAS ================= #}
+<section class="secao secao--azul" id="turmas">
+  <svg class="onda onda--topo" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40c240-40 480-40 720-15s480 40 720 5V70H0Z" fill="currentColor"/></svg>
+  <div class="container">
+    <header class="secao__cabeca">
+      <p class="rotulo">Turmas</p>
+      <h2>Do primeiro colo à formatura</h2>
+      <p>Acompanhamos seu filho dos 4 meses aos 5 anos, em meio período ou integral.</p>
+    </header>
+    <ul class="cartoes-turma">
+      {%- for t in collections.turmas %}
+      <li class="cartao-turma cartao-turma--{{ t.data.cor }}">
+        <a href="{{ t.url }}">
+          <figure><img src="{{ t.data.imagem }}" alt="{{ t.data.imagem_alt }}" sizes="(min-width: 1000px) 360px, (min-width: 640px) 45vw, 90vw"></figure>
+          <div class="cartao-turma__corpo">
+            <span class="etiqueta">{{ t.data.faixa_etaria }}</span>
+            <h3>{{ t.data.titulo }}</h3>
+            <p>{{ t.data.resumo }}</p>
+            <span class="link-seta">Conhecer a turma {{ icone("seta") }}</span>
+          </div>
+        </a>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+{# ================= ESTRUTURA ================= #}
+<section class="secao" id="estrutura">
+  <div class="container">
+    <header class="secao__cabeca">
+      <p class="rotulo">Estrutura</p>
+      <h2>{{ home.estrutura.titulo }}</h2>
+      <p>{{ home.estrutura.subtitulo }}</p>
+    </header>
+    <ul class="espacos">
+      {%- for e in home.estrutura.espacos %}
+      <li class="espaco">
+        <figure><img src="{{ e.imagem }}" alt="{{ e.imagem_alt }}" sizes="(min-width: 1000px) 380px, (min-width: 561px) 45vw, 46vw"></figure>
+        <h3>{{ e.nome }}</h3>
+        <p>{{ e.texto }}</p>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+{# ================= PROPOSTA ================= #}
+<section class="secao secao--creme" id="proposta">
+  <div class="container proposta">
+    <div class="proposta__foto">
+      <figure><img src="{{ home.proposta.imagem }}" alt="{{ home.proposta.imagem_alt }}" sizes="(min-width: 900px) 460px, 90vw"></figure>
+      <p class="manuscrita proposta__frase">{{ home.proposta.frase_manuscrita }}</p>
+    </div>
+    <div class="proposta__texto">
+      <p class="rotulo">Proposta pedagógica</p>
+      <h2>{{ home.proposta.titulo }}</h2>
+      <div class="texto-corrido">{{ home.proposta.texto | paras | safe }}</div>
+      <ul class="pilares">
+        {%- for p in home.proposta.pilares %}
+        <li><span class="pilares__check">{{ icone("check") }}</span><div><h3>{{ p.titulo }}</h3><p>{{ p.texto }}</p></div></li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+{# ================= AULAS EXTRAS ================= #}
+<section class="secao secao--amarela" id="extras">
+  <svg class="onda onda--topo" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30c300 40 600 40 900 10s400-30 540-10V70H0Z" fill="currentColor"/></svg>
+  <div class="container">
+    <header class="secao__cabeca">
+      <p class="rotulo">Aulas extras</p>
+      <h2>{{ home.extras.titulo }}</h2>
+      <p>{{ home.extras.subtitulo }}</p>
+    </header>
+    <ul class="extras">
+      {%- for x in home.extras.itens %}
+      <li class="extra">
+        {%- if x.imagem %}<figure><img src="{{ x.imagem }}" alt="Aula de {{ x.nome }}" sizes="(min-width: 1000px) 260px, 45vw"></figure>{% else %}<span class="extra__icone">{{ icone(x.icone) }}</span>{% endif %}
+        <h3>{{ x.nome }}</h3>
+        <p>{{ x.texto }}</p>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+{# ================= MOMENTOS ================= #}
+<section class="secao" id="momentos">
+  <div class="container">
+    <header class="secao__cabeca">
+      <p class="rotulo">Momentos</p>
+      <h2>{{ home.galeria.titulo }}</h2>
+      <p>{{ home.galeria.subtitulo }}</p>
+    </header>
+    <ul class="mosaico">
+      {%- for f in home.galeria.fotos %}
+      <li><img src="{{ f.imagem }}" alt="{{ f.alt }}" sizes="(min-width: 1000px) 300px, 45vw"></li>
+      {%- endfor %}
+    </ul>
+    <p class="centro"><a class="botao botao--contorno" href="https://www.instagram.com/{{ escola.instagram }}/" target="_blank" rel="noopener">{{ icone("instagram") }} Siga @{{ escola.instagram }}</a></p>
+  </div>
+</section>
+
+{# ================= VÍDEO (só aparece se houver) ================= #}
+{%- if home.video.youtube_id %}
+<section class="secao" id="video">
+  <div class="container container--estreito">
+    <header class="secao__cabeca"><h2>{{ home.video.titulo }}</h2></header>
+    <button class="video-fachada" type="button" data-youtube="{{ home.video.youtube_id }}" aria-label="Assistir ao vídeo: {{ home.video.titulo }}">
+      <img src="https://i.ytimg.com/vi/{{ home.video.youtube_id }}/hqdefault.jpg" alt="" loading="lazy" width="480" height="360" eleventy:ignore>
+      <span class="video-fachada__play">{{ icone("play") }}</span>
+    </button>
+  </div>
+</section>
+{%- endif %}
+
+{# ================= AGENDAR VISITA ================= #}
+{% include "partials/secao-agendar.njk" %}
+
+{# ================= FAQ ================= #}
+<section class="secao" id="duvidas">
+  <div class="container container--estreito">
+    <header class="secao__cabeca">
+      <p class="rotulo">Dúvidas</p>
+      <h2>{{ home.faq.titulo }}</h2>
+    </header>
+    <div class="faq">
+      {%- for f in home.faq.itens %}
+      <details{% if loop.first %} open{% endif %}>
+        <summary>{{ f.pergunta }}<span class="faq__icone">{{ icone("mais") }}</span></summary>
+        <div class="faq__resposta"><p>{{ f.resposta }}</p></div>
+      </details>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+{# ================= CTA FINAL ================= #}
+{% include "partials/cta-final.njk" %}

@@ -1,0 +1,67 @@
+# ============================================================
+#  CONFIGURAÇÕES GERAIS DA ESCOLA
+#  Edite pelo painel (Pages CMS) em "Configurações gerais".
+# ============================================================
+nome: Espaço Renovare
+nome_completo: Espaço Renovare – Berçário e Educação Infantil
+slogan: Educar com amor, respeito e acolhimento
+ano_fundacao: 2013
+url: https://espacorenovareinfantil.com.br
+
+# Contatos
+whatsapp: "5511991154080"
+whatsapp_exibicao: (11) 99115-4080
+whatsapp_mensagem: Olá! Vim pelo site e gostaria de saber mais sobre o Espaço Renovare.
+telefone: "1141511787"
+telefone_exibicao: (11) 4151-1787
+email: contato.escolasantanna@gmail.com
+instagram: espaco_renovare_educacao
+
+# Endereço
+endereco:
+  rua: Rua Colorado, 29
+  bairro: Jardim Rancho Alegre
+  cidade: Santana de Parnaíba
+  uf: SP
+  cep: 06515-210
+  latitude: -23.4711292
+  longitude: -46.894714
+  link_mapa: https://maps.app.goo.gl/FaYxEydeqRUP1ndDA
+  regiao_atendida: Santana de Parnaíba, Barueri e Cajamar
+
+# Funcionamento (confira antes de publicar)
+horario: Segunda a sexta, das 7h às 18h30
+horario_abre: "07:00"
+horario_fecha: "18:30"
+periodos: Manhã, tarde ou integral
+
+# Faixa de matrículas no topo do site
+matriculas:
+  ativo: true
+  texto: Matrículas abertas para 2027 · vagas limitadas por turma
+  botao: Agendar visita
+
+# Avaliações no Google (confira a nota atual antes de publicar; vazio = selo escondido)
+google_nota: "5,0"
+google_total: 6
+google_avaliacoes_link: "https://maps.app.goo.gl/FaYxEydeqRUP1ndDA"
+
+# Agenda de visitas online (ex.: link de "Agendamento de horários" do Google Agenda).
+# Quando preenchido, aparece o botão "Escolher dia e horário na agenda".
+agenda_online_link: ""
+
+# Formulário: se preencher, cada pedido de visita também é enviado para este endereço
+# (ex.: https://api.web3forms.com/submit ou URL de um Google Apps Script). Vazio = só WhatsApp.
+formulario_endpoint: ""
+formulario_chave: ""
+
+# Métricas (deixe vazio se não usar)
+google_analytics_id: ""
+meta_pixel_id: ""
+
+# Crédito no rodapé (link do site da EngrenaLab)
+credito_link: "https://engrenalab.com.br"
+
+# Dados legais (rodapé)
+razao_social: Escola de Educação Infantil Santanna Ltda
+cnpj: 16.936.855/0001-69

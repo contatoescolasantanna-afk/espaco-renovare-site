@@ -1,0 +1,27 @@
+{%- from "partials/icones.njk" import icone -%}
+<section class="secao secao--azul visita" id="agendar">
+  <svg class="onda onda--topo" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40c240-40 480-40 720-15s480 40 720 5V70H0Z" fill="currentColor"/></svg>
+  <div class="container visita__grade">
+    <div class="visita__texto">
+      <p class="rotulo">Agende sua visita</p>
+      <h2>{{ home.visita.titulo }}</h2>
+      <p>{{ home.visita.subtitulo }}</p>
+      {%- if home.visita.info %}<p class="visita__info">{{ icone("relogio") }} {{ home.visita.info }}</p>{% endif %}
+      <ol class="passos">
+        {%- for p in home.visita.passos %}
+        <li><span class="passos__num">{{ loop.index }}</span><div><h3>{{ p.titulo }}</h3><p>{{ p.texto }}</p></div></li>
+        {%- endfor %}
+      </ol>
+      {%- if escola.agenda_online_link %}
+      <p class="visita__agenda"><a class="botao botao--primario botao--grande" href="{{ escola.agenda_online_link }}" target="_blank" rel="noopener" data-evento="agenda-online" data-origem="secao-visita">{{ icone("calendario") }} Escolher dia e horário na agenda</a></p>
+      {%- endif %}
+      <div class="cartao-endereco">
+        <p>{{ icone("local") }} <span><strong>{{ escola.endereco.rua }}</strong><br>{{ escola.endereco.bairro }} · {{ escola.endereco.cidade }}/{{ escola.endereco.uf }}</span></p>
+        <p>{{ icone("relogio") }} <span>{{ escola.horario }}</span></p>
+        <p>{{ icone("telefone") }} <span><a href="tel:+55{{ escola.telefone | digits }}" data-evento="telefone">{{ escola.telefone_exibicao }}</a> · <a href="{{ escola.whatsapp | whatsLink(escola.whatsapp_mensagem) }}" target="_blank" rel="noopener" data-evento="whatsapp" data-origem="endereco">WhatsApp {{ escola.whatsapp_exibicao }}</a></span></p>
+        <a class="botao botao--branco botao--pequeno" href="{{ escola.endereco.link_mapa }}" target="_blank" rel="noopener">Como chegar</a>
+      </div>
+    </div>
+    {% include "partials/form-visita.njk" %}
+  </div>
+</section>

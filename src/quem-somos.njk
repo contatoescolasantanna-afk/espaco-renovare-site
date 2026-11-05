@@ -1,0 +1,40 @@
+---
+layout: layouts/base.njk
+permalink: /quem-somos/
+titulo: Quem somos
+seo_titulo: "Quem somos e equipe | Espaço Renovare – Santana de Parnaíba"
+seo_descricao: "Conheça a história do Espaço Renovare, escola de educação infantil em Santana de Parnaíba desde 2013, e a equipe que cuida do seu filho."
+classeCorpo: pagina-interna
+---
+{%- from "partials/icones.njk" import icone -%}
+<nav class="migalhas container" aria-label="Você está em"><a href="/">Início</a> <span aria-hidden="true">›</span> <span aria-current="page">Quem somos</span></nav>
+
+<section class="secao secao--topo-curto">
+  <div class="container historia">
+    <div class="texto-corrido">
+      <p class="rotulo">Desde {{ escola.ano_fundacao }}</p>
+      <h1>Quem somos</h1>
+      {{ equipe.historia | paras | safe }}
+      <p class="missao">{{ equipe.missao }}</p>
+    </div>
+    <figure><img src="/images/uploads/familia-e-professora.jpg" alt="Professora, mãe e filha juntas na Festa da Família" loading="eager" sizes="(min-width: 860px) 50vw, 92vw"></figure>
+  </div>
+</section>
+
+<section class="secao secao--sem-topo">
+  <div class="container">
+    <header class="secao__cabeca"><p class="rotulo">Equipe</p><h2>{{ equipe.titulo }}</h2><p>{{ equipe.subtitulo }}</p></header>
+    <ul class="equipe">
+      {%- for p in equipe.pessoas %}
+      <li class="pessoa">
+        {%- if p.foto %}<img class="pessoa__foto" src="{{ p.foto }}" alt="{{ p.nome }}, {{ p.funcao }}" sizes="96px">{% else %}<span class="pessoa__inicial" aria-hidden="true">{{ p.nome | first }}</span>{% endif %}
+        <h3>{{ p.nome }}</h3><span class="pessoa__funcao">{{ p.funcao }}</span>
+        <p>{{ p.texto }}</p>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+{% include "partials/secao-agendar.njk" %}
+{% include "partials/cta-final.njk" %}

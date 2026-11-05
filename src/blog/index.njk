@@ -1,0 +1,27 @@
+---
+layout: layouts/base.njk
+permalink: /blog/
+titulo: Blog para famílias
+seo_titulo: Blog para famílias | Espaço Renovare – Educação Infantil
+seo_descricao: Dicas sobre educação infantil, adaptação escolar e desenvolvimento das crianças, pela equipe do Espaço Renovare em Santana de Parnaíba.
+classeCorpo: pagina-interna
+---
+{%- from "partials/icones.njk" import icone -%}
+<section class="secao secao--topo-curto">
+  <div class="container">
+    <header class="secao__cabeca">
+      <p class="rotulo">Blog</p>
+      <h1>Dicas para famílias</h1>
+      <p>Conversas sobre infância, escola e desenvolvimento — do jeito que a gente fala no portão.</p>
+    </header>
+    <ul class="lista-posts">
+      {%- for p in collections.blog %}
+      <li class="cartao-post"><a href="{{ p.url }}">
+        {%- if p.data.imagem %}<figure><img src="{{ p.data.imagem }}" alt="{{ p.data.imagem_alt }}" sizes="(min-width: 900px) 360px, 90vw"></figure>{% endif %}
+        <div><p class="rotulo">{{ p.data.tema or "Blog" }}</p><h2>{{ p.data.titulo }}</h2><p>{{ p.data.resumo }}</p><span class="link-seta">Ler {{ icone("seta") }}</span></div>
+      </a></li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+{% include "partials/cta-final.njk" %}

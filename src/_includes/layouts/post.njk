@@ -1,0 +1,68 @@
+---
+layout: layouts/base.njk
+classeCorpo: pagina-interna
+tipoOg: article
+---
+{%- from "partials/icones.njk" import icone -%}
+<nav class="migalhas container" aria-label="Você está em">
+  <a href="/">Início</a> <span aria-hidden="true">›</span> <a href="/blog/">Blog</a> <span aria-hidden="true">›</span> <span aria-current="page">{{ titulo }}</span>
+</nav>
+<article class="secao secao--topo-curto">
+  <div class="container container--estreito">
+    <header class="post__cabeca">
+      <p class="rotulo">{% if tema %}{{ tema }} · {% endif %}<time datetime="{{ page.date | isoDate }}">{{ page.date | dataBR }}</time></p>
+      <h1>{{ titulo }}</h1>
+      <p class="post__resumo">{{ resumo }}</p>
+      <p class="post__meta">Por <strong>Equipe pedagógica do {{ escola.nome }}</strong> · {{ content | minutosLeitura }} min de leitura</p>
+    </header>
+    {%- if imagem %}<figure class="post__capa"><img src="{{ imagem }}" alt="{{ imagem_alt }}" loading="eager" fetchpriority="high" sizes="(min-width: 800px) 760px, 92vw"></figure>{% endif %}
+    <div class="texto-corrido texto-corrido--artigo">
+      {{ content | safe }}
+    </div>
+    {%- if faq and faq.length %}
+    <section class="post__faq">
+      <h2>Perguntas rápidas</h2>
+      <div class="faq">
+        {%- for f in faq %}
+        <details>
+          <summary>{{ f.pergunta }}<span class="faq__icone">{{ icone("mais") }}</span></summary>
+          <div class="faq__resposta"><p>{{ f.resposta }}</p></div>
+        </details>
+        {%- endfor %}
+      </div>
+    </section>
+    {%- endif %}
+    {%- set turmasRel = collections.turmas | turmasPorSlug(turmas) -%}
+    {%- if turmasRel.length %}
+    <aside class="post__turmas">
+      <h2>Conheça a turma</h2>
+      <ul>
+        {%- for t in turmasRel %}
+        <li><a href="{{ t.url }}"><strong>{{ t.data.titulo }}</strong> <span>{{ t.data.faixa_etaria }}</span> {{ icone("seta") }}</a></li>
+        {%- endfor %}
+      </ul>
+    </aside>
+    {%- endif %}
+    <aside class="post__cta">
+      <h2>Venha conhecer o Espaço Renovare</h2>
+      <p>Visita sem pressa e sem compromisso, com direito a passeio pelo parque, horta e pomar.</p>
+      <a class="botao botao--primario" href="/#agendar" data-evento="cta-visita" data-origem="post">{{ icone("calendario") }} Agendar visita</a>
+    </aside>
+  </div>
+</article>
+{%- set rel = collections.blog | relacionados(page) -%}
+{%- if rel.length %}
+<section class="secao secao--sem-topo">
+  <div class="container">
+    <header class="secao__cabeca"><h2>Leia também</h2></header>
+    <ul class="lista-posts">
+      {%- for p in rel %}
+      <li class="cartao-post"><a href="{{ p.url }}">
+        {%- if p.data.imagem %}<figure><img src="{{ p.data.imagem }}" alt="{{ p.data.imagem_alt }}" sizes="(min-width: 900px) 360px, 90vw"></figure>{% endif %}
+        <div><p class="rotulo">{{ p.data.tema or "Blog" }}</p><h3>{{ p.data.titulo }}</h3><p>{{ p.data.resumo }}</p></div>
+      </a></li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+{%- endif %}

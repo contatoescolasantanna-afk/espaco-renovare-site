@@ -1,0 +1,44 @@
+# ============================================================
+#  REGIÃO ATENDIDA — página /regiao-atendida/
+#  Tempos: estimativa de carro sem trânsito (OpenStreetMap/OSRM),
+#  a partir do centro de cada bairro. Revise quando quiser.
+# ============================================================
+titulo: Escola infantil e berçário perto de você
+subtitulo: O Espaço Renovare fica no Jardim Rancho Alegre, em Santana de Parnaíba, e recebe famílias de vários bairros da cidade, de Barueri e de Cajamar.
+bairros:
+  - nome: Jardim Isaura
+    cidade: Santana de Parnaíba
+    minutos: 4
+    km: 1.5
+  - nome: Centro Histórico
+    cidade: Santana de Parnaíba
+    minutos: 8
+    km: 5.4
+  - nome: Jardim Frediani
+    cidade: Santana de Parnaíba
+    minutos: 8
+    km: 6.2
+  - nome: Centro de Barueri
+    cidade: Barueri
+    minutos: 10
+    km: 7.1
+  - nome: Fazendinha
+    cidade: Santana de Parnaíba
+    minutos: 13
+    km: 11.2
+  - nome: Suru
+    cidade: Santana de Parnaíba
+    minutos: 15
+    km: 9.4
+  - nome: Alphaville
+    cidade: Santana de Parnaíba
+    minutos: 16
+    km: 10
+  - nome: Cidade São Pedro
+    cidade: Santana de Parnaíba
+    minutos: 20
+    km: 16.2
+  - nome: Polvilho
+    cidade: Cajamar
+    minutos: 20
+    km: 16.1

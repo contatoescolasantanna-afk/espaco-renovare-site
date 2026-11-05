@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+permalink: /obrigado/
+titulo: Pedido de visita enviado
+semIndexar: true
+classeCorpo: pagina-interna
+eleventyExcludeFromCollections: true
+---
+{%- from "partials/icones.njk" import icone -%}
+<section class="secao secao--topo-curto obrigado">
+  <div class="container container--estreito centro">
+    <img class="obrigado__sol" src="/images/marca/logo-sol.svg" alt="" width="212" height="198" eleventy:ignore>
+    <h1>Oba! Recebemos seu pedido de visita.</h1>
+    <p>Abrimos o WhatsApp com a sua mensagem pronta — é só tocar em <strong>enviar</strong>. Se a janela não abriu, use o botão abaixo.</p>
+    <p><a class="botao botao--whats botao--grande" href="#" data-whats-retomar data-evento="whatsapp" data-origem="obrigado">{{ icone("whatsapp") }} Abrir o WhatsApp</a></p>
+    <p class="manuscrita obrigado__frase">Até já! {{ icone("coracao") }}</p>
+    <p><a href="/">Voltar ao início</a></p>
+  </div>
+</section>

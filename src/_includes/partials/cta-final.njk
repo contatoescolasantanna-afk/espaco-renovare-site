@@ -1,0 +1,12 @@
+{%- from "partials/icones.njk" import icone -%}
+<section class="cta-final">
+  <div class="container cta-final__caixa">
+    <img class="cta-final__sol" src="/images/marca/logo-sol.svg" alt="" width="212" height="198" loading="lazy" eleventy:ignore>
+    <h2>{{ home.cta_final.titulo }}</h2>
+    <p>{{ home.cta_final.texto }}</p>
+    <div class="cta-final__botoes">
+      <a class="botao botao--primario botao--grande" href="/#agendar" data-evento="cta-visita" data-origem="cta-final">{{ icone("calendario") }} Agendar uma visita</a>
+      <a class="botao botao--whats botao--grande" href="{{ escola.whatsapp | whatsLink(escola.whatsapp_mensagem) }}" target="_blank" rel="noopener" data-evento="whatsapp" data-origem="cta-final">{{ icone("whatsapp") }} Chamar no WhatsApp</a>
+    </div>
+  </div>
+</section>

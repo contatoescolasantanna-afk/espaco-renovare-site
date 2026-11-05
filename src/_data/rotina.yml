@@ -1,0 +1,23 @@
+# ============================================================
+#  ROTINA — "Um dia no Renovare"
+#  Aparece nas páginas de cada turma (Berçário, Maternal, Pré).
+# ============================================================
+titulo: Um dia no Renovare
+subtitulo: Todas as crianças seguem a rotina da turma, todos os dias. É essa previsibilidade que dá segurança e ajuda na adaptação.
+itens:
+  - titulo: Chegada e acolhimento
+    texto: Recebemos cada criança com carinho para começar o dia.
+  - titulo: Roda de conversa
+    texto: Novidades, música e os combinados do dia.
+  - titulo: Atividades e projetos
+    texto: Propostas do material Conquista, arte e investigação.
+  - titulo: Parque, horta e quintal
+    texto: Movimento, natureza e brincadeira livre ao ar livre.
+  - titulo: Lanche e refeições
+    texto: Convivência e autonomia à mesa.
+  - titulo: Aulas extras
+    texto: Ballet, Cross Kids, Música e Inglês ao longo da semana.
+  - titulo: Descanso
+    texto: Soninho tranquilo para quem fica no integral.
+  - titulo: Saída com recado
+    texto: O dia registrado no livro de recados para a família.

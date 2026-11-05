@@ -1,0 +1,72 @@
+{%- from "partials/icones.njk" import icone -%}
+<form class="form-visita" data-form-visita novalidate>
+  <div class="form-visita__topo">
+    <span class="form-visita__icone">{{ icone("calendario") }}</span>
+    <div>
+      <h3>Agende sua visita</h3>
+      <p>Leva menos de 1 minuto. A gente confirma pelo WhatsApp.</p>
+    </div>
+  </div>
+
+  <div class="campo">
+    <label for="f-nome">Seu nome <span aria-hidden="true">*</span></label>
+    <input id="f-nome" name="nome" type="text" autocomplete="name" required placeholder="Como podemos te chamar?">
+  </div>
+  <div class="campo">
+    <label for="f-whats">WhatsApp <span aria-hidden="true">*</span></label>
+    <input id="f-whats" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" required placeholder="(11) 90000-0000" data-mascara-tel>
+  </div>
+  <div class="campos-2">
+    <div class="campo">
+      <label for="f-crianca">Nome da criança</label>
+      <input id="f-crianca" name="crianca" type="text" placeholder="Opcional">
+    </div>
+    <div class="campo">
+      <label for="f-idade">Idade da criança <span aria-hidden="true">*</span></label>
+      <select id="f-idade" name="idade" required>
+        <option value="">Selecione</option>
+        <option>Ainda vai nascer</option>
+        <option>4 a 11 meses</option>
+        <option>1 ano</option>
+        <option>2 anos</option>
+        <option>3 anos</option>
+        <option>4 anos</option>
+        <option>5 anos</option>
+      </select>
+    </div>
+  </div>
+  <div class="campos-2">
+    <div class="campo">
+      <label for="f-periodo">Período de interesse</label>
+      <select id="f-periodo" name="periodo">
+        <option value="">Ainda não sei</option>
+        <option>Manhã</option>
+        <option>Tarde</option>
+        <option>Integral</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label for="f-quando">Melhor horário para a visita</label>
+      <select id="f-quando" name="quando">
+        <option value="">Tanto faz</option>
+        <option>De manhã</option>
+        <option>À tarde</option>
+      </select>
+    </div>
+  </div>
+  <div class="campo">
+    <label for="f-origem">Como conheceu o Renovare?</label>
+    <select id="f-origem" name="origem">
+      <option value="">Selecione</option>
+      <option>Instagram</option>
+      <option>Google</option>
+      <option>Indicação de amigos ou família</option>
+      <option>Passei em frente à escola</option>
+      <option>Outro</option>
+    </select>
+  </div>
+  <input type="text" name="site" class="sr" tabindex="-1" autocomplete="off" aria-hidden="true">
+  <p class="form-visita__erro" role="alert" hidden></p>
+  <button class="botao botao--primario botao--grande" type="submit">{{ icone("whatsapp") }} Quero agendar minha visita</button>
+  <p class="form-visita__nota">{{ icone("escudo") }} Seus dados são usados só para combinar a visita. <a href="/politica-de-privacidade/">Privacidade</a></p>
+</form>
