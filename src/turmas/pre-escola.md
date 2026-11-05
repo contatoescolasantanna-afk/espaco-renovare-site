@@ -4,7 +4,7 @@ faixa_etaria: 4 e 5 anos
 ordem: 3
 cor: verde
 resumo: Curiosidade, letras, números e projetos, preparando a criança para o Ensino Fundamental com confiança e alegria.
-imagem: /images/uploads/formatura-2024.jpg
+imagem: /images/uploads/46-retrato-de-formatura.webp
 imagem_alt: Diretora abraçando aluno de beca na formatura da Pré-escola
 imagem_2: /images/uploads/05-aprendizagem-com-uniforme.webp
 imagem_2_alt: Aluno de uniforme concentrado em atividade no livro

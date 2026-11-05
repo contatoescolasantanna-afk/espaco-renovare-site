@@ -161,8 +161,16 @@ galeria:
       alt: Aluno de uniforme lendo o livro do material Conquista
     - imagem: /images/uploads/18-musica-menino-com-violao.webp
       alt: Menino com violão na aula de música
-    - imagem: /images/uploads/judo-abraco-professor.jpg
+    - imagem: /images/uploads/45-abraco-professor-e-aluno-judo.webp
       alt: Aluno de judô abraçando o professor na entrega de faixas
+    - imagem: /images/uploads/11-professora-e-alunos-no-parque.webp
+      alt: Professora de uniforme sorrindo com os alunos no parque
+    - imagem: /images/uploads/30-descoberta-com-tinta-amarela.webp
+      alt: Bebê mostrando a mão pintada de tinta amarela
+    - imagem: /images/uploads/35-arte-com-as-maos-pintadas.webp
+      alt: Menino mostrando as duas mãos pintadas numa atividade de arte
+    - imagem: /images/uploads/29-criancas-explorando-a-arvore.webp
+      alt: Duas crianças pequenas explorando o tronco de uma árvore no jardim
 
 depoimentos:
   titulo: O que dizem as famílias
