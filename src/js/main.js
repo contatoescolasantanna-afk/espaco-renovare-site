@@ -113,10 +113,10 @@
       ents.forEach(function (e) {
         if (e.isIntersecting) { e.target.classList.add("visivel"); io.unobserve(e.target); }
       });
-    }, { rootMargin: "0px 0px -8% 0px" });
+    }, { rootMargin: "0px 0px 15% 0px" });
     alvos.forEach(function (el, i) {
       el.classList.add("revelar");
-      el.style.transitionDelay = (i % 4) * 70 + "ms";
+      el.style.transitionDelay = (i % 4) * 40 + "ms";
       io.observe(el);
     });
   }

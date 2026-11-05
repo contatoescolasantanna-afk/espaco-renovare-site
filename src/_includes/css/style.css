@@ -425,7 +425,7 @@ a.selo-google:hover{color:var(--azul-900)}
 .pagina-interna .secao--topo-curto{content-visibility:visible}
 
 /* ---------- Animações de entrada ---------- */
-.js .revelar{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.js .revelar{opacity:0;transform:translateY(14px);transition:opacity .35s ease,transform .35s ease}
 .js .revelar.visivel{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}

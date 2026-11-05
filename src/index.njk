@@ -36,10 +36,10 @@ eleventyComputed:
         <img src="{{ h.imagem_principal }}" alt="{{ h.imagem_principal_alt }}"{{ h.imagem_principal | foco | safe }} loading="eager" fetchpriority="high" sizes="(min-width: 1100px) 540px, (min-width: 760px) 50vw, 88vw">
       </figure>
       <figure class="hero__foto hero__foto--2">
-        <img src="{{ h.imagem_2 }}" alt="{{ h.imagem_2_alt }}"{{ h.imagem_2 | foco | safe }} sizes="(min-width: 760px) 200px, 34vw">
+        <img src="{{ h.imagem_2 }}" alt="{{ h.imagem_2_alt }}"{{ h.imagem_2 | foco | safe }} loading="eager" sizes="(min-width: 760px) 200px, 34vw">
       </figure>
       <figure class="hero__foto hero__foto--3">
-        <img src="{{ h.imagem_3 }}" alt="{{ h.imagem_3_alt }}"{{ h.imagem_3 | foco | safe }} sizes="(min-width: 760px) 180px, 30vw">
+        <img src="{{ h.imagem_3 }}" alt="{{ h.imagem_3_alt }}"{{ h.imagem_3 | foco | safe }} loading="eager" sizes="(min-width: 760px) 180px, 30vw">
       </figure>
       <p class="hero__bilhete manuscrita">{{ h.frase_manuscrita }} {{ icone("coracao") }}</p>
     </div>
@@ -155,7 +155,7 @@ eleventyComputed:
     <ul class="espacos">
       {%- for e in home.estrutura.espacos %}
       <li class="espaco{% if e.enquadramento == 'panoramico' %} espaco--panoramico{% endif %}">
-        <figure><img src="{{ e.imagem }}" alt="{{ e.imagem_alt }}"{{ e.imagem | foco(e.foco) | safe }} sizes="{% if e.enquadramento == 'panoramico' %}(min-width: 1200px) 1180px, 92vw{% else %}(min-width: 1000px) 560px, (min-width: 561px) 70vw, 85vw{% endif %}"></figure>
+        <figure><img src="{{ e.imagem }}" alt="{{ e.imagem_alt }}"{{ e.imagem | foco(e.foco) | safe }} sizes="{% if e.enquadramento == 'panoramico' %}(min-width: 1200px) 1180px, 92vw{% else %}(min-width: 1000px) 480px, (min-width: 561px) 60vw, 75vw{% endif %}"></figure>
         <h3>{{ e.nome }}</h3>
         <p>{{ e.texto }}</p>
       </li>
@@ -215,7 +215,7 @@ eleventyComputed:
     </header>
     <ul class="mosaico">
       {%- for f in home.galeria.fotos %}
-      <li{% if f.enquadramento == 'panoramico' %} class="mosaico__panoramica"{% endif %}><img src="{{ f.imagem }}" alt="{{ f.alt }}"{{ f.imagem | foco(f.foco) | safe }} sizes="(min-width: 1000px) 600px, 90vw"></li>
+      <li{% if f.enquadramento == 'panoramico' %} class="mosaico__panoramica"{% endif %}><img src="{{ f.imagem }}" alt="{{ f.alt }}"{{ f.imagem | foco(f.foco) | safe }} sizes="{% if loop.index in [5, 10] %}(min-width: 1000px) 600px, 90vw{% elif loop.index in [1, 6, 7, 9] %}(min-width: 1000px) 360px, (min-width: 761px) 30vw, 60vw{% else %}(min-width: 1000px) 300px, (min-width: 761px) 25vw, 48vw{% endif %}"></li>
       {%- endfor %}
     </ul>
     <p class="centro"><a class="botao botao--contorno" href="https://www.instagram.com/{{ escola.instagram }}/" target="_blank" rel="noopener">{{ icone("instagram") }} Siga @{{ escola.instagram }}</a></p>
