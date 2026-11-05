@@ -151,22 +151,22 @@ galeria:
       alt: Alunos de uniforme fazendo atividade em grupo na sala
     - imagem: /images/uploads/12-pintura-do-semaforo.webp
       alt: Criança de uniforme pintando um semáforo de papel
-    - imagem: /images/uploads/19-turma-de-ballet.webp
-      alt: Turma de ballet durante a aula na escola
     - imagem: /images/uploads/22-menina-pintando-na-mesa-azul.webp
       alt: Menina de uniforme pintando na mesa azul
+    - imagem: /images/uploads/19-turma-de-ballet.webp
+      alt: Turma de ballet durante a aula na escola
     - imagem: /images/uploads/17-musica-menina-com-violao.webp
       alt: Menina com violão na aula de música
+    - imagem: /images/uploads/45-judo-abraco-zoom.webp
+      alt: Aluno de judô abraçando o professor na entrega de faixas
     - imagem: /images/uploads/20-aluno-lendo-conquista.webp
       alt: Aluno de uniforme lendo o livro do material Conquista
     - imagem: /images/uploads/18-musica-menino-com-violao.webp
       alt: Menino com violão na aula de música
-    - imagem: /images/uploads/45-abraco-professor-e-aluno-judo.webp
-      alt: Aluno de judô abraçando o professor na entrega de faixas
-    - imagem: /images/uploads/35-arte-com-as-maos-pintadas.webp
-      alt: Menino mostrando as duas mãos pintadas numa atividade de arte
     - imagem: /images/uploads/29-criancas-explorando-a-arvore.webp
       alt: Duas crianças pequenas explorando o tronco de uma árvore no jardim
+    - imagem: /images/uploads/35-arte-com-as-maos-pintadas.webp
+      alt: Menino mostrando as duas mãos pintadas numa atividade de arte
 
 depoimentos:
   titulo: O que dizem as famílias
