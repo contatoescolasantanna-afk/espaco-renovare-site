@@ -1,7 +1,7 @@
 ---
 # Página "Em construção" usada no domínio oficial enquanto o site completo
 # aguarda aprovação. Só é gerada quando EM_CONSTRUCAO=1 (ver .github/workflows/publicar.yml).
-permalink: "{{ '/em-construcao/index.html' if ambiente.emConstrucao else false }}"
+# O permalink fica em em-construcao.11tydata.js (precisa ser false de verdade, não o texto "false").
 eleventyExcludeFromCollections: true
 ---
 {%- from "partials/icones.njk" import icone -%}
