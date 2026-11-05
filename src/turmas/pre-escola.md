@@ -4,10 +4,10 @@ faixa_etaria: 4 e 5 anos
 ordem: 3
 cor: verde
 resumo: Curiosidade, letras, números e projetos, preparando a criança para o Ensino Fundamental com confiança e alegria.
-imagem: /images/uploads/formatura-2024.jpg
-imagem_alt: Diretora abraçando aluno de beca na formatura da Pré-escola
-imagem_2: /images/uploads/arte-ao-ar-livre-2.jpg
-imagem_2_alt: Crianças da Pré-escola pintando em mesas no gramado
+imagem: /images/uploads/05-aprendizagem-com-uniforme.webp
+imagem_alt: Aluno de uniforme concentrado em atividade no livro
+imagem_2: /images/uploads/01-sala-de-atividades.webp
+imagem_2_alt: Sala de atividades da Pré-escola
 seo_titulo: "Pré-escola (4 e 5 anos) em Santana de Parnaíba | Renovare"
 seo_descricao: "Pré-escola para 4 e 5 anos em Santana de Parnaíba: turmas de até 10, material Conquista com Artes, Inglês e Caligrafia, projetos e formatura."
 destaques:

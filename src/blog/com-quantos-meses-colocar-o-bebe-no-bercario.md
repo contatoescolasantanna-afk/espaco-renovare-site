@@ -5,8 +5,8 @@ date: 2026-11-04
 tema: Primeiros passos
 turmas: [bercario]
 resumo: Não existe uma idade mágica, mas existem boas perguntas. Veja o que considerar, como comparar berçário, babá e avós, e o que observar na visita.
-imagem: /images/uploads/bebe-pintando.jpg
-imagem_alt: Bebê do berçário pintando com pincel no cadeirão
+imagem: /images/uploads/31-bebe-com-bola-no-escorregador.webp
+imagem_alt: Bebê brincando com bola no escorregador
 seo_descricao: "Com quantos meses o bebê pode ir para o berçário? Entenda o que considerar, compare berçário, babá e avós e veja o que observar na visita."
 faq:
   - pergunta: Com quantos meses o bebê pode ir para o berçário?

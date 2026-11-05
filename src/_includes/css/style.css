@@ -123,7 +123,7 @@ a.selo-google:hover{color:var(--azul-900)}
 .hero__local .icone{color:var(--coral)}
 .hero__fotos{position:relative;min-height:clamp(340px,44vw,520px)}
 .hero__foto{position:absolute;overflow:hidden;background:var(--azul-100);box-shadow:var(--sombra-forte);border:6px solid #fff}
-.hero__foto img{width:100%;height:100%;object-fit:cover}
+.hero__foto img{width:100%;height:100%;object-fit:cover;object-position:50% 35%}
 .hero__foto--principal{inset:6% 8% 6% 6%;border-radius:46% 54% 42% 58% / 52% 44% 56% 48%}
 .hero__foto--2{width:34%;aspect-ratio:3/4;right:-2%;top:-2%;border-radius:28px;transform:rotate(5deg)}
 .hero__foto--3{width:30%;aspect-ratio:3/4;left:-3%;bottom:-4%;border-radius:28px;transform:rotate(-6deg)}
@@ -204,6 +204,9 @@ a.selo-google:hover{color:var(--azul-900)}
 .espacos{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem 1.4rem}
 .espaco figure{aspect-ratio:16/11;border-radius:var(--raio);overflow:hidden;background:var(--azul-100);margin-bottom:1rem;box-shadow:var(--sombra)}
 .espaco figure img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.espaco--panoramico{grid-column:1/-1}
+.espacos .espaco--panoramico figure{aspect-ratio:2138/735}
+.espaco--panoramico figure img{object-fit:contain}
 .espaco:hover figure img{transform:scale(1.04)}
 .espaco h3{margin-bottom:.25rem}
 .espaco p{color:var(--tinta-2);margin:0}
@@ -256,6 +259,7 @@ a.selo-google:hover{color:var(--azul-900)}
 .mosaico li:nth-child(4){grid-column:span 2}
 .mosaico li:nth-child(6){grid-row:span 2}
 .mosaico img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.mosaico .mosaico__panoramica img{object-fit:contain;object-position:center}
 @media (max-width:760px){.mosaico{grid-template-columns:repeat(2,1fr);grid-auto-rows:170px}.mosaico li:nth-child(4){grid-column:span 2}}
 
 /* ---------- Depoimentos ---------- */

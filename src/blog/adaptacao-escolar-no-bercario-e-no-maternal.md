@@ -5,8 +5,8 @@ date: 2026-11-04
 tema: Primeiros passos
 turmas: [bercario, maternal]
 resumo: O que esperar das primeiras semanas, quanto tempo costuma durar, o que muda com 1, 2 ou 3 anos e 8 atitudes que deixam a adaptação mais leve para todos.
-imagem: /images/uploads/familia-e-professora.jpg
-imagem_alt: Professora, mãe e filha juntas na escola
+imagem: /images/uploads/28-bebe-sorrindo-no-gramado.webp
+imagem_alt: Bebê do berçário sorrindo no gramado da escola
 seo_descricao: "Como funciona a adaptação escolar no berçário e no maternal, quanto tempo leva, o que muda aos 1, 2 e 3 anos e 8 dicas práticas para os pais."
 faq:
   - pergunta: Quanto tempo dura a adaptação escolar?
