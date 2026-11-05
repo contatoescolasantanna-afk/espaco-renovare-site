@@ -24,7 +24,7 @@ content:
       - name: whatsapp
         label: WhatsApp (só números, com 55 + DDD)
         type: string
-        description: "Exemplo: 5511991154080"
+        description: "Exemplo: 551141511787"
         required: true
       - { name: whatsapp_exibicao, label: WhatsApp como aparece no site, type: string }
       - { name: whatsapp_mensagem, label: Mensagem automática do WhatsApp, type: text }
