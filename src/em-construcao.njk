@@ -1,0 +1,72 @@
+---
+# Página "Em construção" usada no domínio oficial enquanto o site completo
+# aguarda aprovação. Só é gerada quando EM_CONSTRUCAO=1 (ver .github/workflows/publicar.yml).
+permalink: "{{ '/em-construcao/index.html' if ambiente.emConstrucao else false }}"
+eleventyExcludeFromCollections: true
+---
+{%- from "partials/icones.njk" import icone -%}
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>{{ escola.nome_completo }} | Santana de Parnaíba</title>
+  <meta name="description" content="Berçário e educação infantil no Jardim Rancho Alegre, Santana de Parnaíba. Nosso site novo está em construção. Fale com a gente pelo WhatsApp {{ escola.whatsapp_exibicao }}.">
+  <meta name="theme-color" content="#41AACD">
+  <meta name="format-detection" content="telephone=no">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="{{ escola.nome_completo }}">
+  <meta property="og:description" content="Nosso site novo está em construção. Fale com a gente pelo WhatsApp {{ escola.whatsapp_exibicao }}.">
+  <meta property="og:url" content="{{ escola.url }}/">
+  <meta property="og:image" content="{{ escola.url }}{{ home.imagem_compartilhamento }}">
+  <link rel="canonical" href="{{ escola.url }}/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-48.png" sizes="48x48" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preload" href="/fonts/fredoka.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/nunito.woff2" as="font" type="font/woff2" crossorigin>
+  <style>
+    @font-face{font-family:"Fredoka";src:url(/fonts/fredoka.woff2) format("woff2");font-weight:500 600;font-display:swap}
+    @font-face{font-family:"Nunito";src:url(/fonts/nunito.woff2) format("woff2");font-weight:400 800;font-display:swap}
+    *,*::before,*::after{box-sizing:border-box}
+    html{-webkit-text-size-adjust:100%}
+    body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px 16px;
+      font-family:"Nunito",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:1.0625rem;line-height:1.6;color:#1D2B33;
+      background:#FFFBF5 radial-gradient(circle at 12% 10%,#FFF0C2 0,transparent 32%),radial-gradient(circle at 90% 90%,#D3EDF7 0,transparent 38%)}
+    main{width:100%;max-width:560px;background:#fff;border-radius:28px;box-shadow:0 24px 50px -20px rgba(11,74,96,.35);padding:40px 28px;text-align:center}
+    .logo{display:block;width:240px;max-width:80%;height:auto;margin:0 auto 24px}
+    .selo{display:inline-block;background:#FFF0C2;color:#0B4A60;font-weight:800;font-size:.85rem;letter-spacing:.04em;text-transform:uppercase;border-radius:999px;padding:6px 16px;margin-bottom:16px}
+    h1{font-family:"Fredoka",ui-rounded,system-ui,sans-serif;font-weight:600;font-size:clamp(1.8rem,6vw,2.4rem);line-height:1.15;color:#0B4A60;margin:0 0 12px}
+    p{margin:0 0 24px;color:#4B5B64}
+    .botao{display:flex;align-items:center;justify-content:center;gap:10px;min-height:52px;border-radius:999px;font-weight:800;text-decoration:none;font-size:1.05rem;padding:12px 24px}
+    .botao svg{width:22px;height:22px;flex:none}
+    .botao--whats{background:#1F8A4C;color:#fff}
+    .botao--whats:hover{background:#18703D;color:#fff}
+    ul{list-style:none;margin:28px 0 0;padding:24px 0 0;border-top:1px solid #E6E1D8;text-align:left;display:grid;gap:14px}
+    li{display:flex;gap:12px;align-items:flex-start}
+    li svg{width:22px;height:22px;flex:none;color:#13708F;margin-top:2px}
+    a{color:#13708F;text-decoration-thickness:1.5px;text-underline-offset:3px}
+    a:hover{color:#0B4A60}
+    small{display:block;margin-top:28px;color:#4B5B64;font-size:.85rem}
+  </style>
+</head>
+<body>
+  <main>
+    <img class="logo" src="/images/marca/logo-horizontal.png" width="379" height="112" alt="{{ escola.nome }} – Educação Infantil" eleventy:ignore>
+    <span class="selo">Site em construção</span>
+    <h1>Nosso site novo está chegando!</h1>
+    <p>Enquanto isso, fale com a gente pelo WhatsApp ou telefone para tirar dúvidas e agendar uma visita.</p>
+    <a class="botao botao--whats" href="{{ escola.whatsapp | whatsLink(escola.whatsapp_mensagem) }}" target="_blank" rel="noopener">{{ icone("whatsapp") }}<span>Falar no WhatsApp</span></a>
+    <ul>
+      <li>{{ icone("whatsapp") }}<span>WhatsApp: <a href="{{ escola.whatsapp | whatsLink(escola.whatsapp_mensagem) }}" target="_blank" rel="noopener">{{ escola.whatsapp_exibicao }}</a></span></li>
+      <li>{{ icone("telefone") }}<span>Telefone: <a href="tel:+55{{ escola.telefone | digits }}">{{ escola.telefone_exibicao }}</a></span></li>
+      <li>{{ icone("email") }}<span>E-mail: <a href="mailto:{{ escola.email }}">{{ escola.email }}</a></span></li>
+      <li>{{ icone("instagram") }}<span>Instagram: <a href="https://www.instagram.com/{{ escola.instagram }}/" target="_blank" rel="noopener">@{{ escola.instagram }}</a></span></li>
+      <li>{{ icone("local") }}<span><a href="{{ escola.endereco.link_mapa }}" target="_blank" rel="noopener">{{ escola.endereco.rua }}, {{ escola.endereco.bairro }}, {{ escola.endereco.cidade }} – {{ escola.endereco.uf }}</a></span></li>
+      <li>{{ icone("relogio") }}<span>{{ escola.horario }}</span></li>
+    </ul>
+    <small>© {{ "now" | anoAtual }} {{ escola.nome_completo }} · Site criado por <a href="{{ escola.credito_link }}" target="_blank" rel="noopener">EngrenaLab</a></small>
+  </main>
+</body>
+</html>

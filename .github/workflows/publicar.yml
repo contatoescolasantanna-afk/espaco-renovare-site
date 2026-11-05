@@ -11,6 +11,11 @@ permissions:
   pages: write
   id-token: write
 
+# "1" = o domínio oficial mostra só a página "Em construção" com os contatos.
+# Para lançar o site completo, troque para "0" (a pré-visualização sempre mostra o site completo).
+env:
+  EM_CONSTRUCAO: "1"
+
 concurrency:
   group: pages
   cancel-in-progress: true
@@ -34,12 +39,24 @@ jobs:
       - run: npm run build
         env:
           SITE_PREVIEW: ${{ endsWith(github.repository, '.github.io') && '1' || '0' }}
+          EM_CONSTRUCAO: ${{ env.EM_CONSTRUCAO }}
       # Na pré-visualização (repositório *.github.io) não usa o domínio próprio
       - if: endsWith(github.repository, '.github.io')
         run: rm -f _site/CNAME
+      # Domínio oficial em construção: publica só a página "Em construção" com os contatos
+      - name: Montar página em construção
+        if: ${{ !endsWith(github.repository, '.github.io') && env.EM_CONSTRUCAO == '1' }}
+        run: |
+          mkdir -p _construcao/images/marca _construcao/fonts
+          cp _site/em-construcao/index.html _construcao/index.html
+          cp _site/em-construcao/index.html _construcao/404.html
+          cp _site/CNAME _site/favicon.svg _site/favicon-48.png _site/apple-touch-icon.png _construcao/
+          cp _site/fonts/fredoka.woff2 _site/fonts/nunito.woff2 _construcao/fonts/
+          cp _site/images/marca/logo-horizontal.png _site/images/marca/compartilhar.jpg _construcao/images/marca/
+          printf 'User-agent: *\nAllow: /\n' > _construcao/robots.txt
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: _site
+          path: ${{ (!endsWith(github.repository, '.github.io') && env.EM_CONSTRUCAO == '1') && '_construcao' || '_site' }}
 
   deploy:
     needs: build
