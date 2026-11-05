@@ -161,6 +161,8 @@ galeria:
       alt: Aluno de uniforme lendo o livro do material Conquista
     - imagem: /images/uploads/18-musica-menino-com-violao.webp
       alt: Menino com violão na aula de música
+    - imagem: /images/uploads/judo-abraco-professor.jpg
+      alt: Aluno de judô abraçando o professor na entrega de faixas
 
 depoimentos:
   titulo: O que dizem as famílias
