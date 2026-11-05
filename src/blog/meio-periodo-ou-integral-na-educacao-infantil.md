@@ -67,6 +67,6 @@ Na visita, peça para ver **onde a criança dorme** e **como são as refeições
 
 ## No Espaço Renovare
 
-O Espaço Renovare funciona **das 7h às 18h30**, com turmas de **manhã, tarde ou integral**, do [Berçário](/turmas/bercario/) à [Pré-escola](/turmas/pre-escola/). Para quem fica o dia todo, há refeitório coberto ao lado do jardim, **colchonetes individuais** para o descanso e **berços** no berçário, além de parque, horta e pomar para os momentos ao ar livre. As aulas extras de Ballet, Cross Kids, Música e Inglês acontecem na própria escola.
+O Espaço Renovare funciona **das 7h às 18h30**, com turmas de **manhã, tarde ou integral**, do [Berçário](/turmas/bercario/) à [Pré-escola](/turmas/pre-escola/). Para quem fica o dia todo, há refeitório coberto ao lado do jardim, **colchonetes individuais** para o descanso e **berços** no berçário, além de parque, campo de futebol e pomar para os momentos ao ar livre. As aulas extras de Ballet, Cross Kids, Música e Inglês acontecem na própria escola.
 
 Na página de cada turma você encontra a rotina "Um dia no Renovare". Se preferir, **[agende uma visita](/#agendar)** e veja a rotina acontecendo.

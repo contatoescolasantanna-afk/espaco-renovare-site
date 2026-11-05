@@ -27,7 +27,7 @@ Na **Pré-escola** a curiosidade vira projeto. As crianças levantam hipóteses,
 - **Projetos:** como o *Livro que Anda*, a Festa da Família e as datas especiais, que envolvem as famílias.
 - **Arte como caminho:** pintura, teatro, música e construção para expressar ideias e sentimentos.
 - **Autoconhecimento:** assembleias e rodas para reconhecer emoções, resolver conflitos e cuidar do outro.
-- **Natureza:** horta, pomar e investigações no quintal.
+- **Natureza:** pomar, campo de futebol e investigações no quintal.
 
 ## Preparados para o Ensino Fundamental
 

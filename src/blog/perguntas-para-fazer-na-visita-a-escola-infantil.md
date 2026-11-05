@@ -32,7 +32,7 @@ Entenda como as crianças aprendem ali: por projetos? Pelo brincar? Com qual sis
 
 ## 5. Quanto tempo as crianças passam ao ar livre?
 
-Parque, área verde, horta e contato com a natureza são fundamentais para o desenvolvimento motor, emocional e para a saúde. Veja os espaços externos com seus próprios olhos.
+Parque, área verde e contato com a natureza são fundamentais para o desenvolvimento motor, emocional e para a saúde. Veja os espaços externos com seus próprios olhos.
 
 ## 6. Como a escola se comunica com a família?
 
@@ -60,4 +60,4 @@ Pergunte o que está incluído na mensalidade, quais são os horários de cada p
 
 Observe as crianças. Elas parecem à vontade? Os adultos se abaixam para falar com elas, chamam cada uma pelo nome? Muitas vezes, a resposta que você procura está nesses pequenos detalhes.
 
-**Quer fazer essas perguntas para a gente?** No Espaço Renovare, a visita é sem pressa e sem compromisso, e seu filho é muito bem-vindo para conhecer o parque, a horta e o pomar com você.
+**Quer fazer essas perguntas para a gente?** No Espaço Renovare, a visita é sem pressa e sem compromisso, e seu filho é muito bem-vindo para conhecer o parque, o campo de futebol e o pomar com você.

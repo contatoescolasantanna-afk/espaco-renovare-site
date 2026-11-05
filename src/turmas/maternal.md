@@ -15,7 +15,7 @@ destaques:
   - Manhã, tarde ou integral (7h às 18h30)
   - Turmas de no máximo 10 crianças
   - Material Conquista (Grupos 2 e 3), com Artes e Inglês a partir dos 3 anos
-  - Parque, horta e pomar na rotina
+  - Parque, campo de futebol e pomar na rotina
   - Ballet, Cross Kids, Música e Inglês na escola
 ---
 
@@ -26,7 +26,7 @@ No **Maternal** a criança descobre que consegue: comer sozinha, guardar os brin
 - **Linguagem:** rodas de conversa, cantigas, parlendas e contação de histórias com fantoches.
 - **Arte:** pintura, colagem, massinha e construções com sucata no ateliê e no quintal.
 - **Movimento:** parque, circuitos e brincadeiras no gramado.
-- **Natureza:** plantar, regar e colher na horta e no pomar.
+- **Natureza:** colher frutas no pomar e brincar ao ar livre.
 - **Convivência:** combinados da turma, cuidado com o outro e com o espaço.
 
 ## Material Conquista

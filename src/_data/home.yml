@@ -4,14 +4,14 @@
 #  Dica: textos com linha em branco viram parágrafos separados.
 # ============================================================
 seo_titulo: "Berçário e Escola Infantil em Santana de Parnaíba | Renovare"
-seo_descricao: "Escola infantil no Rancho Alegre, Santana de Parnaíba: berçário a partir de 4 meses, turmas de até 10 crianças, horta e pomar. Agende sua visita."
+seo_descricao: "Escola infantil no Rancho Alegre, Santana de Parnaíba: berçário a partir de 4 meses, turmas de até 10 crianças, campo de futebol e pomar. Agende sua visita."
 imagem_compartilhamento: /images/marca/compartilhar.jpg
 
 hero:
   sobretitulo: Berçário e Educação Infantil em Santana de Parnaíba
   titulo: Aqui seu filho é chamado pelo nome
   titulo_destaque: e cresce feliz.
-  subtitulo: Turmas de no máximo 10 crianças, 1.800 m² de área verde com horta e pomar e uma equipe que acompanha cada conquista de pertinho, dos 4 meses aos 5 anos.
+  subtitulo: Turmas de no máximo 10 crianças, 1.800 m² de área verde com campo de futebol e pomar e uma equipe que acompanha cada conquista de pertinho, dos 4 meses aos 5 anos.
   botao_principal: Agendar uma visita
   botao_secundario: Conversar no WhatsApp
   frase_manuscrita: Educação é parceria!
@@ -28,7 +28,7 @@ numeros:
   - valor: Até 10
     legenda: crianças por turma
   - valor: 1.800 m²
-    legenda: de área verde, horta e pomar
+    legenda: de área verde, campo de futebol e pomar
   - valor: 4 meses a 5 anos
     legenda: berçário, maternal e pré
   - valor: 7h às 18h30
@@ -43,7 +43,7 @@ diferenciais:
       texto: No máximo 10 crianças por sala. A professora conhece o jeito, o tempo e as preferências de cada uma, e você sente isso no dia a dia.
     - icone: natureza
       titulo: Natureza no quintal
-      texto: São 1.800 m² de área verde com parque, horta e pomar. Criança aqui planta, colhe acerola, jabuticaba e amora, se suja e aprende de verdade.
+      texto: São 1.800 m² de área verde com parque, campo de futebol e pomar. Criança aqui corre, colhe acerola, jabuticaba e amora, se suja e aprende de verdade.
     - icone: arte
       titulo: Aprender pela arte
       texto: A arte conduz a nossa proposta. Pintura, música, teatro e construção com as mãos desenvolvem criatividade, autonomia e autoestima.
@@ -72,7 +72,7 @@ proposta:
     - titulo: Aprendizagem por projetos
       texto: Projetos como o Livro que Anda, a Festa da Família e as datas especiais envolvem crianças e famílias.
     - titulo: Salas ambientes
-      texto: Ateliê de artes, quintal, horta, pomar e parque organizados como um “terceiro educador”.
+      texto: Ateliê de artes, quintal, campo de futebol, pomar e parque organizados como um “terceiro educador”.
     - titulo: Documentação pedagógica
       texto: Registramos o processo de cada criança com fotos, vídeos e produções para a família acompanhar a evolução.
 
@@ -204,7 +204,7 @@ visita:
     - titulo: Agende
       texto: Escolha o melhor dia e período. Respondemos rapidinho pelo WhatsApp.
     - titulo: Conheça
-      texto: Visite salas, parque, horta e pomar e converse com a direção pedagógica.
+      texto: Visite salas, parque, campo de futebol e pomar e converse com a direção pedagógica.
     - titulo: Tire suas dúvidas
       texto: Rotina, adaptação, material, aulas extras, valores e vagas, sem pressa.
     - titulo: Decida com calma

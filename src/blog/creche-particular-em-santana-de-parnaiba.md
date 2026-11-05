@@ -79,7 +79,7 @@ Veja a lista completa e as rotas na página **[Região atendida](/regiao-atendid
 ## Por que muitas famílias escolhem o Renovare
 
 - **Turmas de no máximo 10 crianças**, com professora e auxiliar.
-- **1.800 m² de área verde**, com parque, horta e pomar.
+- **1.800 m² de área verde**, com parque, campo de futebol e pomar.
 - **Do berçário (4 meses) à pré-escola (5 anos)**, em meio período ou integral, das 7h às 18h30.
 - **Material Conquista** alinhado à BNCC e **aulas extras** de Ballet, Cross Kids, Música e Inglês na própria escola.
 - Nota **5,0 no Google**, dada por mães e pais.
