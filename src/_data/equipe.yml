@@ -18,8 +18,8 @@ pessoas:
     texto: Professora das turmas do Berçário e do Maternal.
     foto: ""
   - nome: Michelle
-    funcao: Auxiliar de desenvolvimento infantil
-    texto: Apoia o dia a dia das turmas, nos cuidados e nas atividades.
+    funcao: Professora do Pré
+    texto: Professora formada, responsável pela turma da Pré-escola.
     foto: ""
   - nome: Isabelly
     funcao: Auxiliar de desenvolvimento infantil
@@ -30,8 +30,12 @@ pessoas:
     texto: Responsável pelas aulas de Ballet da escola.
     foto: ""
   - nome: Weslei
-    funcao: Secretaria
-    texto: Recebe as famílias e cuida de matrículas, documentos e recados.
+    funcao: Diretor administrativo
+    texto: Cuida da administração da escola, das matrículas e do atendimento às famílias.
+    foto: ""
+  - nome: Pamela
+    funcao: Professora de Inglês
+    texto: Responsável pelas aulas de Inglês da escola.
     foto: ""
   - nome: Maria Aparecida
     funcao: Copeira

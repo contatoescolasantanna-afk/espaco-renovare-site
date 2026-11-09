@@ -11,7 +11,7 @@ hero:
   sobretitulo: Berçário e Educação Infantil em Santana de Parnaíba
   titulo: Aqui seu filho é chamado pelo nome
   titulo_destaque: e cresce feliz.
-  subtitulo: Turmas de no máximo 10 crianças, 1.800 m² de área verde com campo de futebol e pomar e uma equipe que acompanha cada conquista de pertinho, dos 4 meses aos 5 anos.
+  subtitulo: Turmas de no máximo 10 crianças, 1.800 m² de área verde com campo de futebol e pomar e uma equipe que acompanha cada conquista de pertinho, dos 4 meses aos 6 anos.
   botao_principal: Agendar uma visita
   botao_secundario: Conversar no WhatsApp
   frase_manuscrita: Educação é parceria!
@@ -29,7 +29,7 @@ numeros:
     legenda: crianças por turma
   - valor: 1.800 m²
     legenda: de área verde, campo de futebol e pomar
-  - valor: 4 meses a 5 anos
+  - valor: 4 meses a 6 anos
     legenda: berçário, maternal e pré
   - valor: 7h às 18h30
     legenda: meio período ou integral
@@ -88,10 +88,10 @@ estrutura:
       texto: A chegada é por uma rampa cercada de flores e árvores. Escola toda térrea, sem escadas.
       imagem: /images/uploads/16-rampa-de-acesso-e-jardim.webp
       imagem_alt: Rampa de acesso ladeada por canteiro florido e árvores
-    - nome: Parque no gramado
-      texto: Escorregadores, balanço, cavalinhos e cercadinho de brincar num gramado amplo para gastar energia com segurança.
-      imagem: /images/uploads/42-parque-no-gramado.webp
-      imagem_alt: Parque infantil colorido com escorregadores e balanço em amplo gramado
+    - nome: Parque com brinquedão
+      texto: Brinquedão com escorregadores, escadinha e balanço em área com piso emborrachado, para brincar com segurança.
+      imagem: /images/uploads/07-parque-brinquedao.webp
+      imagem_alt: Brinquedão colorido com escorregadores, escorregador pequeno e balanço sobre piso emborrachado verde
     - nome: Campo de futebol
       texto: Campo gramado para correr, jogar bola e gastar energia ao ar livre.
       imagem: /images/uploads/02-campo-de-futebol.webp
@@ -108,7 +108,7 @@ estrutura:
       imagem_alt: Refeitório coberto com mesas coloridas de um lado e cadeirões do outro
     - nome: Berçário aconchegante
       texto: Sala própria com berço, cantinho macio e materiais pensados para bebês a partir de 4 meses.
-      imagem: /images/uploads/40-bercario-cantinho-acolhedor.webp
+      imagem: /images/uploads/40-bercario-cantinho-acolhedor-v2.webp
       imagem_alt: Sala do berçário com berço branco e poltronas de pelúcia
       foco: "5% 50%"
     - nome: Soninho dos bebês
@@ -153,12 +153,12 @@ galeria:
       alt: Criança de uniforme pintando um semáforo de papel
     - imagem: /images/uploads/22-menina-pintando-na-mesa-azul.webp
       alt: Menina de uniforme pintando na mesa azul
-    - imagem: /images/uploads/19-turma-de-ballet.webp
-      alt: Turma de ballet durante a aula na escola
+    - imagem: /images/uploads/47-roda-de-bale-no-gramado.webp
+      alt: Alunas de ballet de mãos dadas numa roda no gramado
     - imagem: /images/uploads/17-musica-menina-com-violao.webp
       alt: Menina com violão na aula de música
-    - imagem: /images/uploads/45-judo-abraco-zoom.webp
-      alt: Aluno de judô abraçando o professor na entrega de faixas
+    - imagem: /images/uploads/48-festa-junina-com-coroas.webp
+      alt: Aluna e aluno de coroa e faixa de Miss e Mister Caipirinha na festa junina
     - imagem: /images/uploads/20-aluno-lendo-conquista.webp
       alt: Aluno de uniforme lendo o livro do material Conquista
     - imagem: /images/uploads/18-musica-menino-com-violao.webp
@@ -223,7 +223,7 @@ faq:
   titulo: Perguntas frequentes
   itens:
     - pergunta: A partir de qual idade vocês recebem as crianças?
-      resposta: Recebemos bebês a partir de 4 meses no Berçário e acompanhamos a criança até os 5 anos, na Pré-escola.
+      resposta: Recebemos bebês a partir de 4 meses no Berçário e acompanhamos a criança até os 6 anos, na Pré-escola, conforme a data de aniversário.
     - pergunta: Quais são os horários e períodos?
       resposta: Funcionamos de segunda a sexta, das 7h às 18h30, com opções de manhã, tarde ou período integral.
     - pergunta: Quantas crianças há em cada turma?

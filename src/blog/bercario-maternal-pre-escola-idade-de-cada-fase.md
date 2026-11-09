@@ -61,11 +61,11 @@ Desde 2013, a matrícula é **obrigatória a partir dos 4 anos**, ou seja, na pr
 
 ## Como funciona no Espaço Renovare
 
-No Espaço Renovare, em Santana de Parnaíba, acompanhamos a criança **dos 4 meses aos 5 anos**:
+No Espaço Renovare, em Santana de Parnaíba, acompanhamos a criança **dos 4 meses aos 6 anos**:
 
 - **[Berçário](/turmas/bercario/)**: a partir de 4 meses.
 - **[Maternal](/turmas/maternal/)**: 2 e 3 anos (Grupos 2 e 3 do material Conquista).
-- **[Pré-escola](/turmas/pre-escola/)**: 4 e 5 anos (Grupos 4 e 5), com livros de Artes, Inglês e, no Grupo 5, Caligrafia.
+- **[Pré-escola](/turmas/pre-escola/)**: 4 a 6 anos, conforme a data de aniversário (Grupos 4 e 5), com livros de Artes, Inglês e, no Grupo 5, Caligrafia.
 
 Todas as turmas têm **no máximo 10 crianças**, nos períodos da manhã, da tarde ou integral (das 7h às 18h30).
 

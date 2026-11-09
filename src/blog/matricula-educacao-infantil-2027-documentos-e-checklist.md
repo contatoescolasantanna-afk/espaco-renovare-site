@@ -58,7 +58,7 @@ A lista exata é sempre da escola, mas geralmente inclui:
 
 ## Matrículas 2027 no Espaço Renovare
 
-As **matrículas para 2027 estão abertas** no Espaço Renovare, no Jardim Rancho Alegre, em Santana de Parnaíba. Temos turmas de [Berçário](/turmas/bercario/) (a partir de 4 meses), [Maternal](/turmas/maternal/) (2 e 3 anos) e [Pré-escola](/turmas/pre-escola/) (4 e 5 anos), de manhã, à tarde ou em período integral, das 7h às 18h30.
+As **matrículas para 2027 estão abertas** no Espaço Renovare, no Jardim Rancho Alegre, em Santana de Parnaíba. Temos turmas de [Berçário](/turmas/bercario/) (a partir de 4 meses), [Maternal](/turmas/maternal/) (2 e 3 anos) e [Pré-escola](/turmas/pre-escola/) (4 a 6 anos), de manhã, à tarde ou em período integral, das 7h às 18h30.
 
 Como cada turma tem **no máximo 10 crianças**, as vagas são limitadas. O caminho é simples:
 

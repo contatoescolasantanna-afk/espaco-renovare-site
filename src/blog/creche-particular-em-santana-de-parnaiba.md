@@ -5,8 +5,8 @@ date: 2026-11-04
 tema: Escolher a escola
 turmas: [bercario, maternal]
 resumo: Procurando creche ou berçário particular em Santana de Parnaíba? Um checklist prático, o que perguntar e como encaixar a escola na rotina da família.
-imagem: /images/uploads/42-parque-no-gramado.webp
-imagem_alt: Parque infantil colorido no gramado do Espaço Renovare
+imagem: /images/uploads/39-fachada.webp
+imagem_alt: Fachada do Espaço Renovare com muro azul e placa com o logo da escola
 seo_descricao: "Guia para escolher creche ou berçário particular em Santana de Parnaíba: checklist, perguntas para a visita, horário, deslocamento e avaliações."
 faq:
   - pergunta: Qual a diferença entre creche e berçário?
@@ -80,7 +80,7 @@ Veja a lista completa e as rotas na página **[Região atendida](/regiao-atendid
 
 - **Turmas de no máximo 10 crianças**, com professora e auxiliar.
 - **1.800 m² de área verde**, com parque, campo de futebol e pomar.
-- **Do berçário (4 meses) à pré-escola (5 anos)**, em meio período ou integral, das 7h às 18h30.
+- **Do berçário (4 meses) à pré-escola (até 6 anos)**, em meio período ou integral, das 7h às 18h30.
 - **Material Conquista** alinhado à BNCC e **aulas extras** de Ballet, Cross Kids, Música e Inglês na própria escola.
 - Nota **5,0 no Google**, dada por mães e pais.
 

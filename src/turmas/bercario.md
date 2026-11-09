@@ -4,8 +4,8 @@ faixa_etaria: A partir de 4 meses
 ordem: 1
 cor: amarelo
 resumo: Colo, rotina tranquila e estímulos pensados para os primeiros passos, com turmas pequenas e muito afeto.
-imagem: /images/uploads/bebe-pintando-ajustada.jpg
-imagem_alt: Bebê do berçário pintando com pincel no cadeirão
+imagem: /images/uploads/49-brincadeira-no-cavalinho-verde.webp
+imagem_alt: Bebê do berçário sorrindo e acenando montada num cavalinho verde
 imagem_2: /images/uploads/28-bebe-centralizado.webp
 imagem_2_alt: Bebê do berçário sorrindo no gramado
 seo_titulo: "Berçário em Santana de Parnaíba a partir de 4 meses | Renovare"
