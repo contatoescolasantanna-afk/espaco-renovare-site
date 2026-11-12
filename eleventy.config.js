@@ -122,6 +122,10 @@ export default function (eleventyConfig) {
       .filter((p) => !p.data.rascunho)
       .sort((a, b) => (a.data.ordem || 0) - (b.data.ordem || 0) || String(a.data.titulo).localeCompare(String(b.data.titulo)))
   );
+  // Rascunhos (blog e páginas extras) ficam visíveis só em /previa/, sem Google
+  eleventyConfig.addCollection("rascunhos", (api) =>
+    api.getAll().filter((p) => p.data.rascunho && p.url).sort((a, b) => b.date - a.date)
+  );
   eleventyConfig.addCollection("blog", (api) =>
     api
       .getFilteredByGlob("src/blog/*.md")
@@ -131,7 +135,7 @@ export default function (eleventyConfig) {
 
   return {
     dir: { input: "src", includes: "_includes", data: "_data", output: "_site" },
-    markdownTemplateEngine: "njk",
+    markdownTemplateEngine: false,
     htmlTemplateEngine: "njk",
     templateFormats: ["njk", "md", "html"],
   };

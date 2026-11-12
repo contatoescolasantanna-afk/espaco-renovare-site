@@ -1,7 +1,12 @@
 export default {
   layout: "layouts/post.njk",
-  permalink: "/blog/{{ page.fileSlug }}/",
   eleventyComputed: {
+    // Rascunho: publicado só em /previa/..., escondido do Google e das listas
+    permalink: (data) => {
+      if (!String(data.page?.inputPath || "").endsWith(".md")) return data.permalink;
+      return data.rascunho ? `/previa/blog/${data.page.fileSlug}/` : `/blog/${data.page.fileSlug}/`;
+    },
+    semIndexar: (data) => !!(data.rascunho || data.semIndexar),
     schemaExtra: (data) => {
       if (!String(data.page?.inputPath || "").endsWith(".md")) return undefined;
       const base = data.escola?.url || "";

@@ -42,6 +42,9 @@
 <body class="{{ classeCorpo }}">
   <a class="pular" href="#conteudo">Pular para o conteúdo</a>
   {% include "partials/header.njk" %}
+  {%- if rascunho %}
+  <div class="faixa-previa" role="note"><strong>👀 PRÉVIA</strong> Esta página ainda <strong>não está publicada</strong>. Só quem tem este link vê, e o Google não mostra. Para publicar, abra no painel, desmarque <em>Rascunho</em> e clique em <em>Save</em>.</div>
+  {%- endif %}
   <main id="conteudo">
     {{ content | safe }}
   </main>

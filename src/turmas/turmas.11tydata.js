@@ -1,6 +1,6 @@
 export default {
   layout: "layouts/turma.njk",
-  permalink: "/turmas/{{ page.fileSlug }}/",
+  permalink: (data) => `/turmas/${data.page.fileSlug}/`,
   eleventyComputed: {
     schemaExtra: (data) => {
       const base = data.escola?.url || "";

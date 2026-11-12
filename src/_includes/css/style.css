@@ -508,3 +508,8 @@ a[href^="tel:"],a[href*="wa.me"]{white-space:nowrap}
 .historia figure{border-radius:var(--raio);overflow:hidden;box-shadow:var(--sombra-forte)}
 .missao{font-family:var(--fonte-titulo);font-size:1.25rem;color:var(--azul-900);background:var(--amarelo-50);border-left:6px solid var(--amarelo);border-radius:14px;padding:1rem 1.2rem}
 @media (max-width:860px){.historia{grid-template-columns:1fr}}
+.faixa-previa{background:#FFE08A;color:#3a2a00;border-bottom:3px dashed #D9A200;padding:.8rem 1rem;text-align:center;font-size:1rem;line-height:1.45;position:sticky;top:0;z-index:60}
+.faixa-previa strong:first-child{display:inline-block;background:#3a2a00;color:#FFE08A;border-radius:8px;padding:.1rem .5rem;margin-right:.4rem}
+.lista-previa{list-style:none;padding:0;display:grid;gap:.8rem}
+.lista-previa a{display:block;background:#fff;border-radius:16px;padding:1rem 1.2rem;box-shadow:0 2px 0 var(--linha);font-weight:700}
+.lista-previa small{display:block;font-weight:400;color:var(--tinta-2)}

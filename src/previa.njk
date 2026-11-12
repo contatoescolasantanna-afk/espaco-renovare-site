@@ -1,0 +1,25 @@
+---
+layout: layouts/base.njk
+permalink: /previa/
+titulo: Prévia dos rascunhos
+semIndexar: true
+eleventyExcludeFromCollections: true
+classeCorpo: pagina-interna
+---
+<section class="secao secao--topo-curto">
+  <div class="container container--estreito texto-corrido">
+    <h1>👀 Prévia dos rascunhos</h1>
+    <p>Aqui aparecem os artigos e páginas marcados como <strong>Rascunho</strong> no painel. Eles ainda não estão no site para as famílias: só quem tem este endereço consegue ver.</p>
+    <p>Depois de salvar no painel, espere <strong>2 minutinhos</strong> e recarregue esta página.</p>
+    {%- if collections.rascunhos.length %}
+    <ul class="lista-previa">
+      {%- for r in collections.rascunhos %}
+      <li><a href="{{ r.url }}">{{ r.data.titulo }}<small>{% if "/previa/blog/" in r.url %}Artigo do blog{% else %}Página extra{% endif %} · ver como vai ficar →</small></a></li>
+      {%- endfor %}
+    </ul>
+    {%- else %}
+    <p><em>Nenhum rascunho no momento.</em></p>
+    {%- endif %}
+    <p>Para publicar: abra o rascunho no painel, <strong>desmarque Rascunho</strong> e clique em <strong>Save</strong>.</p>
+  </div>
+</section>

@@ -27,7 +27,7 @@ classeCorpo: pagina-interna
     <ul class="equipe">
       {%- for p in equipe.pessoas %}
       <li class="pessoa">
-        {%- if p.foto %}<img class="pessoa__foto" src="{{ p.foto }}" alt="{{ p.nome }}, {{ p.funcao }}"{{ p.foto | foco(p.foto_foco) | safe }} sizes="96px">{% else %}<span class="pessoa__inicial" aria-hidden="true">{{ p.nome | first }}</span>{% endif %}
+        {%- if p.foto %}<img class="pessoa__foto" src="{{ p.foto }}" alt="{{ p.nome }}{% if p.funcao %}, {{ p.funcao }}{% endif %}"{{ p.foto | foco(p.foto_foco) | safe }} sizes="96px">{% else %}<span class="pessoa__inicial" aria-hidden="true">{{ p.nome | first }}</span>{% endif %}
         <h3>{{ p.nome }}</h3><span class="pessoa__funcao">{{ p.funcao }}</span>
         <p>{{ p.texto }}</p>
       </li>

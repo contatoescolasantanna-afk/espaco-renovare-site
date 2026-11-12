@@ -12,7 +12,7 @@ classeCorpo: pagina-interna
       <h1>{{ titulo }}</h1>
       {%- if resumo %}<p class="post__resumo">{{ resumo }}</p>{% endif %}
     </header>
-    {%- if imagem %}<figure class="post__capa"><img src="{{ imagem }}" alt="{{ imagem_alt }}"{{ imagem | foco(imagem_foco) | safe }} loading="eager" fetchpriority="high" sizes="(min-width: 800px) 760px, 92vw"></figure>{% endif %}
+    {%- if imagem %}<figure class="post__capa"><img src="{{ imagem }}" alt="{{ imagem_alt or titulo }}"{{ imagem | foco(imagem_foco) | safe }} loading="eager" fetchpriority="high" sizes="(min-width: 800px) 760px, 92vw"></figure>{% endif %}
     <div class="texto-corrido texto-corrido--artigo">
       {{ content | safe }}
     </div>
