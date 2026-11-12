@@ -5,10 +5,9 @@ Site estático, rápido e otimizado para o Google, com **painel de edição** pa
 | | |
 |---|---|
 | **Tecnologia** | [Eleventy 3](https://www.11ty.dev/) (gera HTML puro) + otimização automática de fotos (AVIF/WebP) |
-| **Painel de edição** | [Pages CMS](https://pagescms.org) — gratuito, a escola entra **só com o e-mail**, sem conta técnica |
-| **Hospedagem** | GitHub Pages — gratuita, com HTTPS, publica sozinha a cada alteração |
-| **Domínio** | Continua no Wix (`espacorenovareinfantil.com.br`), só apontamos o DNS |
-| **Medição Lighthouse** (local) | Mobile: Performance 95–96 · Acessibilidade 100 · Boas práticas 100 · SEO 100 — Desktop: 100 em tudo |
+| **Painel de edição** | [Pages CMS](https://pagescms.org): gratuito, configurado em `.pages.yml` |
+| **Hospedagem** | GitHub Pages: gratuita, com HTTPS, publica sozinha a cada alteração |
+| **Domínio** | `espacorenovareinfantil.com.br`, registrado no Registro.br em nome da escola |
 
 ---
 
@@ -20,35 +19,15 @@ npm run dev        # abre em http://localhost:8484
 npm run build      # gera a pasta _site/ pronta para publicar
 ```
 
-## 2. Publicar (uma vez só, ~30 min)
+## 2. Como está publicado (situação em 12/11/2026)
 
-### 2.1 GitHub
-1. Crie uma conta/organização no GitHub (sugestão: com o e-mail da escola) e um repositório **privado ou público** chamado `site-renovare`.
-2. Envie esta pasta `site/` como raiz do repositório (branch `main`).
-3. No repositório: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-4. O workflow `.github/workflows/publicar.yml` já está pronto: cada alteração publica o site em ~1–2 minutos.
-5. Em **Settings → Pages → Custom domain**, digite `espacorenovareinfantil.com.br` e marque **Enforce HTTPS** (depois que o DNS propagar).
-
-### 2.2 DNS no Wix (o domínio continua lá)
-O Wix **não permite trocar os servidores de nome** de domínios comprados nele, mas permite editar os registros. Em **Wix → Domínios → ⋯ → Gerenciar registros DNS**:
-
-| Tipo | Host | Valor |
-|---|---|---|
-| A | `@` (raiz) | `185.199.108.153` |
-| A | `@` | `185.199.109.153` |
-| A | `@` | `185.199.110.153` |
-| A | `@` | `185.199.111.153` |
-| CNAME | `www` | `SEU-USUARIO.github.io` |
-
-Remova os registros A/CNAME antigos que apontam para o Wix. A propagação leva de minutos a algumas horas.
-
-> **Alternativa no futuro:** se o domínio for transferido do Wix para a Cloudflare, dá para hospedar no Cloudflare Pages (comando `npm run build`, pasta `_site`). O arquivo `src/static/_headers` já tem o cache configurado para isso.
-
-### 2.3 Painel de edição (Pages CMS)
-1. Acesse <https://app.pagescms.org>, entre com a conta do GitHub e instale o app no repositório.
-2. O painel lê o arquivo `.pages.yml` e já mostra os menus: **Configurações gerais, Página inicial, Turmas e Blog**.
-3. Em **Settings → Collaborators**, convide o e-mail da escola (`contato.escolasantanna@gmail.com`). A escola recebe um link e entra **sem precisar de conta no GitHub**.
-4. Envie para a escola o guia [`COMO-EDITAR.md`](COMO-EDITAR.md).
+- **Repositório:** `contatoescolasantanna-afk/espaco-renovare-site` (conta GitHub da escola, e-mail contato.escolasantanna@gmail.com), branch `main`.
+- **Publicação:** `.github/workflows/publicar.yml` gera o site e publica no GitHub Pages a cada push na `main` (1 a 2 minutos). Settings → Pages: Source = GitHub Actions, domínio próprio e Enforce HTTPS ligados.
+- **DNS no Registro.br:** 4 registros A (185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153), CNAME `www` → `contatoescolasantanna-afk.github.io` e TXT `google-site-verification` (não remover: é a verificação do Search Console).
+- **Painel:** app do Pages CMS instalado só neste repositório, na conta da escola. A escola entra em app.pagescms.org com "Sign in with GitHub". Guia para a escola: [`COMO-EDITAR.md`](COMO-EDITAR.md).
+- **Rascunhos:** blog e páginas extras com `rascunho: true` saem em `/previa/...`, com noindex e fora do sitemap e das listas.
+- **Prévia de testes:** o repositório `marysf31-lab/marysf31-lab.github.io` (remoto `previa`) é uma cópia antiga de testes, fora do site oficial.
+- **Para dar acesso a outro profissional:** Settings → Collaborators no GitHub. Documento completo de entrega e acessos no Google Drive da Mary ("Site do Espaço Renovare: entrega, acessos e manual").
 
 ## 3. Receber e contar os pedidos de visita
 
