@@ -7,7 +7,7 @@ Não precisa saber nada de computação. O painel funciona como preencher um for
 ## 1. Entrar no painel
 
 1. Abra **app.pagescms.org** (no computador é mais confortável que no celular).
-2. Entre com o e-mail da escola: **contato.escolasantanna@gmail.com**.
+2. Clique em **Sign in with GitHub** e entre com a conta do GitHub da escola (**contatoescolasantanna-afk**, e-mail contato.escolasantanna@gmail.com). Se o computador já estiver logado, entra direto.
 3. Clique no projeto **espaco-renovare-site**.
 4. Do lado esquerdo aparecem os menus. Os mais usados vêm primeiro.
 
