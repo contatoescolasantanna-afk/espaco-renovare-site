@@ -29,10 +29,10 @@ content:
         required: true
         description: "Uma pergunta ou frase que os pais buscariam no Google. Ex.: Como é a adaptação no berçário?"
       - name: rascunho
-        label: "Rascunho (deixe marcado enquanto estiver escrevendo)"
+        label: "Rascunho?"
         type: boolean
         default: true
-        description: "Marcado = só a escola vê, em espacorenovareinfantil.com.br/previa/. Desmarque e salve para publicar para as famílias."
+        description: "Deixe LIGADO enquanto estiver escrevendo: só a escola vê, em espacorenovareinfantil.com.br/previa/. Desligue e salve para publicar para as famílias."
       - name: imagem
         label: Foto de capa
         type: image
@@ -105,10 +105,10 @@ content:
         required: true
         description: "Curto e claro. Ex.: Uniforme escolar"
       - name: rascunho
-        label: "Rascunho (deixe marcado enquanto estiver montando)"
+        label: "Rascunho?"
         type: boolean
         default: true
-        description: "Marcado = só a escola vê, em espacorenovareinfantil.com.br/previa/. Desmarque e salve para publicar."
+        description: "Deixe LIGADO enquanto estiver montando: só a escola vê, em espacorenovareinfantil.com.br/previa/. Desligue e salve para publicar."
       - { name: resumo, label: Frase de abertura (opcional), type: text, description: "Aparece embaixo do título, em letras maiores." }
       - { name: imagem, label: Foto de capa (opcional), type: image, options: *foto, description: "Foto deitada (horizontal). Só JPG ou PNG." }
       - { name: imagem_alt, label: Descreva a foto em uma frase, type: string }

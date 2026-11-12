@@ -35,7 +35,7 @@ Todo artigo ou página nova começa como **Rascunho**. Rascunho não aparece par
 3. Abra **espacorenovareinfantil.com.br/previa/** (vale salvar nos favoritos).
 4. Clique no seu rascunho e veja exatamente como ficou no site. Uma faixa amarela no topo avisa que é prévia.
 5. Quer arrumar algo? Volte ao painel, mude, **Save**, espere e recarregue a prévia.
-6. Ficou bom? No painel, **desmarque Rascunho** e clique em **Save**. Em 2 minutos está no ar para todo mundo.
+6. Ficou bom? No painel, **desligue Rascunho** e clique em **Save**. Em 2 minutos está no ar para todo mundo.
 
 > As mudanças na Página inicial, Equipe, Turmas e Contatos não têm prévia: vão direto para o site ao salvar. Confira no site depois de 2 minutos.
 
@@ -45,7 +45,7 @@ Todo artigo ou página nova começa como **Rascunho**. Rascunho não aparece par
 
 1. Menu **1. ✏️ Blog** → botão **Add an entry**.
 2. **Título:** uma pergunta que os pais fariam. Ex.: *Com quantos meses colocar o bebê no berçário?*
-3. Deixe **Rascunho** marcado.
+3. Deixe **Rascunho** ligado.
 4. **Foto de capa:** clique, depois **Upload**, e escolha a foto. Depois escreva uma frase descrevendo a foto.
 5. **Resumo:** 1 ou 2 frases.
 6. **Texto do artigo:** escreva como numa conversa. Para um subtítulo, use o botão **H2**. Para uma lista, o botão de lista. Para foto no meio do texto, o botão de imagem.
@@ -61,7 +61,7 @@ Os campos que começam com **"Google (opcional)"** podem ficar vazios.
 2. **Título:** curto. O endereço da página vem dele: *Uniforme escolar* vira *espacorenovareinfantil.com.br/uniforme-escolar/*.
 3. Foto de capa e texto, como no blog.
 4. Quer que a página apareça no rodapé do site (a parte azul do fim)? Marque **Colocar link no rodapé**.
-5. **Save** → confira na prévia → desmarque **Rascunho** → **Save**.
+5. **Save** → confira na prévia → desligue **Rascunho** → **Save**.
 
 ---
 
