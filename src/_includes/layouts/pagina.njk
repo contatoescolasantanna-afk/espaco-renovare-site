@@ -1,0 +1,27 @@
+---
+layout: layouts/base.njk
+classeCorpo: pagina-interna
+---
+{%- from "partials/icones.njk" import icone -%}
+<nav class="migalhas container" aria-label="Você está em">
+  <a href="/">Início</a> <span aria-hidden="true">›</span> <span aria-current="page">{{ titulo }}</span>
+</nav>
+<article class="secao secao--topo-curto">
+  <div class="container container--estreito">
+    <header class="post__cabeca">
+      <h1>{{ titulo }}</h1>
+      {%- if resumo %}<p class="post__resumo">{{ resumo }}</p>{% endif %}
+    </header>
+    {%- if imagem %}<figure class="post__capa"><img src="{{ imagem }}" alt="{{ imagem_alt }}"{{ imagem | foco(imagem_foco) | safe }} loading="eager" fetchpriority="high" sizes="(min-width: 800px) 760px, 92vw"></figure>{% endif %}
+    <div class="texto-corrido texto-corrido--artigo">
+      {{ content | safe }}
+    </div>
+    {%- if mostrar_cta !== false %}
+    <aside class="post__cta">
+      <h2>Venha conhecer o Espaço Renovare</h2>
+      <p>Visita sem pressa e sem compromisso, com direito a passeio pelo parque, campo de futebol e pomar.</p>
+      <a class="botao botao--primario" href="/#agendar" data-evento="cta-visita" data-origem="pagina-{{ page.fileSlug }}">{{ icone("calendario") }} Agendar visita</a>
+    </aside>
+    {%- endif %}
+  </div>
+</article>

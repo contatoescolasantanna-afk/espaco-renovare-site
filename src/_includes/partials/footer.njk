@@ -31,6 +31,9 @@
         <li><a href="/quem-somos/">Quem somos e equipe</a></li>
         <li><a href="/regiao-atendida/">Bairros atendidos e como chegar</a></li>
         <li><a href="/blog/">Blog para famílias</a></li>
+        {%- for pg in collections.paginas %}{% if pg.data.no_rodape %}
+        <li><a href="{{ pg.url }}">{{ pg.data.titulo }}</a></li>
+        {%- endif %}{% endfor %}
         <li><a href="/agendar-visita/">Agendar visita</a></li>
         <li><a href="/politica-de-privacidade/">Política de privacidade</a></li>
       </ul>

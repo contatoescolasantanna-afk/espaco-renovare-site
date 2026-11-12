@@ -38,8 +38,11 @@ export default function (eleventyConfig) {
   // ---------- Filtros ----------
   // Ponto de foco de cada foto (rosto centralizado, sem cortar). Ver src/_data/focos.json.
   // Uso: <img src="{{ x }}"{{ x | foco | safe }}>  ou  {{ x | foco(manual) | safe }}
+  // No painel a escola escolhe "rosto no alto", "centro" ou "parte de baixo".
+  const FOCOS_PAINEL = { "rosto no alto": "50% 0%", alto: "50% 0%", centro: "50% 50%", "parte de baixo": "50% 100%", baixo: "50% 100%", automatico: "" };
   eleventyConfig.addFilter("foco", (src, manual) => {
-    let pos = manual;
+    const chave = String(manual || "").trim().toLowerCase();
+    let pos = chave in FOCOS_PAINEL ? FOCOS_PAINEL[chave] : manual;
     if (!pos && src) {
       try {
         const mapa = JSON.parse(fs.readFileSync("src/_data/focos.json", "utf8"));
@@ -111,6 +114,13 @@ export default function (eleventyConfig) {
   // ---------- Coleções ----------
   eleventyConfig.addCollection("turmas", (api) =>
     api.getFilteredByGlob("src/turmas/*.md").sort((a, b) => (a.data.ordem || 0) - (b.data.ordem || 0))
+  );
+  // Páginas extras criadas pela escola no painel (src/paginas)
+  eleventyConfig.addCollection("paginas", (api) =>
+    api
+      .getFilteredByGlob("src/paginas/*.md")
+      .filter((p) => !p.data.rascunho)
+      .sort((a, b) => (a.data.ordem || 0) - (b.data.ordem || 0) || String(a.data.titulo).localeCompare(String(b.data.titulo)))
   );
   eleventyConfig.addCollection("blog", (api) =>
     api

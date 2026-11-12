@@ -15,7 +15,7 @@ tipoOg: article
       <p class="post__resumo">{{ resumo }}</p>
       <p class="post__meta">Por <strong>Equipe pedagógica do {{ escola.nome }}</strong> · {{ content | minutosLeitura }} min de leitura</p>
     </header>
-    {%- if imagem %}<figure class="post__capa"><img src="{{ imagem }}" alt="{{ imagem_alt }}"{{ imagem | foco | safe }} loading="eager" fetchpriority="high" sizes="(min-width: 800px) 760px, 92vw"></figure>{% endif %}
+    {%- if imagem %}<figure class="post__capa"><img src="{{ imagem }}" alt="{{ imagem_alt }}"{{ imagem | foco(imagem_foco) | safe }} loading="eager" fetchpriority="high" sizes="(min-width: 800px) 760px, 92vw"></figure>{% endif %}
     <div class="texto-corrido texto-corrido--artigo">
       {{ content | safe }}
     </div>
@@ -58,7 +58,7 @@ tipoOg: article
     <ul class="lista-posts">
       {%- for p in rel %}
       <li class="cartao-post"><a href="{{ p.url }}">
-        {%- if p.data.imagem %}<figure><img src="{{ p.data.imagem }}" alt="{{ p.data.imagem_alt }}"{{ p.data.imagem | foco | safe }} sizes="(min-width: 900px) 360px, 90vw"></figure>{% endif %}
+        {%- if p.data.imagem %}<figure><img src="{{ p.data.imagem }}" alt="{{ p.data.imagem_alt }}"{{ p.data.imagem | foco(p.data.imagem_foco) | safe }} sizes="(min-width: 900px) 360px, 90vw"></figure>{% endif %}
         <div><p class="rotulo">{{ p.data.tema or "Blog" }}</p><h3>{{ p.data.titulo }}</h3><p>{{ p.data.resumo }}</p></div>
       </a></li>
       {%- endfor %}

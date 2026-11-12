@@ -17,7 +17,7 @@ classeCorpo: pagina-interna
     <ul class="lista-posts">
       {%- for p in collections.blog %}
       <li class="cartao-post"><a href="{{ p.url }}">
-        {%- if p.data.imagem %}<figure><img src="{{ p.data.imagem }}" alt="{{ p.data.imagem_alt }}"{{ p.data.imagem | foco | safe }} sizes="(min-width: 900px) 360px, 90vw"></figure>{% endif %}
+        {%- if p.data.imagem %}<figure><img src="{{ p.data.imagem }}" alt="{{ p.data.imagem_alt }}"{{ p.data.imagem | foco(p.data.imagem_foco) | safe }} sizes="(min-width: 900px) 360px, 90vw"></figure>{% endif %}
         <div><p class="rotulo">{{ p.data.tema or "Blog" }}</p><h2>{{ p.data.titulo }}</h2><p>{{ p.data.resumo }}</p><span class="link-seta">Ler {{ icone("seta") }}</span></div>
       </a></li>
       {%- endfor %}

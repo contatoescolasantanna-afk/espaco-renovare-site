@@ -33,7 +33,7 @@ eleventyComputed:
     <div class="hero__fotos">
       <img class="hero__sol" src="/images/marca/logo-sol.svg" alt="" width="212" height="198" eleventy:ignore>
       <figure class="hero__foto hero__foto--principal">
-        <img src="{{ h.imagem_principal }}" alt="{{ h.imagem_principal_alt }}"{{ h.imagem_principal | foco | safe }} loading="eager" fetchpriority="high" sizes="(min-width: 1100px) 540px, (min-width: 760px) 50vw, 88vw">
+        <img src="{{ h.imagem_principal }}" alt="{{ h.imagem_principal_alt }}"{{ h.imagem_principal | foco(h.imagem_principal_foco) | safe }} loading="eager" fetchpriority="high" sizes="(min-width: 1100px) 540px, (min-width: 760px) 50vw, 88vw">
       </figure>
       <figure class="hero__foto hero__foto--2">
         <img src="{{ h.imagem_2 }}" alt="{{ h.imagem_2_alt }}"{{ h.imagem_2 | foco | safe }} loading="eager" sizes="(min-width: 760px) 200px, 34vw">
@@ -130,7 +130,7 @@ eleventyComputed:
       {%- for t in collections.turmas %}
       <li class="cartao-turma cartao-turma--{{ t.data.cor }}">
         <a href="{{ t.url }}">
-          <figure><img src="{{ t.data.imagem }}" alt="{{ t.data.imagem_alt }}"{{ t.data.imagem | foco | safe }} sizes="(min-width: 1000px) 360px, (min-width: 640px) 45vw, 90vw"></figure>
+          <figure><img src="{{ t.data.imagem }}" alt="{{ t.data.imagem_alt }}"{{ t.data.imagem | foco(t.data.imagem_foco) | safe }} sizes="(min-width: 1000px) 360px, (min-width: 640px) 45vw, 90vw"></figure>
           <div class="cartao-turma__corpo">
             <span class="etiqueta">{{ t.data.faixa_etaria }}</span>
             <h3>{{ t.data.titulo }}</h3>
@@ -168,7 +168,7 @@ eleventyComputed:
 <section class="secao secao--creme" id="proposta">
   <div class="container proposta">
     <div class="proposta__foto">
-      <figure><img src="{{ home.proposta.imagem }}" alt="{{ home.proposta.imagem_alt }}"{{ home.proposta.imagem | foco | safe }} sizes="(min-width: 900px) 460px, 90vw"></figure>
+      <figure><img src="{{ home.proposta.imagem }}" alt="{{ home.proposta.imagem_alt }}"{{ home.proposta.imagem | foco(home.proposta.imagem_foco) | safe }} sizes="(min-width: 900px) 460px, 90vw"></figure>
       <p class="manuscrita proposta__frase">{{ home.proposta.frase_manuscrita }}</p>
     </div>
     <div class="proposta__texto">

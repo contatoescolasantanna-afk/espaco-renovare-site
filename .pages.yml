@@ -98,6 +98,7 @@ content:
           - { name: botao_secundario, label: Botão do WhatsApp, type: string }
           - { name: frase_manuscrita, label: Bilhetinho escrito à mão, type: string }
           - { name: imagem_principal, label: Foto grande, type: image }
+          - { name: imagem_principal_foco, label: Enquadramento da foto grande, type: select, options: { values: ["rosto no alto", centro, "parte de baixo"] }, description: "Se a foto cortar a cabeça, escolha rosto no alto. Vazio = automático." }
           - { name: imagem_principal_alt, label: Descrição da foto grande (acessibilidade e Google), type: string }
           - { name: imagem_2, label: Foto pequena (direita), type: image }
           - { name: imagem_2_alt, label: Descrição da foto pequena (direita), type: string }
@@ -167,6 +168,12 @@ content:
               - { name: texto, label: Descrição, type: text }
               - { name: imagem, label: Foto, type: image }
               - { name: imagem_alt, label: Descrição da foto, type: string }
+              - { name: foco, label: Enquadramento da foto, type: string, description: "Opcional. Escreva: rosto no alto, centro ou parte de baixo." }
+              - name: enquadramento
+                label: Formato do cartão
+                type: select
+                options: { values: [panoramico] }
+                description: "panoramico = foto larga ocupando a linha toda. Vazio = normal."
 
       - name: proposta
         label: 6. Proposta pedagógica
@@ -176,6 +183,7 @@ content:
           - { name: texto, label: Texto (linha em branco separa parágrafos), type: text }
           - { name: frase_manuscrita, label: Frase escrita à mão, type: string }
           - { name: imagem, label: Foto, type: image }
+          - { name: imagem_foco, label: Enquadramento da foto, type: select, options: { values: ["rosto no alto", centro, "parte de baixo"] }, description: "Se a foto cortar a cabeça, escolha rosto no alto. Vazio = automático." }
           - { name: imagem_alt, label: Descrição da foto, type: string }
           - name: pilares
             label: Pilares
@@ -217,6 +225,7 @@ content:
             fields:
               - { name: imagem, label: Foto, type: image }
               - { name: alt, label: Descrição da foto, type: string }
+              - { name: foco, label: Enquadramento, type: string, description: "Opcional. Escreva: rosto no alto, centro ou parte de baixo." }
 
       - name: video
         label: 9. Vídeo do YouTube
@@ -298,6 +307,7 @@ content:
           - { name: funcao, label: Função, type: string }
           - { name: texto, label: Frase curta, type: text }
           - { name: foto, label: Foto (com autorização), type: image }
+          - { name: foto_foco, label: Enquadramento da foto, type: select, options: { values: ["rosto no alto", centro, "parte de baixo"] }, description: "Se a foto cortar a cabeça, escolha rosto no alto. Vazio = automático." }
 
   # ------------------------------------------------------------------
   - name: alimentacao
@@ -338,6 +348,7 @@ content:
       - { name: resumo, label: Resumo (aparece no cartão), type: text }
       - { name: imagem, label: Foto principal, type: image }
       - { name: imagem_alt, label: Descrição da foto principal, type: string }
+      - { name: imagem_foco, label: Enquadramento da foto principal, type: select, options: { values: ["rosto no alto", centro, "parte de baixo"] }, description: "Se a foto cortar a cabeça, escolha rosto no alto. Vazio = automático." }
       - { name: imagem_2, label: Foto secundária, type: image }
       - { name: imagem_2_alt, label: Descrição da foto secundária, type: string }
       - { name: seo_titulo, label: Título no Google, type: string }
@@ -371,6 +382,7 @@ content:
       - { name: resumo, label: Resumo, type: text }
       - { name: imagem, label: Foto de capa, type: image }
       - { name: imagem_alt, label: Descrição da foto, type: string }
+      - { name: imagem_foco, label: Enquadramento da capa, type: select, options: { values: ["rosto no alto", centro, "parte de baixo"] }, description: "Se a foto cortar a cabeça, escolha rosto no alto. Vazio = automático." }
       - { name: seo_descricao, label: Descrição no Google, type: text }
       - { name: rascunho, label: Rascunho (não publicar ainda), type: boolean }
       - name: faq
@@ -381,3 +393,29 @@ content:
           - { name: pergunta, label: Pergunta, type: string }
           - { name: resposta, label: Resposta, type: text }
       - { name: body, label: Texto, type: rich-text, options: { format: markdown } }
+
+  # ------------------------------------------------------------------
+  - name: paginas
+    label: 📄 Páginas extras
+    description: "Crie páginas novas (ex.: Uniforme, Festa Junina, Material escolar). O endereço é o nome da página, ex. espacorenovareinfantil.com.br/uniforme/"
+    type: collection
+    path: src/paginas
+    filename: "{primary}.md"
+    exclude: [paginas.11tydata.js, .gitkeep]
+    view:
+      fields: [titulo]
+      primary: titulo
+      sort: [ordem, titulo]
+    fields:
+      - { name: titulo, label: Título da página, type: string, required: true, description: "Não use o mesmo nome de uma página que já existe (Blog, Quem somos, Turmas)." }
+      - { name: resumo, label: Frase de abertura (opcional), type: text }
+      - { name: imagem, label: Foto de capa (opcional), type: image }
+      - { name: imagem_alt, label: Descrição da foto, type: string }
+      - { name: imagem_foco, label: Enquadramento da capa, type: select, options: { values: ["rosto no alto", centro, "parte de baixo"] }, description: "Se a foto cortar a cabeça, escolha rosto no alto. Vazio = automático." }
+      - { name: body, label: Texto da página, type: rich-text, options: { format: markdown } }
+      - { name: no_rodape, label: Mostrar link no rodapé do site?, type: boolean }
+      - { name: ordem, label: Ordem no rodapé, type: number }
+      - { name: mostrar_cta, label: Mostrar convite "Agendar visita" no fim?, type: boolean, default: true }
+      - { name: seo_titulo, label: "Título no Google (opcional, até 60 letras)", type: string }
+      - { name: seo_descricao, label: Descrição no Google, type: text }
+      - { name: rascunho, label: Rascunho (não publicar ainda), type: boolean }
