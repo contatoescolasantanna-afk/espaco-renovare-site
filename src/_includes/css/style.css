@@ -420,9 +420,8 @@ a.selo-google:hover{color:var(--azul-900)}
   body{padding-bottom:76px}
 }
 
-/* ---------- Desempenho: só monta as seções quando o visitante chega perto ---------- */
-.secao:not(.secao--azul),.cta-final{content-visibility:auto;contain-intrinsic-size:auto 900px}
-.pagina-interna .secao--topo-curto{content-visibility:visible}
+/* content-visibility:auto foi removido: a altura estimada (900px) diferia da real
+   e a página "tremia" ao rolar, principalmente no Safari do iPhone. */
 
 /* ---------- Animações de entrada ---------- */
 .js .revelar{opacity:0;transform:translateY(14px);transition:opacity .35s ease,transform .35s ease}
