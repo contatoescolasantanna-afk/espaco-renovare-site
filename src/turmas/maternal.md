@@ -16,7 +16,7 @@ destaques:
   - Turmas de no máximo 10 crianças
   - Material Conquista (Grupos 2 e 3), com Artes e Inglês a partir dos 3 anos
   - Parque, campo de futebol e pomar na rotina
-  - Ballet, Cross Kids, Música e Inglês na escola
+  - Inglês e Cross Kids inclusos; Ballet e Música à parte
 ---
 
 No **Maternal** a criança descobre que consegue: comer sozinha, guardar os brinquedos, contar o que aconteceu, fazer amigos. Nosso papel é dar espaço, tempo e segurança para essas conquistas acontecerem.

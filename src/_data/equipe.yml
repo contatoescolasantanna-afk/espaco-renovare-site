@@ -6,38 +6,44 @@ subtitulo: Uma equipe pequena, próxima e que conhece cada criança pelo nome.
 historia: |-
   O Espaço Renovare nasceu em 1º de agosto de 2013, com o nome de Escola Santanna, em Santana de Parnaíba. Com o tempo, a escola ganhou um novo nome: **Renovare**, que vem do italiano e significa *renovar*.
 
+  Em fevereiro de 2023, a escola mudou para um novo espaço, mais arejado e amplo, com parque maior e quintal para as crianças brincarem. As salas têm câmeras, e o sistema de ensino Conquista continua o mesmo.
+
   O sol do nosso logo representa exatamente isso: um novo dia, uma nova chance, uma nova oportunidade de viver algo novo. É assim que enxergamos a infância, com respeito, afeto e muita descoberta, do berçário à pré-escola.
 missao: Acolher cada criança como única, aprendendo pela arte, pelo brincar e pela natureza, em parceria com as famílias.
 pessoas:
   - nome: Sabrina
     funcao: Diretora pedagógica
     texto: Conduz a proposta pedagógica da escola e acompanha de perto cada turma e cada família.
-    foto: ""
+    foto: /images/uploads/equipe-sabrina-rosto.jpg
   - nome: Carla
-    funcao: Professora
-    texto: Professora das turmas do Berçário e do Maternal.
-    foto: ""
+    funcao: Professora do Berçário
+    texto: Cuida da rotina dos bebês com calma, carinho e muita atenção a cada um.
+    foto: /images/uploads/equipe-carla-rosto.jpg
   - nome: Michelle
     funcao: Professora do Pré
     texto: Professora formada, responsável pela turma da Pré-escola.
-    foto: ""
+    foto: /images/uploads/equipe-michelle-rosto.jpg
   - nome: Isabelly
-    funcao: Auxiliar de desenvolvimento infantil
-    texto: Apoia o dia a dia das turmas, nos cuidados e nas atividades.
-    foto: ""
+    funcao: Auxiliar de desenvolvimento infantil do Berçário
+    texto: Apoia o dia a dia do Berçário, nos cuidados e nas atividades.
+    foto: /images/uploads/equipe-isabelly-rosto.jpg
+  - nome: Fabiana Maia
+    funcao: Professora de Cross Kids
+    texto: Responsável pelas aulas de Cross Kids, que trabalham força, coordenação e confiança em forma de brincadeira.
+    foto: /images/uploads/equipe-fabiana-maia-v1.jpg
   - nome: Gabriane
     funcao: Professora de Ballet
     texto: Responsável pelas aulas de Ballet da escola.
-    foto: ""
+    foto: /images/uploads/equipe-gabriane-rosto.jpg
   - nome: Weslei
     funcao: Diretor administrativo
     texto: Cuida da administração da escola, das matrículas e do atendimento às famílias.
-    foto: ""
+    foto: /images/uploads/equipe-weslei-rosto.jpg
   - nome: Pamela
     funcao: Professora de Inglês
     texto: Responsável pelas aulas de Inglês da escola.
-    foto: ""
-  - nome: Maria Aparecida
+    foto: /images/uploads/equipe-pamela-rosto.jpg
+  - nome: Dona Cida
     funcao: Copeira
     texto: Prepara e organiza as refeições servidas às crianças.
     foto: ""
